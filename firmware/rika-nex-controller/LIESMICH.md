@@ -1,6 +1,6 @@
 # RIKA NEX – Firmware (Logger + Luftbox)
 
-Stand 0.3.1-luftbox (22.10.2026). Läuft auf dem Produktiv-D1-Mini (rika_nex.local).
+Stand 0.3.2-luftbox (27.10.2026). Läuft auf dem Produktiv-D1-Mini (rika_nex.local).
 Misst Brennraumtemperatur, Tür, Netz/Akku und stellt die Luftbox über den Servo;
 der AS5600 kontrolliert die Ist-Stellung. Noch **keine automatische Regelung** –
 die Stellung kommt aus Home Assistant.
@@ -30,7 +30,7 @@ die Stellung kommt aus Home Assistant.
 | button Nullpunkt setzen (Konfiguration) | aktuelle Stellung als „ganz zu“ speichern (EEPROM) |
 | number Servo-Puls (Kalibrierung) (Konfiguration) | roher Puls 500–2500 µs, **ohne** Luftbox-Grenzen |
 
-Dashboard zum Einfügen: `../home-assistant/rika-nex-dashboard.yaml`.
+Dashboard zum Einfügen: `../../home-assistant/rika-nex-dashboard.yaml`.
 
 ## Verhalten
 
@@ -43,8 +43,14 @@ Dashboard zum Einfügen: `../home-assistant/rika-nex-dashboard.yaml`.
 - Ereignisse auf `rika_nex/event`: `luft:<‰>/<µs>us`, `luft:sperre`, `luft:abweichung:<‰>`,
   `luft:nullpunkt:<raw>`, `luft:kalibrierung:<µs>us`, `tuer_auf`, `tuer_zu`, `nachgelegt`, …
 
-## Noch zu tun nach dem Koppeln
+## Kalibrierung der Endpunkte
 
-`AIR_US_AT_0` / `AIR_US_AT_1000` in `include/config.h` sind vorläufig (2200 / 860 µs).
-Nach dem Koppeln mit „Servo-Puls (Kalibrierung)“ die Anschläge antasten, mit dem AS5600 die
-Pulse für 0 ‰ und 1000 ‰ bestimmen (je ca. 20 µs vor dem Anschlag), eintragen, neu flashen.
+`AIR_US_AT_0` / `AIR_US_AT_1000` in `include/config.h`:
+
+| Stellung | Puls | Stand |
+|---|---|---|
+| 0 ‰ = ganz zu („Glut halten“) | 2360 µs | angetastet 27.10.2026, vollständig geschlossen |
+| 1000 ‰ = ganz auf („Anfeuern“) | 860 µs | noch vorläufig – mit „Servo-Puls (Kalibrierung)“ antasten |
+
+Vorgehen: mit „Servo-Puls (Kalibrierung)“ den Anschlag antasten, mit dem AS5600 prüfen
+(ca. 20 µs vor dem Anschlag), Wert eintragen, neu flashen. Details: `docs/KALIBRIERUNG.md`.
