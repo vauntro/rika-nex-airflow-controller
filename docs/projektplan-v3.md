@@ -26,6 +26,7 @@ Stand: 18.10.2026 · Ersetzt v2 (`projektplan-v1.md` und `projektplan-v2.md` ble
 | E17 | Luftbox-Winkel (AS5600, 22.10.) | Magnet + AS5600 sitzen am Einlass der Luftbox (verklebt). Ab „ganz zu“: Zwischenanschlag +27,6° (≈152 ‰), ganz auf +182,3° (1000 ‰); Wiederholgenauigkeit ca. 0,1°, Anschlag-Streuung ca. ±1° (Toleranz ±5° in der Firmware). AS5600 am selben I²C-Bus wie PCA9685 (0x36/0x40). Nullpunkt per HA-Button, dauerhaft gespeichert. Bekannte Einschränkung: axiales Wellenspiel (herstellungsbedingt, nicht behebbar) verschiebt den Messwert um bis zu 2,8° (≈15 ‰); akzeptiert, Störungsschwelle ≥5°. Details: `KALIBRIERUNG.md`, Test Handschieber: `TEST-Handschieber.md` (auf Nicos Mac). |
 | E18 | Ziel (22.10.) | Ofen vorerst vollständig elektrisch über den Servo steuern. Ob der Handschieber mit angekoppeltem Servo weiter nutzbar ist (Kraft, Riemen-Überspringen), bleibt vorerst offen. |
 | E19 | Stromausfall ohne WLAN (23.10.) | Bei Netzausfall ist auch das WLAN weg (mehrere Access Points, nicht puffbar). Die Firmware muss den Ausfall allein behandeln: Regelung läuft lokal auf dem Board weiter, ohne HA/MQTT; Messwerte und Ereignisse werden lokal zwischengespeichert und nach Rückkehr des WLAN nachgemeldet. Puffer für das Board selbst (eigener Akku oder Mini-DC-USV 5 V, unterbrechungsfrei, ≥ 3 A) noch offen. Notstellung bei Störung (Akku leer, Fühler/AS5600 defekt), entschieden 23.10.: nach Phase, im Abbrand 500 ‰, im Glutbett letzte Stellung; nie automatisch ganz zu; bis die Regelung fertig ist, gilt letzte Stellung. Umsetzung (Offline-Betrieb, Ist-Stellung nach Neustart übernehmen, Neustart-Ereignis, Ausfallzähler) erst mit der Prod-Firmware (Nico, 23.10.). |
+| E20 | Board für den Produktivbetrieb (27.10.) | Umstieg vom Wemos D1 Mini (ESP8266) auf einen **ESP32 im D1-mini-Format** (Vorschlag: „ESP32 D1 Mini“, ESP32-WROOM-32, zwei Kerne). Der D1 Mini bleibt Testboard bis zur Prod-Firmware. Details: Abschnitt 6.1. |
 
 Fotos und Maße des Flansches reicht Nico nach (Voraussetzung für die Servo-Auswahl).
 
@@ -157,6 +158,44 @@ Ein Türkontakt ist deshalb für E5 nicht mehr optional, sondern Voraussetzung. 
 - **Home Assistant per MQTT-Discovery** (`homeassistant/...`), dann erscheinen Sensoren, Schalter und Buttons automatisch. Die Nachlege-Meldung ist eine HA-Automation auf `rika_nex/event = nachlegen_empfohlen`.
 - Befehle von außen können die Sicherheitsregeln nicht aushebeln (z. B. kein `cmd/position = 0` bei heißem Ofen).
 
+### 6.1 Umstieg auf ESP32 (E20, 27.10.)
+
+**Warum:** Zwei Kerne (WLAN/MQTT getrennt von Regelung und Sicherheitslogik), deutlich mehr RAM für OTA-Updates und den Offline-Puffer aus E19, Hardware-Watchdog, NVS/Preferences statt emuliertem EEPROM, mehrere ADC-Eingänge (Akku, Netzerkennung) und genug freie GPIOs. Der ESP8266 hat nur einen ADC und wenige freie Pins (D7 ist schon doppelt belegt).
+
+**Servo-PWM:** Der Servopuls kommt weiterhin aus dem **PCA9685** (Hardware-PWM, über I²C), nicht direkt vom Mikrocontroller. Am Servo-Verhalten ändert der Umstieg daher nichts, die gemessenen Pulswerte (z. B. 0 ‰ = 2360 µs) gelten unverändert. Die ESP32-eigene LEDC-PWM wäre nur eine Option, falls der PCA9685 später entfallen soll; dann müssten die Endwerte neu eingemessen werden.
+
+**Boardwahl:**
+
+| Board | Bewertung |
+|---|---|
+| **ESP32 D1 Mini** (WROOM-32, 2 Kerne) | **Empfehlung.** Gleiches Format wie der Wemos D1 Mini, alle benötigten GPIOs der `esp32dev`-Belegung herausgeführt, Firmware-Ziel `esp32dev` passt ohne Änderung. |
+| ESP32-C3 Super Mini | Sehr klein und günstig, aber nur ein Kern und wenige Pins; für Offline-Puffer plus Regelung knapp. Nur als Ersatz. |
+
+**Pinbelegung** (bereits so in `firmware/rika-nex-controller/include/config.h`, Zweig `esp32dev`):
+
+| Funktion | ESP32-GPIO | bisher D1 Mini |
+|---|---|---|
+| I²C SDA (PCA9685 0x40, AS5600 0x36) | 21 | D2 (GPIO4) |
+| I²C SCL | 22 | D1 (GPIO5) |
+| SPI SCK (Thermoelement) | 18 | D5 |
+| SPI MISO | 19 | D6 |
+| SPI MOSI (nur MAX31856) | 23 | D7 |
+| SPI CS | 5 | D8 |
+| Türkontakt | 27 | D7 |
+| Netzerkennung (Spannungsteiler, vor USV/Lademodul) | 34 (nur Eingang) | D0 |
+| Akkuspannung (Teiler 100k/100k) | 35 (nur Eingang, ADC) | A0 |
+
+**Verkabelung:** Alle Module laufen weiter mit 3,3 V Logik. AS5600 und PCA9685 hängen am selben I²C-Bus; der Servo bekommt seine 5 V weiterhin extern über V+ am PCA9685, nicht über das Board.
+
+**Portierung der Firmware:** Die PlatformIO-Firmware hat bereits ein Ziel `esp32dev` und baut dafür (geprüft mit 0.3.0). Offen für die Prod-Firmware:
+- Kalibrier- und Nullpunktdaten von EEPROM-Emulation auf NVS/Preferences umstellen (Werte einmalig übertragen bzw. Nullpunkt neu setzen).
+- Regelung bzw. Sicherheitslogik als eigene Task auf Kern 1, WLAN/MQTT auf Kern 0.
+- Hardware-Watchdog aktivieren.
+- Offline-Betrieb und Neustart-Verhalten aus E19 umsetzen.
+- Vor dem Umbau einmal kalt testen: AS5600 lesen, alle Stellungen fahren, Temperatur und Tür prüfen.
+
+**Reihenfolge:** Erst Kalibrierung am D1 Mini abschließen (Endwert „ganz auf“ fehlt noch), dann ESP32 bestellen und mit der Prod-Firmware umstellen.
+
 ## 7. Projektphasen
 
 | Phase | Inhalt | Ergebnis |
@@ -171,7 +210,7 @@ Ein Türkontakt ist deshalb für E5 nicht mehr optional, sondern Voraussetzung. 
 ## 8. Stückliste (vorläufig)
 
 - Original: Flammtemperatursensor B17692, Flammsensorrohr B15248, Andrückwinkel L02783 (ggf. Umlenkplatte Z32596)
-- ESP32-Board, Messverstärker passend zum Sensor (bei Typ K: MAX31856), Ausgleichsleitung
+- ESP32 D1 Mini (WROOM-32, E20), Messverstärker passend zum Sensor (bei Typ K: MAX31856), Ausgleichsleitung
 - Servo mit Positionsrückmeldung oder Servo + AS5600, lösbare Kupplung, Adapterflansch
 - Power-Path-Lademodul, Li-Ion- oder LiFePO4-Zelle mit BMS, DC/DC-Wandler, Netzteil 5 V
 - Hardware-Watchdog (z. B. ATtiny oder Watchdog-IC)
