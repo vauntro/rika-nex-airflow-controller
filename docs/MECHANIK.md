@@ -2,9 +2,7 @@
 
 ## Luftbox (69), Befestigungslöcher an der Stirnseite (Wellenseite)
 
-Gemessen von Nico am 21.10.2026 (Stelle: Kommentar in der Zeichnung
-`zeichnungen/luftbox-riemenantrieb-as5600.png`, ca. 52 % von links / 56 % von oben,
-untere Ecke der Stirnseite neben dem Wellenstück 68).
+Gemessen von Nico am 21.10.2026 (Stelle: untere Ecke der Stirnseite neben dem Wellenstück 68).
 
 | Maß                                   | Wert    |
 |---------------------------------------|---------|
