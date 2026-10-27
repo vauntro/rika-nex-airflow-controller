@@ -1,0 +1,119 @@
+# RIKA NEX – Dashboard für Home Assistant
+#
+# Alle Entitäten legt die Firmware per MQTT-Discovery selbst an (Gerät "RIKA NEX").
+# Dieses Dashboard ordnet sie nur übersichtlich an.
+#
+# Einrichten:
+#   Einstellungen → Dashboards → "Dashboard hinzufügen" → "Neues Dashboard von Grund auf"
+#   → Dashboard öffnen → ⋮ → "Bearbeiten" → ⋮ → "Raw-Konfigurationseditor"
+#   → gesamten Inhalt dieser Datei einfügen → Speichern.
+#
+# Falls Home Assistant die Entitäten anders benannt hat (z. B. sensor.rika_nex_brennraumtemperatur
+# statt sensor.rika_nex_temp_brennraum): unter Einstellungen → Geräte → "RIKA NEX" nachsehen
+# und die IDs unten anpassen.
+
+title: RIKA NEX
+views:
+  - title: Ofen
+    path: ofen
+    icon: mdi:fireplace
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: gauge
+            entity: sensor.rika_nex_temp_brennraum
+            name: Brennraum
+            min: 0
+            max: 900
+            needle: true
+            severity:
+              green: 0
+              yellow: 650
+              red: 800
+          - type: entities
+            title: Ofen
+            entities:
+              - entity: binary_sensor.rika_nex_tuer
+                name: Feuerraumtür
+              - entity: button.rika_nex_angeheizt
+                name: Angeheizt (Ereignis)
+              - entity: button.rika_nex_nachgelegt
+                name: Nachgelegt (Ereignis)
+
+      - type: vertical-stack
+        cards:
+          - type: entities
+            title: Luftbox
+            show_header_toggle: false
+            entities:
+              - entity: sensor.rika_nex_luftbox_zustand
+                name: Zustand
+              - entity: select.rika_nex_luftbox_stellung
+                name: Stellung
+              - entity: number.rika_nex_luftklappe
+                name: Soll (‰)
+              - type: divider
+              - entity: sensor.rika_nex_luftbox_stellung_ist
+                name: Ist (‰, AS5600)
+              - entity: sensor.rika_nex_primaerluft
+                name: Primärluft
+              - entity: sensor.rika_nex_sekundaerluft
+                name: Sekundärluft
+              - entity: sensor.rika_nex_luftbox_winkel
+                name: Ist-Winkel
+              - entity: sensor.rika_nex_luftklappe_abweichung
+                name: Abweichung Ist – Soll
+              - entity: sensor.rika_nex_luftklappe_status
+                name: Status
+              - entity: sensor.rika_nex_luftklappe_stellung
+                name: Zuletzt gefahren
+          - type: markdown
+            content: >-
+              **0 ‰** = ganz zu (Glut halten) · **500 ‰** = Übergang Sekundär/Primär ·
+              **1000 ‰** = ganz auf (Anfeuern). Der Regler fährt nicht unter die
+              Sperre beim alten Zwischenanschlag – ganz zu nur über „Glut halten“.
+
+      - type: history-graph
+        title: Abbrand (letzte 6 Stunden)
+        hours_to_show: 6
+        entities:
+          - entity: sensor.rika_nex_temp_brennraum
+            name: Brennraum °C
+      - type: history-graph
+        title: Luftklappe Soll / Ist (letzte 6 Stunden)
+        hours_to_show: 6
+        entities:
+          - entity: number.rika_nex_luftklappe
+            name: Soll ‰
+          - entity: sensor.rika_nex_luftbox_stellung_ist
+            name: Ist ‰
+
+  - title: Service
+    path: service
+    icon: mdi:wrench
+    cards:
+      - type: entities
+        title: Diagnose
+        entities:
+          - entity: sensor.rika_nex_as5600_magnet
+            name: AS5600 Magnet
+          - entity: sensor.rika_nex_sensor_fault
+            name: Temperaturfühler
+          - entity: sensor.rika_nex_temp_cj
+            name: Vergleichsstelle
+          - entity: binary_sensor.rika_nex_netz
+            name: Netzversorgung
+          - entity: sensor.rika_nex_akku_spannung
+            name: Akkuspannung
+      - type: entities
+        title: Kalibrierung (nur bei Bedarf)
+        entities:
+          - entity: number.rika_nex_servo_puls
+            name: Servo-Puls direkt (µs)
+          - entity: button.rika_nex_nullpunkt
+            name: Nullpunkt setzen (Box auf „ganz zu“)
+      - type: markdown
+        content: >-
+          **Achtung:** „Servo-Puls direkt“ umgeht alle Grenzen der Luftbox. Am gekoppelten
+          Servo nur in kleinen Schritten an die Anschläge herantasten. „Nullpunkt setzen“ nur
+          drücken, wenn die Luftbox wirklich auf „ganz zu“ steht.
