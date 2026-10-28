@@ -34,3 +34,5 @@ gepuffert werden).
 - Messphase mit echten Abbränden (Ereignisse Angeheizt/Nachgelegt nutzen).
 - Abbrandregelung (Phasen + PID auf Brennraumtemperatur).
 - Umstieg ESP32 + MAX31856, Gehäuse, Kabelführung.
+
+- Optional: sanfte Fahrrampe im Servo-Antrieb (ca. 1,5 s voller Weg, langsamer vor den Anschlägen), nur falls im Betrieb hartes Anschlagen auffällt. Stand 28.10.: nicht nötig, Fahrweg passt.
