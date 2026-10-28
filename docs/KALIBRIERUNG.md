@@ -139,9 +139,16 @@ ohne Nullpunkt, 14:59:39–15:00:39, 604 Messwerte, langsam von Anschlag zu Ansc
 | Stellung | Puls | Quelle |
 |---|---|---|
 | ganz zu (0 ‰, „Glut halten“) | **2360 µs** | Nico, über „Servo-Puls (Kalibrierung)“ angetastet: vollständig geschlossen |
-| ganz auf (1000 ‰, „Anfeuern“) | 860 µs | noch vorläufig, offen → noch antasten |
+| ganz auf (1000 ‰, „Anfeuern“) | **860 µs** | Nico, 28.10.: Markierung am Riemenrad stimmt mit der von Hand erprobten Endlage überein → bestätigt |
 
 - In der Firmware 0.3.2-luftbox eingetragen (AIR_US_AT_0 = 2360), geflasht 27.10.2026.
 - Weg 2360 → 860 µs = 1500 µs; bei ca. 7,4 µs/° wären das ca. 200° – mehr als die
   gemessenen ca. 182–188° der Box. Das offene Ende liegt vermutlich zwischen ca. 980 und 1000 µs
   (bzw. 860 µs drückt bereits an den Anschlag) → beim Antasten prüfen.
+
+### Endwerte bestätigt (28.10.2026)
+
+- 0 ‰ = 2360 µs, 1000 ‰ = 860 µs. Firmware unverändert (beide Werte schon in 0.3.2).
+- Der Servo braucht über den Riemen ca. 8,0 µs/° statt der geschätzten 7,4 µs/°; die Sorge „860 µs drückt an den Anschlag“ ist damit erledigt.
+- Zwischenstellungen (linear): Abbrand stark 500 ‰ = 1610 µs, mittel 335 ‰ ≈ 1858 µs, leicht 165 ‰ ≈ 2113 µs, Reglersperre 160 ‰ ≈ 2120 µs.
+- Offen, sobald der AS5600 wieder angeschlossen ist: auf „Glut halten“ fahren und „Nullpunkt setzen“; dann 1000/500/335/165 ‰ fahren und prüfen, dass „Luftklappe Abweichung“ überall unter ±20 ‰ bleibt.

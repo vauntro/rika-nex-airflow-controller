@@ -2,6 +2,11 @@
 
 Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden hier festgehalten, neueste oben.
 
+## 2026-10-28
+
+### Kalibrierung
+- Endwert „ganz auf“ (1000 ‰, „Anfeuern“) = **860 µs** bestätigt: stimmt mit der von Hand erprobten Endlage überein. Firmware unverändert. Zwischenstellungen und nächste Schritte (AS5600-Nullpunkt, Linearitätsprüfung) in `docs/KALIBRIERUNG.md`.
+
 ## 2026-10-27
 
 ### Planung
