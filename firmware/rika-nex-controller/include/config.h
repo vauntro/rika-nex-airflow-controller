@@ -72,7 +72,7 @@
 // Abbildung ‰ -> Servo-Puls. VORLÄUFIG (Geodreieck 21.10.), nach dem Koppeln an der
 // Luftbox mit dem AS5600 kalibrieren. Die Werte sind zugleich die harten Grenzen.
 #define AIR_US_AT_0      2360       // 0 ‰    = ganz zu (gemessen 27.10.: vollständig geschlossen)
-#define AIR_US_AT_1000   860        // 1000 ‰ = ganz auf
+#define AIR_US_AT_1000   860        // 1000 ‰ = ganz auf (bestätigt 28.10.: Endlage stimmt)
 // Software-Sperre (wie der Hebel am Original-Schieber): der freie Regler fährt nicht
 // unter diesen Wert, ganz zu nur über die Auswahl "Glut halten".
 // Zwischenanschlag gemessen bei ca. 152 ‰ (27,6°).
