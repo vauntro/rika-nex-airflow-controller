@@ -86,3 +86,7 @@ Mechanik nach dem Stresstest:
 - Kein Brummen an den Anschlägen, keine Riemengeräusche.
 
 **Ergebnis: Antrieb freigegeben.** Nächster Schritt: AS5600 anschließen, Nullpunkt bei „Glut halten“ setzen, Linearität bei 1000/500/335/165 ‰ prüfen.
+
+### Nachtest nach Riemenjustage (28.10.2026, abends)
+
+Servo mit Unterlegscheiben unter allen vier Laschen nach vorn versetzt, weil der Riemen leicht am inneren Bord des Riemenrads anlief. Danach 8 Fahrten im 10-s-Takt und 48 im 3-s-Takt (manuell gestoppt): alle quittiert, keine Fehler. Endlage „Anfeuern“ (860 µs) geprüft: Fahrweg passt, kein Anschlagen. Firmware unverändert.
