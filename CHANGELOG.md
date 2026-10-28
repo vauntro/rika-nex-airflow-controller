@@ -4,6 +4,9 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 
 ## 2026-10-28
 
+### Hardware / Test
+- Dauer- und Stresstest des Antriebs ohne AS5600: 16 Fahrten im 10-s-Takt, danach 120 Fahrten im 1,5-s-Takt (60 volle Hübe). Alle Befehle quittiert, kein Neustart. Servo kalt, Riemenrad-Markierungen an beiden Endlagen exakt, keine Geräusche. **Antrieb freigegeben.** Details in `docs/MECHANIK.md`.
+
 ### Kalibrierung
 - Endwert „ganz auf“ (1000 ‰, „Anfeuern“) = **860 µs** bestätigt: stimmt mit der von Hand erprobten Endlage überein. Firmware unverändert. Zwischenstellungen und nächste Schritte (AS5600-Nullpunkt, Linearitätsprüfung) in `docs/KALIBRIERUNG.md`.
 
