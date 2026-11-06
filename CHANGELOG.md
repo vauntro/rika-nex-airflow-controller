@@ -5,7 +5,7 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-06
 
 ### Hardware
-- **3D-Baugruppe Sensorbrücke** als STEP und GLB, montiert und als Explosion, mit Vorschaubild.
+- **3D-Baugruppe Sensorbrücke** als STEP, STL und GLB, montiert und als Explosion, mit Vorschaubild.
 - **Montageanleitung Sensorbrücke** (`sensorbruecke-as5600-montage.pdf`): Explosionsdarstellung aus dem CAD-Modell
   mit Positionsnummern, Teileliste und Montageschritten.
 - **Sensorbrücke Befestigung korrigiert:** Laschen sind 6,2 mm dick (gemessen Nico), daher ISO 4017 **M5 × 30** statt

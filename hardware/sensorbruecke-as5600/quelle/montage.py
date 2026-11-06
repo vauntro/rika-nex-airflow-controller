@@ -167,3 +167,6 @@ for tag,E_ in (("montiert",MONTIERT),("explosion",EXPLODE)):
         assy.add(solid,name=f"{n:02d}_{NAMEN[n]}_{cnt[n]}",color=cq.Color(*matplotlib.colors.to_rgb(c)))
     assy.save(f"sensorbruecke-as5600-baugruppe-{tag}.step")
     assy.save(f"sensorbruecke-as5600-baugruppe-{tag}.glb")
+    # STL: alle Teile als ein Netz
+    comp=cq.Compound.makeCompound([solid.val() for _,_,solid,_ in build(E_)])
+    cq.exporters.export(cq.Workplane().add(comp),f"sensorbruecke-as5600-baugruppe-{tag}.stl",tolerance=0.05,angularTolerance=0.2)

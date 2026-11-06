@@ -9,6 +9,7 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 |---|---|
 | `sensorbruecke-as5600-zeichnung-iso.pdf` | **Fertigungszeichnung nach ISO** (A4 quer, 1:1, Sachnummer RNX-S-001), Stil wie Bauteil H: Blatt 1 Ansichten mit Bemaßung, Blatt 2 Montage (Schnitt durch die Wellenmitte) und Hinweise |
 | `sensorbruecke-as5600-baugruppe-montiert.step` / `-explosion.step` | **3D-Baugruppe** für CAD (Luftbox-Rückseite vereinfacht, Magnet, Platine, Abstandshalter, Brücke, Hülsen, Normteile), montiert und als Explosion |
+| `sensorbruecke-as5600-baugruppe-montiert.stl` / `-explosion.stl` | Dieselbe Baugruppe als STL (alle Teile in einem Netz) |
 | `sensorbruecke-as5600-baugruppe-montiert.glb` / `-explosion.glb` | Dieselbe Baugruppe farbig zum direkten Anschauen (macOS Vorschau/Quick Look, Windows 3D-Viewer, Browser) |
 | `sensorbruecke-as5600-baugruppe.png` | Vorschaubild der montierten Baugruppe |
 | `sensorbruecke-as5600-montage.pdf` / `.png` | **Montageanleitung**: Explosionsdarstellung mit Positionsnummern, Teileliste und Montageschritten |
