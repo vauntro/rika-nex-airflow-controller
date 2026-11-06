@@ -5,6 +5,9 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-06
 
 ### Hardware
+- **Sensorbrücke schmaler** (Wunsch Nico, weniger Luftwiderstand): Steg 8 statt 16 mm, Augen Ø 14 um die
+  M5-Löcher, Mittelplatte 24 × 24 statt 32 × 32, Länge 161. STEP, STL, DXF und Zeichnung neu erzeugt; die
+  Zeichnung übernimmt die Kontur jetzt direkt aus dem CAD-Modell.
 - **Neu: AS5600-Sensorbrücke** für die Rückseite der Luftbox (`hardware/sensorbruecke-as5600/`): flaches
   2-mm-Alublech 163 × 16 mit Mittelplatte 32 × 32, befestigt an den mittleren Laschen (Lochabstand 147) mit
   M5 × 22 und Distanzhülsen 12 mm, Platine auf Abstandshaltern M3 × 6, Fenster 17 × 11 für die Stecker.

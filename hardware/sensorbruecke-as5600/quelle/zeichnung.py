@@ -4,40 +4,24 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, Circle, Arc
 from matplotlib.backends.backend_pdf import PdfPages
 MM=1/25.4
-HX,BW,PL=73.5,16.0,32.0
+HX,BW,PL,EYE=73.5,8.0,24.0,14.0
 PX,PY=8.05,8.15; WX,WY=17.0,11.0
 def draw(ax,ox,oy,lw=0.35):
-    r=BW/2
-    # outline: stadium bar + plate (draw as union by path)
-    import numpy as np
-    pts=[]
-    # start top-left of bar at plate
-    def arc(cx,cy,rad,a0,a1,n=40):
-        return [(cx+rad*math.cos(math.radians(a)),cy+rad*math.sin(math.radians(a))) for a in np.linspace(a0,a1,n)]
-    c=2.0;h=PL/2
-    pts+= [(-h,r)]
-    pts+= [(-h,h-c)]+arc(-h+c,h-c,c,180,90)[1:]
-    pts+= [(h-c,h)]+arc(h-c,h-c,c,90,0)[1:]
-    pts+= [(h,r),(HX,r)]+arc(HX,0,r,90,-90)[1:]
-    pts+= [(h,-r),(h,-h+c)]+arc(h-c,-h+c,c,0,-90)[1:]
-    pts+= [(-h+c,-h)]+arc(-h+c,-h+c,c,270,180)[1:]
-    pts+= [(-h,-r),(-HX,-r)]+arc(-HX,0,r,-90,-270)[1:]
-    pts.append(pts[0])
-    xs=[ox+p[0] for p in pts]; ys=[oy+p[1] for p in pts]
-    ax.plot(xs,ys,'k',lw=lw*2)
-    for sx in(-1,1):
-        ax.add_patch(Circle((ox+sx*HX,oy),5.5/2,fill=False,lw=lw*2))
-        for sy in(-1,1):
-            ax.add_patch(Circle((ox+sx*PX,oy+sy*PY),3.2/2,fill=False,lw=lw*2))
-    ax.add_patch(FancyBboxPatch((ox-WX/2+1.5,oy-WY/2+1.5),WX-3,WY-3,boxstyle="round,pad=1.5",fill=False,lw=lw*2))
-    # center marks
+    # Kontur direkt aus dem CAD-Modell (bruecke.py), damit Zeichnung und Modell übereinstimmen
+    import bruecke
+    face=bruecke.make().faces("<Z").val()
+    for wire in face.Wires():
+        for e in wire.Edges():
+            n=max(2,int(e.Length()/0.3))
+            pts=[e.positionAt(i/(n-1)) for i in range(n)]
+            ax.plot([ox+p.x for p in pts],[oy+p.y for p in pts],'k',lw=lw*2)
     def cm(x,y,l=3):
         ax.plot([x-l,x+l],[y,y],'k',lw=0.2); ax.plot([x,x],[y-l,y+l],'k',lw=0.2)
     for sx in(-1,1):
         cm(ox+sx*HX,oy,4.5)
         for sy in(-1,1): cm(ox+sx*PX,oy+sy*PY,2.5)
     ax.plot([ox-HX-12,ox+HX+12],[oy,oy],'k',lw=0.2,ls=(0,(8,2,1,2)))
-    ax.plot([ox,ox],[oy-22,oy+22],'k',lw=0.2,ls=(0,(8,2,1,2)))
+    ax.plot([ox,ox],[oy-18,oy+18],'k',lw=0.2,ls=(0,(8,2,1,2)))
 def dim(ax,x1,y1,x2,y2,txt,off,horiz=True,fs=7):
     if horiz:
         y=y1+off
@@ -53,17 +37,17 @@ fig=plt.figure(figsize=(297*MM,210*MM))
 ax=fig.add_axes([0,0,1,1]); ax.set_xlim(0,297); ax.set_ylim(0,210); ax.axis("off")
 ox,oy=148.5,128
 draw(ax,ox,oy)
-dim(ax,ox-HX-8,oy,ox+HX+8,oy,"163",-27)
+dim(ax,ox-HX-EYE/2,oy,ox+HX+EYE/2,oy,"161",-27)
 dim(ax,ox-HX,oy,ox+HX,oy,"147 (Lochmitte)",-21)
-dim(ax,ox-PL/2,oy+PL/2,ox+PL/2,oy+PL/2,"32",14)
-dim(ax,ox-PX,oy+PY,ox+PX,oy+PY,"16,1",2.6,fs=6)
-dim(ax,ox+PL/2,oy-PL/2,ox+PL/2,oy+PL/2,"32",14,horiz=False)
-dim(ax,ox+PX,oy-PY,ox+PX,oy+PY,"16,3",-25,horiz=False)
-dim(ax,ox-HX,oy-BW/2,ox-HX,oy+BW/2,"16",-14,horiz=False)
+dim(ax,ox-PL/2,oy+PL/2,ox+PL/2,oy+PL/2,"24",14)
+dim(ax,ox-PX,oy+PY,ox+PX,oy+PY,"16,1",7,fs=6.5)
+dim(ax,ox+PL/2,oy-PL/2,ox+PL/2,oy+PL/2,"24",10,horiz=False)
+dim(ax,ox-PX,oy-PY,ox-PX,oy+PY,"16,3",-9,horiz=False)
+dim(ax,ox-40,oy-BW/2,ox-40,oy+BW/2,"8",-4,horiz=False)
 ax.text(ox+HX-6,oy+12,"2× Ø 5,5 (M5)",fontsize=7)
-ax.text(ox+18,oy+19,"4× Ø 3,2 (M3, Platine AS5600)",fontsize=7)
-ax.text(ox-HX-11,oy+12,"R 8",fontsize=7)
-ax.text(ox-34,oy+19,"Ecken R 2",fontsize=7)
+ax.text(ox+14,oy+19,"4× Ø 3,2 (M3, Platine AS5600)",fontsize=7)
+ax.text(ox-HX-12,oy+10,"Auge Ø 14",fontsize=7)
+ax.text(ox-38,oy+16,"Ecken und Übergänge R 2",fontsize=7,ha="right")
 ax.annotate("Fenster 17 × 11, Ecken R 1,5\n(Ecken Ø 3 vorbohren, aussägen, feilen)",(ox-4,oy-4),(ox-75,oy+30),fontsize=6.5,arrowprops=dict(arrowstyle="-",lw=0.3))
 # title block
 ax.text(12,198,"Sensorbrücke AS5600 – Rückseite Luftbox",fontsize=13,weight="bold")

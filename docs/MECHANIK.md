@@ -81,8 +81,10 @@ Gehäuseschraube“ (E16). Dateien und Montage: `hardware/sensorbruecke-as5600/`
 - Befestigung an den beiden freien mittleren Laschenlöchern (Ø 6,8, Abstand **147 mm** Mitte–Mitte, gesamt
   160 mm über die Laschen) mit **M5 × 22** und **Distanzhülsen 12 mm** (Entscheidung Nico: flach mit Hülsen
   statt gekantet, „bekomme ich genauer hin“).
-- Brücke aus 2-mm-Alublech (Nicos Platte 300 × 200 × 2), 163 × 16 mit Mittelplatte 32 × 32, liegt über der
-  mittleren Querrippe.
+- Brücke aus 2-mm-Alublech (Nicos Platte 300 × 200 × 2), liegt über der mittleren Querrippe (3 mm breit).
+  Auf Nicos Wunsch so schmal wie möglich (wenig Luftwiderstand): Steg 8 mm, Augen Ø 14 um die M5-Löcher,
+  Mittelplatte 24 × 24, Länge 161 (06.11.; erster Stand Steg 16, Platte 32 × 32). Untergrenze Steg ca. 6 mm,
+  darunter biegt sich das Blech auf 147 mm beim Anziehen und Hantieren.
 - AS5600-Platine 23,2 × 22,7 mm, Löcher Ø 3,6, Lochmitten 16,1 × 16,3 mm (gemessen Nico). Stiftleisten
   auf der Rückseite (Chip-Gegenseite) eingelötet; sie gehen durch ein Fenster 17 × 11 in der Brücke.
 - Höhenkette: Magnet 1 + Luftspalt ca. 1,9 + Chip 1,5 + Platine 1,6 + Abstandshalter M3 × 6 = Hülse 12.
