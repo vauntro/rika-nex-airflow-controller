@@ -27,6 +27,7 @@ Stand: 18.10.2026 · Ersetzt v2 (`projektplan-v1.md` und `projektplan-v2.md` ble
 | E18 | Ziel (22.10.) | Ofen vorerst vollständig elektrisch über den Servo steuern. Ob der Handschieber mit angekoppeltem Servo weiter nutzbar ist (Kraft, Riemen-Überspringen), bleibt vorerst offen. |
 | E19 | Stromausfall ohne WLAN (23.10.) | Bei Netzausfall ist auch das WLAN weg (mehrere Access Points, nicht puffbar). Die Firmware muss den Ausfall allein behandeln: Regelung läuft lokal auf dem Board weiter, ohne HA/MQTT; Messwerte und Ereignisse werden lokal zwischengespeichert und nach Rückkehr des WLAN nachgemeldet. Puffer für das Board selbst (eigener Akku oder Mini-DC-USV 5 V, unterbrechungsfrei, ≥ 3 A) noch offen. Notstellung bei Störung (Akku leer, Fühler/AS5600 defekt), entschieden 23.10.: nach Phase, im Abbrand 500 ‰, im Glutbett letzte Stellung; nie automatisch ganz zu; bis die Regelung fertig ist, gilt letzte Stellung. Umsetzung (Offline-Betrieb, Ist-Stellung nach Neustart übernehmen, Neustart-Ereignis, Ausfallzähler) erst mit der Prod-Firmware (Nico, 23.10.). |
 | E20 | Board für den Produktivbetrieb (27.10.) | Umstieg vom Wemos D1 Mini (ESP8266) auf einen **ESP32 im D1-mini-Format** (Vorschlag: „ESP32 D1 Mini“, ESP32-WROOM-32, zwei Kerne). Der D1 Mini bleibt Testboard bis zur Prod-Firmware. Details: Abschnitt 6.1. |
+| E21 | Servo im Stand stromlos, Akku-Auslegung (06.11.) | Der Servo wird abgeschaltet, sobald die Stellung erreicht ist, und hält nicht aktiv (Nico, 06.11.). Damit reicht **eine 18650-Zelle** für einen Zyklus auf Akku (E10). Abschätzung siehe Abschnitt 2.3. Offen: Hält der Riemenantrieb die Stellung stromlos gegen die Rückstellkraft der Klappen (Test in Phase 3)? Akku oder Mini-DC-USV bleibt offen (E19). |
 
 Fotos und Maße des Flansches reicht Nico nach (Voraussetzung für die Servo-Auswahl).
 
@@ -73,7 +74,18 @@ Siehe Abschnitt 3.
 - Netzausfall-Erkennung am ESP32 (Spannung vor dem Lademodul messen).
 - **Akku nicht in die warme Zone:** Li-Ion verträgt dauerhaft max. ca. 45–60 °C. Elektronik und Akku außerhalb des Steinmantels oder im kühlsten Bereich (Zuluft) und Temperatur dort im Probebetrieb messen. LiFePO4 ist thermisch unkritischer.
 - **Akku-Kapazität (E10):** Ein Zyklus vom Anheizen bis „Feuer aus“ dauert bei einer Auflage grob 4–6 h (Abbrand 0,75–1,5 h, Glut bis 4 h, dazu Abkühlzeit bis T_aus). Grobe Schätzung: ESP32 mit WLAN ca. 100–150 mA im Mittel, Servo nur bei Stellbewegungen. 6 h × 150 mA ≈ 0,9 Ah, mit Reserve und Alterung **eine 18650-Zelle mit 2,5–3,5 Ah (bzw. LiFePO4 entsprechend)**. Das ist eine Schätzung, der echte Verbrauch wird in Phase 3 gemessen.
-- Servo im Halten möglichst stromlos (selbsthemmendes Getriebe oder Servo abschalten, wenn die Position steht), das spart Akku und Wärme.
+- **Servo im Stand stromlos (E21, 06.11.):** Der Servo wird abgeschaltet, sobald die Stellung erreicht ist, und hält nicht aktiv. Das spart Akku und Wärme. Ob der Riemenantrieb die Stellung ohne Haltemoment hält (Rückstellkraft der Klappen), wird in Phase 3 getestet; der AS5600 erkennt ein Wegdriften.
+- **Energiebilanz für 6 h auf Akku (Abschätzung 06.11.):**
+
+  | Verbraucher | Annahme | Energie / 6 h |
+  |---|---|---|
+  | ESP32 mit WLAN | ca. 150 mA bei 3,7 V, 0,9 Ah | ≈ 3,3 Wh |
+  | Wandlerverluste | Step-up/Step-down | ≈ +0,7 Wh (gesamt ≈ 4 Wh) |
+  | Servo DS3225MG, nur Stellbewegungen | ca. 1 A × 0,5 s alle 30 s bei 5–6 V | ≈ 0,5 Wh |
+  | **Summe** | | **≈ 4,5 Wh** |
+
+  Eine 18650-Zelle mit 2,5–3,5 Ah hat ca. 9–13 Wh, also gut die doppelte Reserve. Würde der Servo dauerhaft halten, käme sein Haltestrom über die ganzen 6 h dazu; deshalb E21.
+- **Spitzenstrom:** Der DS3225MG zieht beim Anlaufen bzw. unter Last bis ca. 3 A. Wandler bzw. USV für die Servospannung deshalb **≥ 3 A** auslegen.
 
 ## 3. Diskussion Servo am Flansch der Luftbox
 
