@@ -5,6 +5,9 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-06
 
 ### Hardware
+- **Sensorbrücke Befestigung korrigiert:** Laschen sind 6,2 mm dick (gemessen Nico), daher ISO 4017 **M5 × 30** statt
+  M5 × 22, Ganzmetall-Sicherungsmutter ISO 7042 (keine Nylon-Stoppmutter wegen Wärme), Abstandshalter aus Messing.
+  Einkaufsliste im README des Bauteils, beide Zeichnungen neu erzeugt.
 - **ISO-Fertigungszeichnung der Sensorbrücke** (`sensorbruecke-as5600-zeichnung-iso.pdf`, RNX-S-001): A4 quer,
   1:1, Schriftfeld nach ISO 7200 wie beim Servohalter. Blatt 1 Ansichten, Blatt 2 Montage und Hinweise.
 - **Sensorbrücke schmaler** (Wunsch Nico, weniger Luftwiderstand): Steg 8 statt 16 mm, Augen Ø 14 um die

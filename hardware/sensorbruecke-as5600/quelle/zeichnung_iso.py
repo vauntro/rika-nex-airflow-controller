@@ -71,7 +71,7 @@ def title_block(blatt,zusatz):
     y=ty0+24
     box(tx,y,56,8,"Technische Referenz","sensorbruecke-as5600.step",3.0)
     box(tx+56,y,76,8,"Titel, Zusatztitel","Sensorbrücke AS5600",5.0,True)
-    box(tx+132,y,24,8,"Änderungsindex","N")
+    box(tx+132,y,24,8,"Änderungsindex","A")
     box(tx+156,y,24,8,"Ausgabedatum","2026-11-06",3.2)
     y=ty0+16
     box(tx,y,56,8,"Erstellt durch","Claude (KI) für Nico",3.4)
@@ -216,10 +216,10 @@ lab(-3,-17,128,"Luftbox, Laschenebene")
 hx,hy=110,112
 T(hx,hy,"Hinweise Montage",3.8,w="bold")
 notes=["1 Lochabstand 147 an den mittleren Laschen (Ø6,8) geprüft (Nico, 06.11.2026).",
-"2 Je Seite: ISO 4017 M5 × 22 – A2-70 (Laschen ≥ 3 dick: M5 × 25), Distanzhülse",
-"   Ø10/5,3 × 12 zwischen Lasche und Brücke, Scheibe ISO 7089 – 5, Mutter ISO 4032 M5.",
+"2 Je Seite: ISO 4017 M5 × 30 – A2-70 (Lasche 6,2 dick), Distanzhülse Ø10/5,3 × 12 zwischen",
+"   Lasche und Brücke, 2× Scheibe ISO 7089 – 5, Ganzmetall-Sicherungsmutter ISO 7042 M5 – A2.",
 "3 Platine auf der Box-Seite, Chip zur Welle: 4× Abstandshalter M3 × 6 innen/innen,",
-"   8× ISO 7380 M3 × 5 – A2. Lochbild 16,1 × 16,3 an der Platine prüfen.",
+"   8× ISO 7380 M3 × 5 – A2, Abstandshalter Messing. Lochbild 16,1 × 16,3 prüfen.",
 "4 Spalt kleiner: Scheibe M3 zwischen Abstandshalter und Brücke (je ≈ 0,5); zulässig 0,5…3.",
 "5 Vor dem Anziehen Chip mittig über dem Magneten ausrichten (Spiel ≈ ±0,6).",
 "6 Danach Feldstärke (MD/ML/MH) prüfen und Nullpunkt neu setzen."]

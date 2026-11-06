@@ -55,7 +55,7 @@ ax.text(12,191,"Werkstoff: Alu-Blech 2 mm · Maßstab 1:1 (A4 quer, ohne Seitena
 # scale check
 ax.plot([12,62],[86,86],'k',lw=0.8); [ax.plot([x,x],[85,87],'k',lw=0.8) for x in range(12,63,10)]
 ax.text(12,88,"Prüfmaß 50 mm (beim Ausdruck nachmessen)",fontsize=6.5)
-notes=["Aufbau (von der Box aus): Lasche · Distanzhülse 12 mm · Brücke 2 mm · Scheibe · Mutter, Schraube M5 × 22 bis 25",
+notes=["Aufbau (von der Box aus): Lasche · Distanzhülse 12 mm · Brücke 2 mm · Scheibe · Mutter, Schraube ISO 4017 M5 × 30, Mutter ISO 7042",
 "Laschenlöcher Ø 6,8 geben ca. ±0,6 mm Spiel: Brücke beim Anziehen so ausrichten, dass das Fenster mittig über der Welle sitzt.",
 "Platine mit Chip zur Welle auf der Box-Seite der Brücke, 4 Abstandshalter M3 × 6 (Innen/Innen), Schrauben M3 × 5.",
 "Stack: Magnet 1 vor Laschenebene + Luftspalt ca. 1,9 + Chip 1,5 + Platine 1,6 + Abstandshalter 6 = 12 (Hülsenlänge).",
