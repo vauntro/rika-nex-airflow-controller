@@ -2,6 +2,18 @@
 
 Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden hier festgehalten, neueste oben.
 
+## 2026-11-06
+
+### Hardware
+- **Neu: AS5600-Sensorbrücke** für die Rückseite der Luftbox (`hardware/sensorbruecke-as5600/`): flaches
+  2-mm-Alublech 163 × 16 mit Mittelplatte 32 × 32, befestigt an den mittleren Laschen (Lochabstand 147) mit
+  M5 × 22 und Distanzhülsen 12 mm, Platine auf Abstandshaltern M3 × 6, Fenster 17 × 11 für die Stecker.
+  STEP, STL, DXF, Zeichnung 1:1 (PDF) und Entwurfsskizzen. Ersetzt den Sensorwinkel aus E16.
+
+### Doku
+- `docs/MECHANIK.md`: Abschnitt Sensorbrücke mit den von Nico gemessenen Maßen.
+- `docs/OFFENE-PUNKTE.md`: Bau und Inbetriebnahme der Sensorbrücke.
+
 ## 2026-10-27
 
 ### Planung

@@ -70,3 +70,20 @@ Folgerung:
 - Verworfen (Entscheidung Nico): Alu-Disc + Riemenrad, Messingrohr/Distanzhülsen, Kupplungen,
   Gewindeadapter – das Druckteil ersetzt alles.
 - Servohalter und weitere Halter baut Nico selbst.
+
+## AS5600-Sensorbrücke (Rückseite Luftbox) – Stand 06.11.2026
+
+Abgestimmt mit Nico am 30.10. und 06.11.2026. Ersetzt den früheren Plan „Winkel aus Flachprofil 30 × 2 an einer
+Gehäuseschraube“ (E16). Dateien und Montage: `hardware/sensorbruecke-as5600/`.
+
+- Ort: Rückseite der Luftbox (Servo und Riemen sitzen auf der Gegenseite). Der Magnet Ø 6 × 2,5 ist mittig
+  auf dem Wellenende verklebt und steht **1 mm** vor der Ebene der seitlichen Laschen.
+- Befestigung an den beiden freien mittleren Laschenlöchern (Ø 6,8, Abstand **147 mm** Mitte–Mitte, gesamt
+  160 mm über die Laschen) mit **M5 × 22** und **Distanzhülsen 12 mm** (Entscheidung Nico: flach mit Hülsen
+  statt gekantet, „bekomme ich genauer hin“).
+- Brücke aus 2-mm-Alublech (Nicos Platte 300 × 200 × 2), 163 × 16 mit Mittelplatte 32 × 32, liegt über der
+  mittleren Querrippe.
+- AS5600-Platine 23,2 × 22,7 mm, Löcher Ø 3,6, Lochmitten 16,1 × 16,3 mm (gemessen Nico). Stiftleisten
+  auf der Rückseite (Chip-Gegenseite) eingelötet; sie gehen durch ein Fenster 17 × 11 in der Brücke.
+- Höhenkette: Magnet 1 + Luftspalt ca. 1,9 + Chip 1,5 + Platine 1,6 + Abstandshalter M3 × 6 = Hülse 12.
+
