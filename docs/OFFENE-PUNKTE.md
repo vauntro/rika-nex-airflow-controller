@@ -38,6 +38,15 @@ gepuffert werden).
 - Echten Verbrauch messen (Board + Servo, Phase 3) und die Akku-Abschätzung prüfen.
 - Voreinstellungen „Abbrand mittel/leicht“ am echten Feuer festlegen.
 
+## Schaltplan (Entwurf Rev. A, `docs/SCHALTPLAN.md`)
+
+- Annahmen bestätigen: USV-/Power-Path-Modul 1S + 18650 als PWR1, Watchdog mit ATtiny85.
+- Konkretes USV-Modul auswählen (5 V Ausgang ≥ 3 A dauerhaft, Laden und Entladen gleichzeitig).
+- ERC in KiCad 8/9 laufen lassen.
+- Firmware: IO26 (Servoversorgung) um jede Fahrt schalten, Lebenszeichen auf IO25, Taster/LED.
+- Watchdog-Firmware für den ATtiny85 schreiben.
+- Prüfen, ob die Module (PCA9685, AS5600) eigene I²C-Pull-ups haben (sonst R5/R6 bestücken).
+
 ## Später
 
 - Messphase mit echten Abbränden (Ereignisse Angeheizt/Nachgelegt nutzen).
