@@ -8,11 +8,12 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 | Datei | Inhalt |
 |---|---|
 | `sensorbruecke-as5600-zeichnung-iso.pdf` | **Fertigungszeichnung nach ISO** (A4 quer, 1:1, Sachnummer RNX-S-001), Stil wie Bauteil H: Blatt 1 Ansichten mit Bemaßung, Blatt 2 Montage (Schnitt durch die Wellenmitte) und Hinweise |
+| `sensorbruecke-as5600-montage.pdf` / `.png` | **Montageanleitung**: Explosionsdarstellung mit Positionsnummern, Teileliste und Montageschritten |
 | `sensorbruecke-as5600-zeichnung.pdf` | Zeichnung **1:1 auf A4 quer** mit Maßen und Montagehinweisen, als Bohr- und Anreißschablone ausdrucken (ohne Seitenanpassung, Prüfmaß 50 mm nachmessen) |
 | `sensorbruecke-as5600-zeichnung.png` | Dieselbe Zeichnung als Bild |
 | `sensorbruecke-as5600.step` / `.stl` | 3D-Modell |
 | `sensorbruecke-as5600.dxf` | Kontur für Laser/Wasserstrahl |
-| `quelle/bruecke.py`, `quelle/zeichnung.py`, `quelle/zeichnung_iso.py` | CadQuery-/Matplotlib-Skripte, aus denen die Dateien erzeugt werden |
+| `quelle/bruecke.py`, `quelle/zeichnung.py`, `quelle/zeichnung_iso.py`, `quelle/montage.py` | CadQuery-/Matplotlib-Skripte, aus denen die Dateien erzeugt werden |
 | `entwurf/` | Skizzen aus der Abstimmung (überholt: Schraube M5 statt M6, Blech 2 mm statt 3 mm, Variante B gewählt) |
 
 ## Maße
@@ -54,5 +55,5 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 
 ```bash
 pip install cadquery matplotlib
-cd quelle && python3 bruecke.py && python3 zeichnung.py && python3 zeichnung_iso.py   # Ausgabe in quelle/, danach eine Ebene höher verschieben
+cd quelle && python3 bruecke.py && python3 zeichnung.py && python3 zeichnung_iso.py && python3 montage.py   # Ausgabe in quelle/, danach eine Ebene höher verschieben
 ```

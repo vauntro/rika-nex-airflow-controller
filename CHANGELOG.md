@@ -5,6 +5,8 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-06
 
 ### Hardware
+- **Montageanleitung Sensorbrücke** (`sensorbruecke-as5600-montage.pdf`): Explosionsdarstellung aus dem CAD-Modell
+  mit Positionsnummern, Teileliste und Montageschritten.
 - **Sensorbrücke Befestigung korrigiert:** Laschen sind 6,2 mm dick (gemessen Nico), daher ISO 4017 **M5 × 30** statt
   M5 × 22, Ganzmetall-Sicherungsmutter ISO 7042 (keine Nylon-Stoppmutter wegen Wärme), Abstandshalter aus Messing.
   Einkaufsliste im README des Bauteils, beide Zeichnungen neu erzeugt.
