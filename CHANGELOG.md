@@ -5,6 +5,8 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-06
 
 ### Hardware
+- **ISO-Fertigungszeichnung der Sensorbrücke** (`sensorbruecke-as5600-zeichnung-iso.pdf`, RNX-S-001): A4 quer,
+  1:1, Schriftfeld nach ISO 7200 wie beim Servohalter. Blatt 1 Ansichten, Blatt 2 Montage und Hinweise.
 - **Sensorbrücke schmaler** (Wunsch Nico, weniger Luftwiderstand): Steg 8 statt 16 mm, Augen Ø 14 um die
   M5-Löcher, Mittelplatte 24 × 24 statt 32 × 32, Länge 161. STEP, STL, DXF und Zeichnung neu erzeugt; die
   Zeichnung übernimmt die Kontur jetzt direkt aus dem CAD-Modell.
