@@ -26,6 +26,8 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
   STEP, STL, DXF, Zeichnung 1:1 (PDF) und Entwurfsskizzen. Ersetzt den Sensorwinkel aus E16.
 
 ### Doku
+- **Neu: `docs/VERKABELUNG.md`**: Verkabelungsplan aus dem Testaufbau ins Repo übernommen und für den ESP32 ergänzt
+  (AS5600 mit DIR auf GND, PCA9685, Thermoelement, Türkontakt, Netz/Akku).
 - `docs/MECHANIK.md`: Abschnitt Sensorbrücke mit den von Nico gemessenen Maßen.
 - `docs/OFFENE-PUNKTE.md`: Bau und Inbetriebnahme der Sensorbrücke.
 

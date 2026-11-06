@@ -57,7 +57,7 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 
 ## Anschluss
 
-Fünf Adern, wie im Verkabelungsplan des Testaufbaus (`VERKABELUNG-D1-MINI.md`):
+Fünf Adern, siehe auch [`docs/VERKABELUNG.md`](../../docs/VERKABELUNG.md):
 
 | AS5600 | Board | Ader (Vorschlag) |
 |---|---|---|
