@@ -46,6 +46,16 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 - `docs/MECHANIK.md`: Abschnitt Sensorbrücke mit den von Nico gemessenen Maßen.
 - `docs/OFFENE-PUNKTE.md`: Bau und Inbetriebnahme der Sensorbrücke.
 
+## 2026-10-28
+
+### Hardware / Test
+- Dauer- und Stresstest des Antriebs ohne AS5600: 16 Fahrten im 10-s-Takt, danach 120 Fahrten im 1,5-s-Takt (60 volle Hübe). Alle Befehle quittiert, kein Neustart. Servo kalt, Riemenrad-Markierungen an beiden Endlagen exakt, keine Geräusche. **Antrieb freigegeben.** Details in `docs/MECHANIK.md`.
+- Servo mit Unterlegscheiben ausgerichtet (Riemen lief am inneren Bord an), Nachtest mit 56 Fahrten (10 s und 3 s) ohne Fehler, Endlage „Anfeuern“ passt.
+- 10-Minuten-Stresstest (200 Fahrten, 3 s): alle quittiert, danach fehlte bei „Glut halten“ ca. 1 mm, vermutlich Riemensprung um einen Zahn. Riemen neu auflegen und strammer spannen, Pulswerte bleiben. Details in `docs/MECHANIK.md`.
+
+### Kalibrierung
+- Endwert „ganz auf“ (1000 ‰, „Anfeuern“) = **860 µs** bestätigt: stimmt mit der von Hand erprobten Endlage überein. Firmware unverändert. Zwischenstellungen und nächste Schritte (AS5600-Nullpunkt, Linearitätsprüfung) in `docs/KALIBRIERUNG.md`.
+
 ## 2026-10-27
 
 ### Planung

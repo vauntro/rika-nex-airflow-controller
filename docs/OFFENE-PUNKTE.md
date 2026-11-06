@@ -30,7 +30,7 @@ gepuffert werden).
 - Druck-Riemenräder (3 Varianten) eingetroffen? → passende Variante wählen, M3-Schraube nach
   Einschraubtiefe.
 - Axialspiel der Luftbox-Welle: Scheiben M10 (≈ 3,6 mm) + Riemenrad als Anschlag.
-- Servo gekoppelt. AIR_US_AT_0 = 2360 µs (ganz zu, 27.10.). AIR_US_AT_1000 (ganz auf) noch antasten.
+- Servo gekoppelt. AIR_US_AT_0 = 2360 µs (ganz zu, 27.10.). AIR_US_AT_1000 = 860 µs (ganz auf, bestätigt 28.10.). Offen: AS5600-Nullpunkt neu setzen und Linearität prüfen (KALIBRIERUNG.md).
 - Klappen prüfen: Liegt der Übergang Primär/Sekundär wirklich bei 500 ‰?
 - **Test (E21):** Hält der Riemenantrieb die Stellung mit stromlosem Servo, oder drücken die Klappen ihn zurück?
   Mehrere Stellungen anfahren, Servo abschalten, AS5600-Wert über einige Minuten beobachten (auch mit
@@ -52,3 +52,5 @@ gepuffert werden).
 - Messphase mit echten Abbränden (Ereignisse Angeheizt/Nachgelegt nutzen).
 - Abbrandregelung (Phasen + PID auf Brennraumtemperatur).
 - Umstieg ESP32 + MAX31856, Gehäuse, Kabelführung.
+
+- Optional: sanfte Fahrrampe im Servo-Antrieb (ca. 1,5 s voller Weg, langsamer vor den Anschlägen), nur falls im Betrieb hartes Anschlagen auffällt. Stand 28.10.: nicht nötig, Fahrweg passt.

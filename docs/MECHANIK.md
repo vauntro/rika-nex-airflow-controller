@@ -71,6 +71,30 @@ Folgerung:
   Gewindeadapter – das Druckteil ersetzt alles.
 - Servohalter und weitere Halter baut Nico selbst.
 
+## Dauer- und Stresstest Antrieb (28.10.2026)
+
+Aufbau: DS3225MG, gedrucktes GT2-20T-Riemenrad mit 25T-Aufnahme, Riemen auf die Luftbox-Welle. AS5600 nicht angeschlossen, Beurteilung der Mechanik durch Sichtprüfung (Nico).
+
+| Test | Ablauf | Ergebnis Steuerung |
+|---|---|---|
+| Testreihe | 10 s je Stellung, Voreinstellungen und 250/750 ‰, abgebrochen nach 16 Schritten | 16/16 Befehle quittiert |
+| Stresstest | 1,5 s je Fahrt (Minimum, bei dem ein voller Hub im 1-s-Puls fertig wird), 120 Fahrten in ca. 3 min: ganz auf → zufällig 160–1000 ‰ → ganz zu → zufällige Voreinstellung | 120/120 quittiert, kein Neustart, keine I²C-Fehler, Sperre nie ausgelöst; 60 volle Hübe an die Anschläge |
+
+Mechanik nach dem Stresstest:
+- Servo kalt.
+- Markierung am Riemenrad stimmt bei „Anfeuern“ und „Glut halten“ exakt, kein Riemensprung.
+- Kein Brummen an den Anschlägen, keine Riemengeräusche.
+
+**Ergebnis: Antrieb freigegeben.** Nächster Schritt: AS5600 anschließen, Nullpunkt bei „Glut halten“ setzen, Linearität bei 1000/500/335/165 ‰ prüfen.
+
+### Nachtest nach Riemenjustage (28.10.2026, abends)
+
+Servo mit Unterlegscheiben unter allen vier Laschen nach vorn versetzt, weil der Riemen leicht am inneren Bord des Riemenrads anlief. Danach 8 Fahrten im 10-s-Takt und 48 im 3-s-Takt (manuell gestoppt): alle quittiert, keine Fehler. Endlage „Anfeuern“ (860 µs) geprüft: Fahrweg passt, kein Anschlagen. Firmware unverändert.
+
+### 10-Minuten-Stresstest und Riemensprung (28.10.2026, spät)
+
+200 Fahrten im 3-s-Takt, alle quittiert, keine Fehler, darunter 18 volle Hübe zwischen „Anfeuern“ und „Glut halten“. Danach schloss „Glut halten“ ca. 1 mm nicht mehr vollständig, obwohl weiter 2360 µs gesendet wurden: Der Riemen ist vermutlich um einen Zahn übergesprungen, wahrscheinlich weil er nach dem Versetzen des Servos zu locker war. Abhilfe: Riemen bei „Glut halten“ neu auflegen, Klappe dabei von Hand ganz zu, strammer spannen, beide Endlagen prüfen. Pulswerte unverändert. Später erkennt der AS5600 einen Riemensprung als „Abweichung“.
+
 ## AS5600-Sensorbrücke (Rückseite Luftbox) – Stand 06.11.2026
 
 Abgestimmt mit Nico am 30.10. und 06.11.2026. Ersetzt den früheren Plan „Winkel aus Flachprofil 30 × 2 an einer
