@@ -23,8 +23,8 @@ gepuffert werden).
 ## Mechanik / Kalibrierung
 
 - AS5600-Sensorbrücke bauen (`hardware/sensorbruecke-as5600/`): Zeichnung 1:1 drucken, aus 2-mm-Alublech
-  aussägen, 2 Distanzhülsen M5 × 12 und 4 Abstandshalter M3 × 6 besorgen. Nach Montage Luftspalt und
-  Feldstärke (MD/ML/MH) prüfen und den Nullpunkt neu setzen. Prüfen, ob M5 × 22 reicht (sonst × 25).
+  aussägen, Teile laut Einkaufsliste im README des Bauteils besorgen (u. a. M5 × 30, Hülsen 12 mm,
+  Abstandshalter M3 × 6). Nach Montage Luftspalt und Feldstärke (MD/ML/MH) prüfen und den Nullpunkt neu setzen.
 - Druck-Riemenräder (3 Varianten) eingetroffen? → passende Variante wählen, M3-Schraube nach
   Einschraubtiefe.
 - Axialspiel der Luftbox-Welle: Scheiben M10 (≈ 3,6 mm) + Riemenrad als Anschlag.

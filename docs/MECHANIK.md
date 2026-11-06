@@ -79,7 +79,7 @@ Gehäuseschraube“ (E16). Dateien und Montage: `hardware/sensorbruecke-as5600/`
 - Ort: Rückseite der Luftbox (Servo und Riemen sitzen auf der Gegenseite). Der Magnet Ø 6 × 2,5 ist mittig
   auf dem Wellenende verklebt und steht **1 mm** vor der Ebene der seitlichen Laschen.
 - Befestigung an den beiden freien mittleren Laschenlöchern (Ø 6,8, Abstand **147 mm** Mitte–Mitte, gesamt
-  160 mm über die Laschen) mit **M5 × 22** und **Distanzhülsen 12 mm** (Entscheidung Nico: flach mit Hülsen
+  160 mm über die Laschen) mit **M5 × 30** (Laschen 6,2 dick, gemessen Nico 06.11.) und **Distanzhülsen 12 mm** (Entscheidung Nico: flach mit Hülsen
   statt gekantet, „bekomme ich genauer hin“).
 - Brücke aus 2-mm-Alublech (Nicos Platte 300 × 200 × 2), liegt über der mittleren Querrippe (3 mm breit).
   Auf Nicos Wunsch so schmal wie möglich (wenig Luftwiderstand): Steg 8 mm, Augen Ø 14 um die M5-Löcher,

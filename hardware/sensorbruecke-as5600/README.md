@@ -8,11 +8,16 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 | Datei | Inhalt |
 |---|---|
 | `sensorbruecke-as5600-zeichnung-iso.pdf` | **Fertigungszeichnung nach ISO** (A4 quer, 1:1, Sachnummer RNX-S-001), Stil wie Bauteil H: Blatt 1 Ansichten mit Bemaßung, Blatt 2 Montage (Schnitt durch die Wellenmitte) und Hinweise |
+| `sensorbruecke-as5600-baugruppe-montiert.step` / `-explosion.step` | **3D-Baugruppe** für CAD (Luftbox-Rückseite vereinfacht, Magnet, Platine, Abstandshalter, Brücke, Hülsen, Normteile), montiert und als Explosion |
+| `sensorbruecke-as5600-baugruppe-montiert.stl` / `-explosion.stl` | Dieselbe Baugruppe als STL (alle Teile in einem Netz) |
+| `sensorbruecke-as5600-baugruppe-montiert.glb` / `-explosion.glb` | Dieselbe Baugruppe farbig zum direkten Anschauen (macOS Vorschau/Quick Look, Windows 3D-Viewer, Browser) |
+| `sensorbruecke-as5600-baugruppe.png` | Vorschaubild der montierten Baugruppe |
+| `sensorbruecke-as5600-montage.pdf` / `.png` | **Montageanleitung**: Explosionsdarstellung mit Positionsnummern, Teileliste und Montageschritten |
 | `sensorbruecke-as5600-zeichnung.pdf` | Zeichnung **1:1 auf A4 quer** mit Maßen und Montagehinweisen, als Bohr- und Anreißschablone ausdrucken (ohne Seitenanpassung, Prüfmaß 50 mm nachmessen) |
 | `sensorbruecke-as5600-zeichnung.png` | Dieselbe Zeichnung als Bild |
 | `sensorbruecke-as5600.step` / `.stl` | 3D-Modell |
 | `sensorbruecke-as5600.dxf` | Kontur für Laser/Wasserstrahl |
-| `quelle/bruecke.py`, `quelle/zeichnung.py`, `quelle/zeichnung_iso.py` | CadQuery-/Matplotlib-Skripte, aus denen die Dateien erzeugt werden |
+| `quelle/bruecke.py`, `quelle/zeichnung.py`, `quelle/zeichnung_iso.py`, `quelle/montage.py`, `quelle/vorschau.py` | CadQuery-/Matplotlib-Skripte, aus denen die Dateien erzeugt werden |
 | `entwurf/` | Skizzen aus der Abstimmung (überholt: Schraube M5 statt M6, Blech 2 mm statt 3 mm, Variante B gewählt) |
 
 ## Maße
@@ -26,19 +31,33 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 
 ## Aufbau (von der Box aus)
 
-1. Lasche · Distanzhülse **12 mm** (M5) · Brücke · Scheibe · Mutter, Schraube **M5 × 22** (vorhanden; wird
-   knapp, sonst M5 × 25).
+1. Scheibe · Lasche (6,2 dick) · Distanzhülse **12 mm** (Ø10/5,3) · Brücke · Scheibe · Ganzmetall-Sicherungsmutter
+   ISO 7042 M5, Schraube **ISO 4017 M5 × 30** (Klemmlänge 6,2 + 12 + 2 + 2 × 1 + Mutter 5 + Überstand ≈ 28,7).
+   Keine Nylon-Stoppmutter (nahe am Ofen, nur bis ca. 120 °C).
 2. Platine auf der Box-Seite der Brücke, Chip zur Welle, auf vier Abstandshaltern **M3 × 6** (Innen/Innen),
-   Schrauben M3 × 5. Stiftreihen senkrecht, die Stifte zeigen durch das Fenster nach hinten.
+   Schrauben ISO 7380 M3 × 5. Abstandshalter aus Messing, nicht Kunststoff. Stiftreihen senkrecht, die Stifte zeigen durch das Fenster nach hinten.
 3. Höhenkette: Magnet 1 vor Laschenebene + Luftspalt ca. 1,9 + Chip 1,5 + Platine 1,6 + Abstandshalter 6
    = 12. Eine M3-Scheibe zwischen Abstandshalter und Brücke verkleinert den Spalt um ca. 0,5 mm,
    Abstandshalter 5 mm vergrößern ihn auf ca. 2,9 mm. Der AS5600 arbeitet mit ca. 0,5–3 mm.
 4. Die Laschenlöcher Ø 6,8 geben mit M5 ca. ±0,6 mm Spiel: Brücke so ausrichten, dass der Chip mittig
    über dem Magneten sitzt, dann anziehen. Danach Feldstärke per Firmware prüfen (Status MD/ML/MH).
 
+## Einkaufsliste Montage
+
+| Anzahl | Teil |
+|---|---|
+| 2 | Sechskantschraube ISO 4017 M5 × 30, A2 |
+| 2 | Distanzhülse 12 mm, Ø 10 / 5,3, ohne Gewinde (Alu oder Edelstahl) |
+| 4 | Scheibe ISO 7089 – 5, A2 |
+| 2 | Ganzmetall-Sicherungsmutter ISO 7042 M5, A2 |
+| 4 | Abstandshalter M3 × 6, Innen-/Innengewinde, Messing |
+| 8 | Linsenkopfschraube ISO 7380 M3 × 5, A2 |
+| optional | Scheiben ISO 7089 – 3 zum Einstellen des Luftspalts |
+| 1 | Dupont-Kabel Buchse, 4-polig (VCC, GND, SDA, SCL) |
+
 ## Neu erzeugen
 
 ```bash
 pip install cadquery matplotlib
-cd quelle && python3 bruecke.py && python3 zeichnung.py && python3 zeichnung_iso.py   # Ausgabe in quelle/, danach eine Ebene höher verschieben
+cd quelle && python3 bruecke.py && python3 zeichnung.py && python3 zeichnung_iso.py && python3 montage.py && python3 vorschau.py   # Ausgabe in quelle/, danach eine Ebene höher verschieben
 ```
