@@ -2,3 +2,11 @@
 **/include/secrets.h
 .DS_Store
 .vscode/
+
+# KiCad
+*-backups/
+*.kicad_prl
+fp-info-cache
+_autosave-*
+*.lck
+__pycache__/

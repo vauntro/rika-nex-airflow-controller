@@ -18,6 +18,12 @@ Alle Module laufen mit **3,3 V Logik**. Die Elektronik sitzt im Sockelraum unter
 | Türkontakt (nach GND) | – | GPIO 27 | D7 mit MAX6675, D0 + 10 kΩ nach 3V3 mit MAX31856 |
 | Netzerkennung (Teiler 10k/20k) | – | GPIO 34 | D0 (nur mit MAX6675) |
 | Akkuspannung | – | GPIO 35 (Teiler 100k/100k) | A0 (+100 kΩ Vorwiderstand) |
+| Lebenszeichen an Watchdog | – | GPIO 25 | – |
+| Servoversorgung EIN | – | GPIO 26 | – |
+| Taster / Status-LED | – | GPIO 32 / GPIO 33 | – |
+
+Vollständiger Schaltplan der ESP32-Steuerung (KiCad): [`SCHALTPLAN.md`](SCHALTPLAN.md). Dort hängt der Servo
+nicht mehr am PCA9685-Kanal 1, sondern bekommt Puls und schaltbare 5 V über die Trägerplatine.
 
 Nicht verwenden am D1 Mini: **D3, D4** (Bootmodus), **D8** nur als CS.
 

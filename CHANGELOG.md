@@ -4,6 +4,15 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 
 ## 2026-11-06
 
+### Schaltplan
+- **Neu: KiCad-Schaltplan der ESP32-Steuerung** (`hardware/schaltplan/`, Doku `docs/SCHALTPLAN.md`), Rev. A Entwurf:
+  Versorgung mit USV-/Power-Path-Modul und 18650, Netz- und Akkuüberwachung, ESP32 D1 Mini, MAX31856, AS5600 über
+  JST-XH, PCA9685, schaltbare Servoversorgung über P-MOSFET (E21), Dioden-ODER für den Servopuls, Hardware-Watchdog
+  mit ATtiny85, Türkontakt, Taster und LED. PDF/PNG-Export und Generator-Skript dabei.
+- Annahmen (Akku statt Mini-USV, ATtiny als Watchdog) in `docs/SCHALTPLAN.md` und `docs/OFFENE-PUNKTE.md`.
+- `config.h`: GPIO 25/26/32/33 für Lebenszeichen, Servoversorgung, Taster und LED reserviert (noch ohne Funktion).
+- `docs/VERKABELUNG.md`: neue GPIOs und Verweis auf den Schaltplan.
+
 ### Hardware
 - **Sensorbrücke Anschluss:** Belegung der 5 Adern (VCC, GND, SDA, SCL, DIR auf GND) im README des Bauteils,
   Kabel 5-adrig 24 AWG mit Dupont- oder JST-XH-Stecker statt 4-poligem Dupont-Kabel.

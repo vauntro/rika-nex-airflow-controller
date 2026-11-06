@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "rika_nex")(type "KiCad")(uri "${KIPRJMOD}/rika-nex-steuerung.kicad_sym")(options "")(descr "RIKA NEX Steuerung"))
+)
