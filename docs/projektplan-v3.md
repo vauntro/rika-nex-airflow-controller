@@ -185,7 +185,7 @@ Ein Türkontakt ist deshalb für E5 nicht mehr optional, sondern Voraussetzung. 
 | Netzerkennung (Spannungsteiler, vor USV/Lademodul) | 34 (nur Eingang) | D0 |
 | Akkuspannung (Teiler 100k/100k) | 35 (nur Eingang, ADC) | A0 |
 
-**Verkabelung:** Alle Module laufen weiter mit 3,3 V Logik. AS5600 und PCA9685 hängen am selben I²C-Bus; der Servo bekommt seine 5 V weiterhin extern über V+ am PCA9685, nicht über das Board.
+**Verkabelung** (Details in `docs/VERKABELUNG.md`): Alle Module laufen weiter mit 3,3 V Logik. AS5600 und PCA9685 hängen am selben I²C-Bus; der Servo bekommt seine 5 V weiterhin extern über V+ am PCA9685, nicht über das Board.
 
 **Portierung der Firmware:** Die PlatformIO-Firmware hat bereits ein Ziel `esp32dev` und baut dafür (geprüft mit 0.3.0). Offen für die Prod-Firmware:
 - Kalibrier- und Nullpunktdaten von EEPROM-Emulation auf NVS/Preferences umstellen (Werte einmalig übertragen bzw. Nullpunkt neu setzen).

@@ -5,6 +5,10 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-06
 
 ### Hardware
+- **Sensorbrücke Anschluss:** Belegung der 5 Adern (VCC, GND, SDA, SCL, DIR auf GND) im README des Bauteils,
+  Kabel 5-adrig 24 AWG mit Dupont- oder JST-XH-Stecker statt 4-poligem Dupont-Kabel.
+- **Sensorbrücke Mutter:** Sicherungsmutter DIN 985 M5 A2 mit Nylonring statt Ganzmetall ISO 7042. An der
+  Stelle wird es nicht heiß (Nico). Höhe gleich (5 mm), M5 × 30 bleibt. README, Zeichnungen und Montage aktualisiert.
 - **3D-Baugruppe Sensorbrücke** als STEP, STL und GLB, montiert und als Explosion, mit Vorschaubild.
 - **Montageanleitung Sensorbrücke** (`sensorbruecke-as5600-montage.pdf`): Explosionsdarstellung aus dem CAD-Modell
   mit Positionsnummern, Teileliste und Montageschritten.
@@ -22,6 +26,8 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
   STEP, STL, DXF, Zeichnung 1:1 (PDF) und Entwurfsskizzen. Ersetzt den Sensorwinkel aus E16.
 
 ### Doku
+- **Neu: `docs/VERKABELUNG.md`**: Verkabelungsplan aus dem Testaufbau ins Repo übernommen und für den ESP32 ergänzt
+  (AS5600 mit DIR auf GND, PCA9685, Thermoelement, Türkontakt, Netz/Akku).
 - `docs/MECHANIK.md`: Abschnitt Sensorbrücke mit den von Nico gemessenen Maßen.
 - `docs/OFFENE-PUNKTE.md`: Bau und Inbetriebnahme der Sensorbrücke.
 

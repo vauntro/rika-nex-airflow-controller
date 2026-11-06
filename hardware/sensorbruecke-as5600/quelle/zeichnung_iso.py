@@ -217,7 +217,7 @@ hx,hy=110,112
 T(hx,hy,"Hinweise Montage",3.8,w="bold")
 notes=["1 Lochabstand 147 an den mittleren Laschen (Ø6,8) geprüft (Nico, 06.11.2026).",
 "2 Je Seite: ISO 4017 M5 × 30 – A2-70 (Lasche 6,2 dick), Distanzhülse Ø10/5,3 × 12 zwischen",
-"   Lasche und Brücke, 2× Scheibe ISO 7089 – 5, Ganzmetall-Sicherungsmutter ISO 7042 M5 – A2.",
+"   Lasche und Brücke, 2× Scheibe ISO 7089 – 5, Sicherungsmutter DIN 985 M5 – A2.",
 "3 Platine auf der Box-Seite, Chip zur Welle: 4× Abstandshalter M3 × 6 innen/innen,",
 "   8× ISO 7380 M3 × 5 – A2, Abstandshalter Messing. Lochbild 16,1 × 16,3 prüfen.",
 "4 Spalt kleiner: Scheibe M3 zwischen Abstandshalter und Brücke (je ≈ 0,5); zulässig 0,5…3.",
