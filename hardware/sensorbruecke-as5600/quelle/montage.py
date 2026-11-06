@@ -64,7 +64,7 @@ def build(E):
         x=sx*HX
         add(6,cyl(5,12,x,0,E["sl"],2.65),STEEL)                 # Distanzhülse
         add(9,cyl(5,1,x,0,E["w"],2.65),STEEL)                  # Scheibe außen
-        add(10,hexnut(8,5,x,0,E["nut"],2.5),STEEL)              # Ganzmetall-Sicherungsmutter
+        add(10,hexnut(8,5,x,0,E["nut"],2.5),STEEL)              # Sicherungsmutter DIN 985
         add(9,cyl(5,1,x,0,E["wr"],2.65),STEEL)                 # Scheibe hinten
         add(8,hexbolt(x,0,E["bolt"],30,+1),STEEL)               # M5 × 30, Kopf hinter der Lasche
 
@@ -133,7 +133,7 @@ legend=[("1","Luftbox-Rückseite, mittlere Laschen (6,2 dick, Ø6,8)","vorhanden
 ("7","ISO 7380 M3 × 5 – A2","8"),
 ("8","ISO 4017 M5 × 30 – A2","2"),
 ("9","Scheibe ISO 7089 – 5 – A2","4"),
-("10","Ganzmetall-Sicherungsmutter ISO 7042 M5 – A2","2")]
+("10","Sicherungsmutter DIN 985 M5 – A2","2")]
 x0,y0=0.70,0.86
 fig.text(x0,y0+0.03,"Teileliste",fontsize=10,weight="bold")
 fig.text(x0,y0,"Pos.   Benennung",fontsize=7.5,weight="bold"); fig.text(0.985,y0,"Stk.",fontsize=7.5,weight="bold",ha="right")
@@ -158,7 +158,7 @@ fig.savefig("sensorbruecke-as5600-montage.pdf")
 
 # ---- 3D-Modelle: STEP (CAD) und GLB (Betrachter), montiert und als Explosion ----
 NAMEN={1:"Luftbox_Rueckseite",2:"Magnet",3:"AS5600_Platine",4:"Abstandshalter_M3x6",5:"Sensorbruecke",
-       6:"Distanzhuelse_12",7:"ISO7380_M3x5",8:"ISO4017_M5x30",9:"Scheibe_ISO7089_5",10:"Mutter_ISO7042_M5"}
+       6:"Distanzhuelse_12",7:"ISO7380_M3x5",8:"ISO4017_M5x30",9:"Scheibe_ISO7089_5",10:"Mutter_DIN985_M5"}
 for tag,E_ in (("montiert",MONTIERT),("explosion",EXPLODE)):
     assy=cq.Assembly(name="sensorbruecke_as5600_"+tag)
     cnt={}

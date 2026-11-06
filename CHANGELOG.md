@@ -5,6 +5,8 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-06
 
 ### Hardware
+- **Sensorbrücke Mutter:** Sicherungsmutter DIN 985 M5 A2 mit Nylonring statt Ganzmetall ISO 7042. An der
+  Stelle wird es nicht heiß (Nico). Höhe gleich (5 mm), M5 × 30 bleibt. README, Zeichnungen und Montage aktualisiert.
 - **3D-Baugruppe Sensorbrücke** als STEP, STL und GLB, montiert und als Explosion, mit Vorschaubild.
 - **Montageanleitung Sensorbrücke** (`sensorbruecke-as5600-montage.pdf`): Explosionsdarstellung aus dem CAD-Modell
   mit Positionsnummern, Teileliste und Montageschritten.

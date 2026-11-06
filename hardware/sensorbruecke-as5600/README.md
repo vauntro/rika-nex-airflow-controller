@@ -31,9 +31,9 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 
 ## Aufbau (von der Box aus)
 
-1. Scheibe · Lasche (6,2 dick) · Distanzhülse **12 mm** (Ø10/5,3) · Brücke · Scheibe · Ganzmetall-Sicherungsmutter
-   ISO 7042 M5, Schraube **ISO 4017 M5 × 30** (Klemmlänge 6,2 + 12 + 2 + 2 × 1 + Mutter 5 + Überstand ≈ 28,7).
-   Keine Nylon-Stoppmutter (nahe am Ofen, nur bis ca. 120 °C).
+1. Scheibe · Lasche (6,2 dick) · Distanzhülse **12 mm** (Ø10/5,3) · Brücke · Scheibe · Sicherungsmutter
+   DIN 985 M5 (Nylonring), Schraube **ISO 4017 M5 × 30** (Klemmlänge 6,2 + 12 + 2 + 2 × 1 + Mutter 5 + Überstand ≈ 28,7).
+   Nylon-Stoppmutter ist in Ordnung: an der Stelle wird es nicht heiß (Nico, 06.11.), Nylon hält bis ca. 120 °C.
 2. Platine auf der Box-Seite der Brücke, Chip zur Welle, auf vier Abstandshaltern **M3 × 6** (Innen/Innen),
    Schrauben ISO 7380 M3 × 5. Abstandshalter aus Messing, nicht Kunststoff. Stiftreihen senkrecht, die Stifte zeigen durch das Fenster nach hinten.
 3. Höhenkette: Magnet 1 vor Laschenebene + Luftspalt ca. 1,9 + Chip 1,5 + Platine 1,6 + Abstandshalter 6
@@ -49,7 +49,7 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 | 2 | Sechskantschraube ISO 4017 M5 × 30, A2 |
 | 2 | Distanzhülse 12 mm, Ø 10 / 5,3, ohne Gewinde (Alu oder Edelstahl) |
 | 4 | Scheibe ISO 7089 – 5, A2 |
-| 2 | Ganzmetall-Sicherungsmutter ISO 7042 M5, A2 |
+| 2 | Sicherungsmutter DIN 985 M5 (Nylonring), A2 |
 | 4 | Abstandshalter M3 × 6, Innen-/Innengewinde, Messing |
 | 8 | Linsenkopfschraube ISO 7380 M3 × 5, A2 |
 | optional | Scheiben ISO 7089 – 3 zum Einstellen des Luftspalts |
