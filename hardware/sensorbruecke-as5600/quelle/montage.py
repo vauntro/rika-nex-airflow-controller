@@ -30,46 +30,54 @@ def m3screw(x,y,z,direction):
         return cyl(2.85,1.65,x,y,z-1.65).union(cyl(1.5,5,x,y,z))
     return cyl(2.85,1.65,x,y,z).union(cyl(1.5,5,x,y,z-5))
 
-parts=[]   # (Nummer, Körper, Farbe)
-def add(n,solid,color): parts.append((n,solid,color))
 GREY,ALU,BRASS,STEEL,PCB,MAG,DARK="#b9b9b9","#a9c4e0","#d4b25a","#c8c8c8","#2f6fbf","#8a8a8a","#333333"
+# Lage der Teile in Z: Explosion für die Zeichnung, MONTIERT = Einbaulage
+EXPLODE=dict(m3a=10,pcb=22,sp=34,sl=34,br=56,m3b=70,w=72,nut=82,bolt=-40,wr=-20)
+MONTIERT=dict(m3a=4.4,pcb=4.4,sp=6,sl=0,br=12,m3b=14,w=14,nut=15,bolt=-7.2,wr=-7.2)
+def build(E):
+    parts=[]   # (Nummer, Name, Körper, Farbe)
+    def add(n,solid,color,name=""): parts.append((n,name,solid,color))
 
-# 1 Luftbox-Rückseite (vereinfacht): Rahmen mit den beiden mittleren Laschen, Dicke 6,2
-box=WP(-6.2).rect(130,68).extrude(6.2).faces(">Z").workplane().rect(120,58).cutThruAll()
-box=box.union(WP(-6.2).rect(120,3).extrude(6.2)).union(WP(-6.2).rect(3,58).extrude(6.2))
-box=box.union(cyl(6,6.2,0,0,-6.2))
-for sx in(-1,1):
-    box=box.union(WP(-6.2).center(sx*(HX+65)/2,0).rect(HX-65+2,13.2).extrude(6.2)).union(cyl(6.6,6.2,sx*HX,0,-6.2))
-    box=box.cut(cyl(3.4,8,sx*HX,0,-7))
-add(1,box,GREY)
-add(2,cyl(3,2.5,0,0,-1.5),MAG)                     # Magnet auf dem Wellenende
-E=dict(m3a=10,pcb=22,sp=34,sl=34,br=56,m3b=70,w=72,nut=82,bolt=-40,wr=-20)
-for sx in(-1,1):
-    for sy in(-1,1):
-        add(7,m3screw(sx*PX,sy*PY,E["m3a"],+1),STEEL)        # Platinenseite
-        add(4,cyl(2.75,6,sx*PX,sy*PY,E["sp"],1.5),BRASS)     # Abstandshalter
-        add(7,m3screw(sx*PX,sy*PY,E["m3b"],-1),STEEL)        # Brückenseite
-pcb=WP(E["pcb"]).rect(23.2,22.7).extrude(1.6)
-for sx in(-1,1):
-    for sy in(-1,1): pcb=pcb.cut(cyl(1.8,3,sx*PX,sy*PY,E["pcb"]-0.5))
-add(3,pcb,PCB)
-add(3,WP(E["pcb"]-1.5).rect(5,4).extrude(1.5),DARK)                       # Chip
-for x0 in(-6.6,6.6):
-    add(3,WP(E["pcb"]+1.6).center(x0,0).rect(2.5,10.2).extrude(2.5),DARK) # Stiftleisten
-add(5,B.make().translate((0,0,E["br"])),ALU)
-for sx in(-1,1):
-    x=sx*HX
-    add(6,cyl(5,12,x,0,E["sl"],2.65),STEEL)                 # Distanzhülse
-    add(9,cyl(5,1,x,0,E["w"],2.65),STEEL)                  # Scheibe außen
-    add(10,hexnut(8,5,x,0,E["nut"],2.5),STEEL)              # Ganzmetall-Sicherungsmutter
-    add(9,cyl(5,1,x,0,E["wr"],2.65),STEEL)                 # Scheibe hinten
-    add(8,hexbolt(x,0,E["bolt"],30,+1),STEEL)               # M5 × 30, Kopf hinter der Lasche
+    # 1 Luftbox-Rückseite (vereinfacht): Rahmen mit den beiden mittleren Laschen, Dicke 6,2
+    box=WP(-6.2).rect(130,68).extrude(6.2).faces(">Z").workplane().rect(120,58).cutThruAll()
+    box=box.union(WP(-6.2).rect(120,3).extrude(6.2)).union(WP(-6.2).rect(3,58).extrude(6.2))
+    box=box.union(cyl(6,6.2,0,0,-6.2))
+    for sx in(-1,1):
+        box=box.union(WP(-6.2).center(sx*(HX+65)/2,0).rect(HX-65+2,13.2).extrude(6.2)).union(cyl(6.6,6.2,sx*HX,0,-6.2))
+        box=box.cut(cyl(3.4,8,sx*HX,0,-7))
+    add(1,box,GREY)
+    add(2,cyl(3,2.5,0,0,-1.5),MAG)                     # Magnet auf dem Wellenende
+    for sx in(-1,1):
+        for sy in(-1,1):
+            add(7,m3screw(sx*PX,sy*PY,E["m3a"],+1),STEEL)        # Platinenseite
+            add(4,cyl(2.75,6,sx*PX,sy*PY,E["sp"],1.5),BRASS)     # Abstandshalter
+            add(7,m3screw(sx*PX,sy*PY,E["m3b"],-1),STEEL)        # Brückenseite
+    pcb=WP(E["pcb"]).rect(23.2,22.7).extrude(1.6)
+    for sx in(-1,1):
+        for sy in(-1,1): pcb=pcb.cut(cyl(1.8,3,sx*PX,sy*PY,E["pcb"]-0.5))
+    add(3,pcb,PCB)
+    add(3,WP(E["pcb"]-1.5).rect(5,4).extrude(1.5),DARK)                       # Chip
+    for x0 in(-6.6,6.6):
+        add(3,WP(E["pcb"]+1.6).center(x0,0).rect(2.5,10.2).extrude(2.5),DARK) # Stiftleisten
+    add(5,B.make().translate((0,0,E["br"])),ALU)
+    for sx in(-1,1):
+        x=sx*HX
+        add(6,cyl(5,12,x,0,E["sl"],2.65),STEEL)                 # Distanzhülse
+        add(9,cyl(5,1,x,0,E["w"],2.65),STEEL)                  # Scheibe außen
+        add(10,hexnut(8,5,x,0,E["nut"],2.5),STEEL)              # Ganzmetall-Sicherungsmutter
+        add(9,cyl(5,1,x,0,E["wr"],2.65),STEEL)                 # Scheibe hinten
+        add(8,hexbolt(x,0,E["bolt"],30,+1),STEEL)               # M5 × 30, Kopf hinter der Lasche
+
+    return parts
+
+parts=build(EXPLODE)
+E=EXPLODE
 
 # ---- Rendern ----
 light=np.array([0.4,-0.6,0.7]); light/=np.linalg.norm(light)
 def mapv(v): return (v[0],v[2],v[1])          # Modell (x,y,z) -> Plot (x, Tiefe, hoch)
 polys,cols=[],[]
-for n,s,c in parts:
+for n,_,s,c in parts:
     verts,tris=s.val().tessellate(0.15,0.3)
     V=np.array([mapv((p.x,p.y,p.z)) for p in verts])
     rgb=np.array(matplotlib.colors.to_rgb(c))
@@ -147,3 +155,15 @@ for i,s in enumerate(steps[:5]): fig.text(0.03,0.11-i*0.022,s,fontsize=7.6)
 for i,s in enumerate(steps[5:]): fig.text(0.5,0.11-i*0.022,s,fontsize=7.6)
 fig.savefig("sensorbruecke-as5600-montage.png",dpi=200)
 fig.savefig("sensorbruecke-as5600-montage.pdf")
+
+# ---- 3D-Modelle: STEP (CAD) und GLB (Betrachter), montiert und als Explosion ----
+NAMEN={1:"Luftbox_Rueckseite",2:"Magnet",3:"AS5600_Platine",4:"Abstandshalter_M3x6",5:"Sensorbruecke",
+       6:"Distanzhuelse_12",7:"ISO7380_M3x5",8:"ISO4017_M5x30",9:"Scheibe_ISO7089_5",10:"Mutter_ISO7042_M5"}
+for tag,E_ in (("montiert",MONTIERT),("explosion",EXPLODE)):
+    assy=cq.Assembly(name="sensorbruecke_as5600_"+tag)
+    cnt={}
+    for n,_,solid,c in build(E_):
+        cnt[n]=cnt.get(n,0)+1
+        assy.add(solid,name=f"{n:02d}_{NAMEN[n]}_{cnt[n]}",color=cq.Color(*matplotlib.colors.to_rgb(c)))
+    assy.save(f"sensorbruecke-as5600-baugruppe-{tag}.step")
+    assy.save(f"sensorbruecke-as5600-baugruppe-{tag}.glb")
