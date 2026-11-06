@@ -90,3 +90,26 @@ Mechanik nach dem Stresstest:
 ### Nachtest nach Riemenjustage (28.10.2026, abends)
 
 Servo mit Unterlegscheiben unter allen vier Laschen nach vorn versetzt, weil der Riemen leicht am inneren Bord des Riemenrads anlief. Danach 8 Fahrten im 10-s-Takt und 48 im 3-s-Takt (manuell gestoppt): alle quittiert, keine Fehler. Endlage „Anfeuern“ (860 µs) geprüft: Fahrweg passt, kein Anschlagen. Firmware unverändert.
+
+### 10-Minuten-Stresstest und Riemensprung (28.10.2026, spät)
+
+200 Fahrten im 3-s-Takt, alle quittiert, keine Fehler, darunter 18 volle Hübe zwischen „Anfeuern“ und „Glut halten“. Danach schloss „Glut halten“ ca. 1 mm nicht mehr vollständig, obwohl weiter 2360 µs gesendet wurden: Der Riemen ist vermutlich um einen Zahn übergesprungen, wahrscheinlich weil er nach dem Versetzen des Servos zu locker war. Abhilfe: Riemen bei „Glut halten“ neu auflegen, Klappe dabei von Hand ganz zu, strammer spannen, beide Endlagen prüfen. Pulswerte unverändert. Später erkennt der AS5600 einen Riemensprung als „Abweichung“.
+
+## AS5600-Sensorbrücke (Rückseite Luftbox) – Stand 06.11.2026
+
+Abgestimmt mit Nico am 30.10. und 06.11.2026. Ersetzt den früheren Plan „Winkel aus Flachprofil 30 × 2 an einer
+Gehäuseschraube“ (E16). Dateien und Montage: `hardware/sensorbruecke-as5600/`.
+
+- Ort: Rückseite der Luftbox (Servo und Riemen sitzen auf der Gegenseite). Der Magnet Ø 6 × 2,5 ist mittig
+  auf dem Wellenende verklebt und steht **1 mm** vor der Ebene der seitlichen Laschen.
+- Befestigung an den beiden freien mittleren Laschenlöchern (Ø 6,8, Abstand **147 mm** Mitte–Mitte, gesamt
+  160 mm über die Laschen) mit **M5 × 30** (Laschen 6,2 dick, gemessen Nico 06.11.) und **Distanzhülsen 12 mm** (Entscheidung Nico: flach mit Hülsen
+  statt gekantet, „bekomme ich genauer hin“).
+- Brücke aus 2-mm-Alublech (Nicos Platte 300 × 200 × 2), liegt über der mittleren Querrippe (3 mm breit).
+  Auf Nicos Wunsch so schmal wie möglich (wenig Luftwiderstand): Steg 8 mm, Augen Ø 14 um die M5-Löcher,
+  Mittelplatte 24 × 24, Länge 161 (06.11.; erster Stand Steg 16, Platte 32 × 32). Untergrenze Steg ca. 6 mm,
+  darunter biegt sich das Blech auf 147 mm beim Anziehen und Hantieren.
+- AS5600-Platine 23,2 × 22,7 mm, Löcher Ø 3,6, Lochmitten 16,1 × 16,3 mm (gemessen Nico). Stiftleisten
+  auf der Rückseite (Chip-Gegenseite) eingelötet; sie gehen durch ein Fenster 17 × 11 in der Brücke.
+- Höhenkette: Magnet 1 + Luftspalt ca. 1,9 + Chip 1,5 + Platine 1,6 + Abstandshalter M3 × 6 = Hülse 12.
+

@@ -51,6 +51,11 @@
 #define PIN_MAINS_SENSE 34 // digital über Spannungsteiler
 #define PIN_BATTERY   35   // Teiler 100k/100k
 #define BATTERY_DIVIDER 2.0f
+// Reserviert laut Schaltplan (docs/SCHALTPLAN.md), von der Firmware noch nicht genutzt
+#define PIN_HEARTBEAT 25   // Lebenszeichen an den Hardware-Watchdog
+#define PIN_SERVO_EN  26   // HIGH = Servoversorgung ein (Q1), E21
+#define PIN_BUTTON    32   // Taster nach GND
+#define PIN_LED       33   // Status-LED, HIGH = an
 #endif
 
 // Türkontakt: geschlossene Tür = geschlossener Kontakt nach GND.

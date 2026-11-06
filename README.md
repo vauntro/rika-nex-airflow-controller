@@ -7,9 +7,9 @@ Automatische Verbrennungsluftregelung für den Rika NEX Kaminofen ohne Rikatroni
 | Ordner | Inhalt |
 |---|---|
 | [`firmware/rika-nex-controller/`](firmware/rika-nex-controller/) | PlatformIO-Projekt für den D1 mini (ESP8266), Firmware 0.3.2, MQTT-Anbindung an Home Assistant |
-| [`docs/`](docs/) | Funktionsweise der Luftbox, Projektpläne (v1–v3), Mechanik, Kalibrierung, offene Punkte, Home-Assistant-Werte |
+| [`docs/`](docs/) | Funktionsweise der Luftbox, Projektpläne (v1–v3), Mechanik, Verkabelung, Kalibrierung, offene Punkte, Home-Assistant-Werte |
 | [`home-assistant/`](home-assistant/) | Dashboard-YAML für Home Assistant |
-| [`hardware/`](hardware/) | CAD-Daten (STEP/STL) und Zeichnungen: Servohalter (Bauteil H), GT2-Riemenrad |
+| [`hardware/`](hardware/) | CAD-Daten (STEP/STL) und Zeichnungen: Servohalter (Bauteil H), GT2-Riemenrad, AS5600-Sensorbrücke; KiCad-Schaltplan der Steuerung in [`hardware/schaltplan/`](hardware/schaltplan/) ([Doku](docs/SCHALTPLAN.md)) |
 
 ## Funktionsprinzip
 
