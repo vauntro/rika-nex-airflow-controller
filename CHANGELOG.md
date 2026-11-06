@@ -4,6 +4,12 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 
 ## 2026-11-06
 
+### Planung
+- **E21: Servo im Stand stromlos** (Nico, 06.11.). Nach Erreichen der Stellung wird der Servo abgeschaltet.
+  Akku-Abschätzung für 6 h: ESP32 + WLAN ≈ 3,3 Wh, mit Wandlerverlusten ≈ 4 Wh, Servo-Stellbewegungen ≈ 0,5 Wh;
+  eine 18650-Zelle (9–13 Wh) reicht. Wandler ≥ 3 A wegen der Servo-Spitzen. `docs/projektplan-v3.md` (E21,
+  Abschnitt 2.3) und `docs/OFFENE-PUNKTE.md` ergänzt. Offen: Hält der Riemenantrieb stromlos? Akku oder Mini-DC-USV?
+
 ### Hardware
 - **Sensorbrücke Anschluss:** Belegung der 5 Adern (VCC, GND, SDA, SCL, DIR auf GND) im README des Bauteils,
   Kabel 5-adrig 24 AWG mit Dupont- oder JST-XH-Stecker statt 4-poligem Dupont-Kabel.
