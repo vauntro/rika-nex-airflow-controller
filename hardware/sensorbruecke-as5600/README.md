@@ -1,6 +1,6 @@
 # Sensorbrücke AS5600 (Rückseite Luftbox)
 
-Flache Brücke aus 2-mm-Alublech, die den AS5600 auf der Rückseite der Luftbox über dem Magneten am
+Flache, schmale Brücke aus 2-mm-Alublech, die den AS5600 auf der Rückseite der Luftbox über dem Magneten am
 Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stand 06.11.2026.
 
 ## Dateien
@@ -16,7 +16,9 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 
 ## Maße
 
-- Länge 163, Steg 16 breit mit Enden R 8, Mittelplatte 32 × 32 (Ecken R 2), Dicke 2.
+- Länge 161, Steg **8** breit, Augen Ø 14 um die M5-Bohrungen, Mittelplatte **24 × 24**, Ecken und
+  Übergänge R 2, Dicke 2. Schmal gehalten, damit die Brücke möglichst wenig Luft verdeckt (06.11.: vorher
+  Steg 16 und Platte 32 × 32). Steg nicht unter 6 mm, sonst biegt sich das Blech beim Anziehen.
 - 2 × Ø 5,5 für M5 im Abstand **147** (Laschenlöcher der Luftbox Ø 6,8, auf Höhe der Wellenmitte).
 - 4 × Ø 3,2 für die AS5600-Platine, Lochmitten **16,1 × 16,3** (Platine 23,2 × 22,7, Löcher Ø 3,6).
 - Fenster 17 × 11 mittig (Ecken R 1,5) für die Dupont-Stecker der Stiftleisten.
