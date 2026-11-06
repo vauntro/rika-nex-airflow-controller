@@ -53,7 +53,22 @@ Wellenende hält. Die Gegenseite (Servo, Riemen) ist davon nicht betroffen. Stan
 | 4 | Abstandshalter M3 × 6, Innen-/Innengewinde, Messing |
 | 8 | Linsenkopfschraube ISO 7380 M3 × 5, A2 |
 | optional | Scheiben ISO 7089 – 3 zum Einstellen des Luftspalts |
-| 1 | Dupont-Kabel Buchse, 4-polig (VCC, GND, SDA, SCL) |
+| 1 | Anschlusskabel 5-adrig 24 AWG (z. B. UL2464 5 × 0,2 mm²), Stecker Dupont oder JST XH 5-polig, selbst gecrimpt |
+
+## Anschluss
+
+Fünf Adern, wie im Verkabelungsplan des Testaufbaus (`VERKABELUNG-D1-MINI.md`):
+
+| AS5600 | Board | Ader (Vorschlag) |
+|---|---|---|
+| VCC | 3V3 | rot |
+| GND | GND | schwarz |
+| SDA | SDA (D1 Mini D2, ESP32 GPIO 21) | gelb |
+| SCL | SCL (D1 Mini D1, ESP32 GPIO 22) | weiß |
+| DIR | GND (darf nicht offen bleiben) | grün |
+
+I²C-Leitung kurz halten (bis ca. 1,5 m), Kabel mit Abstand zu heißem Blech führen (PVC bis 80 °C).
+Alternative mit 4 Polen: DIR auf der Platine mit einer Drahtbrücke auf GND legen.
 
 ## Neu erzeugen
 

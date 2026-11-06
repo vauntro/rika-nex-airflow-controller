@@ -5,6 +5,8 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-06
 
 ### Hardware
+- **Sensorbrücke Anschluss:** Belegung der 5 Adern (VCC, GND, SDA, SCL, DIR auf GND) im README des Bauteils,
+  Kabel 5-adrig 24 AWG mit Dupont- oder JST-XH-Stecker statt 4-poligem Dupont-Kabel.
 - **Sensorbrücke Mutter:** Sicherungsmutter DIN 985 M5 A2 mit Nylonring statt Ganzmetall ISO 7042. An der
   Stelle wird es nicht heiß (Nico). Höhe gleich (5 mm), M5 × 30 bleibt. README, Zeichnungen und Montage aktualisiert.
 - **3D-Baugruppe Sensorbrücke** als STEP, STL und GLB, montiert und als Explosion, mit Vorschaubild.
