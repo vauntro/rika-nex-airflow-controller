@@ -196,7 +196,7 @@ Tabelle: [`messungen/as5600-labortest-2026-11-21-ergebnis.md`](messungen/as5600-
   Offen: Erreicht der Servo den Anschlag nicht, oder ist der Drehweg an dieser Sensorposition kleiner?
 - **Ganz zu nicht immer erreicht:** Von 160 ‰ aus kommt „Glut halten“ auf 0,0°, direkt von 500 ‰ aus
   blieb die Welle bei 6,6° (36 ‰) stehen. Auch vor dem Test stand sie bei 2,5°.
-  Nico (21.11., 19:30): Bei 6,6° ist die Luftbox sichtbar **ganz geschlossen**. Die Klappen sind also schon
-  vor 0° dicht, die letzten Grad sind Leerweg. Funktional ok, nur die Prüfung meldet fälschlich „Abweichung +36 ‰“.
+  Nico (21.11., 19:32): Bei 6,6° sah die Luftbox zu aus, ließ sich von Hand aber noch 1–2 mm weiter schließen.
+  Sie war also **nicht ganz zu**. Die Meldung „Abweichung +36 ‰“ war berechtigt.
 - **Rauschen und Halten (E21, kalt):** 180 s auf 500 ‰ mit stromlosem Servo, 180 Messwerte, 95,2–95,3°
   (±0,05°). Kein Rauschen, keine Drift. Der Riemenantrieb hält kalt die Stellung.
