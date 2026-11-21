@@ -1,6 +1,7 @@
 # Verkabelung
 
-Stand 06.11.2026. Pinbelegung wie in `firmware/rika-nex-controller/include/config.h`. Übernommen aus dem
+Stand 21.11.2026. Pinbelegung wie in `firmware/rika-nex-controller/include/config.h`. Ausführlicher Plan für den
+aktuellen D1 Mini (mit Servo/PCA9685): [`firmware/rika-nex-controller/VERKABELUNG-D1-MINI.md`](../firmware/rika-nex-controller/VERKABELUNG-D1-MINI.md). Übernommen aus dem
 Verkabelungsplan des Testaufbaus (`VERKABELUNG-D1-MINI.md` der Logger-Firmware) und für den ESP32 ergänzt.
 
 Alle Module laufen mit **3,3 V Logik**. Die Elektronik sitzt im Sockelraum unter der Luftbox, nicht im Steinmantel.
@@ -49,7 +50,7 @@ Nicht verwenden am D1 Mini: **D3, D4** (Bootmodus), **D8** nur als CS.
 | VCC | 3V3 vom Board (Logik) |
 | GND | GND (gemeinsam mit Board und Servo-Netzteil) |
 | SDA / SCL | I²C-Bus wie oben |
-| V+ (Schraubklemme) | **externe 5 V** für den Servo, nicht vom Board |
+| V+ (Schraubklemme) | **externe 5 V, mindestens 3 A** für den Servo, nicht vom Board |
 | Kanal 1 | Servo (zweiter Kanal von links) |
 
 ## Thermoelement Typ K

@@ -4,6 +4,11 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 
 ## 2026-11-21
 
+### Doku
+- **Verkabelungsplan D1 Mini** neu für Firmware 0.3.4 (`firmware/rika-nex-controller/VERKABELUNG-D1-MINI.md`): alle Pins,
+  PCA9685 mit Servo auf Kanal 1 und externer 5-V-Versorgung (≥ 3 A), AS5600, MAX6675, Tür, Netz, Akku.
+  `docs/VERKABELUNG.md` verweist darauf. Der alte Plan der Logger-Firmware enthielt den Servo noch nicht.
+
 ### Firmware
 - **0.3.4-luftbox:** AS5600-Diagnose in HA (Konfiguration/Diagnose): Rohwinkel, AGC und Feldstärke (Magnitude),
   alle 5 s (`AS_DIAG_MS`). Zum Prüfen von Luftspalt und Magnet.
