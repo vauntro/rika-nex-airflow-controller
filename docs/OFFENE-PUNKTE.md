@@ -32,8 +32,8 @@ gepuffert werden).
   ist es Spiel (Abhilfe: Ziele immer aus derselben Richtung anfahren oder mit dem AS5600 nachstellen).
 - **Ganz auf:** 860 µs ergibt nur 177,6° statt 182,3°. Schieber stromlos von Hand ganz auf drücken und den Winkel
   ablesen. Danach `AS_RAW_SPAN` oder `AIR_US_AT_1000` anpassen.
-- **Ganz zu:** „Glut halten“ von 500 ‰ aus blieb bei 6,6° stehen (von 160 ‰ aus 0,0°). Prüfen, ob die Klappen dabei
-  wirklich zu sind. Mögliche Abhilfe: zweite kurze Fahrt oder Nachstellen, wenn der AS5600 > 2° meldet.
+- **Ganz zu:** „Glut halten“ von 500 ‰ aus blieb bei 6,6° stehen (von 160 ‰ aus 0,0°). Die Box ist dabei sichtbar
+  ganz zu (Nico, 21.11.). Firmware: bei Soll 0 ‰ Ist bis ca. 8° (≈ 45 ‰) als „zu“ werten statt „Abweichung“.
 - Druck-Riemenräder (3 Varianten) eingetroffen? → passende Variante wählen, M3-Schraube nach
   Einschraubtiefe.
 - Axialspiel der Luftbox-Welle: Scheiben M10 (≈ 3,6 mm) + Riemenrad als Anschlag.
