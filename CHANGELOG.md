@@ -4,6 +4,12 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 
 ## 2026-11-21
 
+### Firmware
+- **0.3.3-luftbox: Nachstellen mit dem AS5600** (noch nicht geflasht). Nach jeder Fahrt wird bei Abweichung über der
+  Toleranz (20 ‰, bei „Glut halten“ 11 ‰ ≈ 2°) bis zu 2-mal mit korrigiertem Puls nachgefahren. Gegen die im
+  Labortest gemessene Hysterese und das unvollständige Schließen. Neue Werte `AIR_CORR_MAX`,
+  `AIR_CLOSED_TOL_PERMILLE`, `AIR_CORR_MIN_US` in `config.h`.
+
 ### Kalibrierung
 - **AS5600 an der Sensorbrücke in Betrieb genommen (Labortest ohne Feuer).** I²C und Magnet ok, Drehrichtung
   passt (DIR auf GND). Neuer Nullpunkt „ganz zu“ raw 3241 (vorher 3530, Einlass-Position), im EEPROM gesetzt.
