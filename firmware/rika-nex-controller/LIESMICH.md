@@ -1,6 +1,6 @@
 # RIKA NEX – Firmware (Logger + Luftbox)
 
-Stand 0.3.3-luftbox (21.11.2026, noch nicht geflasht; vorher 0.3.2-luftbox vom 27.10.). Läuft auf dem Produktiv-D1-Mini (rika_nex.local).
+Stand 0.3.3-luftbox (geflasht 21.11.2026; vorher 0.3.2-luftbox vom 27.10.). Läuft auf dem Produktiv-D1-Mini (rika_nex.local).
 Misst Brennraumtemperatur, Tür, Netz/Akku und stellt die Luftbox über den Servo;
 der AS5600 kontrolliert die Ist-Stellung. Noch **keine automatische Regelung** –
 die Stellung kommt aus Home Assistant.

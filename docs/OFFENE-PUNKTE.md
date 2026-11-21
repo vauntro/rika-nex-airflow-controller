@@ -35,7 +35,7 @@ gepuffert werden).
 - **Ganz zu:** „Glut halten“ von 500 ‰ aus blieb bei 6,6° stehen (von 160 ‰ aus 0,0°). Sie sah zu aus, ließ sich
   von Hand aber noch 1–2 mm weiter schließen (Nico, 21.11.). Firmware: bei Soll 0 ‰ nachstellen (zweite kurze Fahrt),
   wenn der AS5600 mehr als ca. 2° meldet. Für „Glut halten“ wichtig, weil dort ganz zu gewollt ist.
-  Umgesetzt in 0.3.3-luftbox (Nachstellen, auch gegen die Hysterese). Offen: flashen und Testreihe wiederholen,
+  Umgesetzt in 0.3.3-luftbox (Nachstellen, auch gegen die Hysterese), geflasht 21.11. Offen: Riemen montieren, Testreihe wiederholen,
   dabei prüfen, ob kleine Korrekturfahrten genau landen oder selbst wieder überschießen.
 - Druck-Riemenräder (3 Varianten) eingetroffen? → passende Variante wählen, M3-Schraube nach
   Einschraubtiefe.
