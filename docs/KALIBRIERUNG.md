@@ -204,3 +204,33 @@ Tabelle: [`messungen/as5600-labortest-2026-11-21-ergebnis.md`](messungen/as5600-
   Sie war also **nicht ganz zu**. Die Meldung „Abweichung +36 ‰“ war berechtigt.
 - **Rauschen und Halten (E21, kalt):** 180 s auf 500 ‰ mit stromlosem Servo, 180 Messwerte, 95,2–95,3°
   (±0,05°). Kein Rauschen, keine Drift. Der Riemenantrieb hält kalt die Stellung.
+
+### Zweite Testreihe mit 0.3.3-luftbox (Nachstellen), 21.11.2026, 20:08
+
+Riemen neu aufgelegt bei „ganz zu“ (Box und Servo 2360 µs), Ausgangslage 0,0°, kein neuer Nullpunkt nötig.
+Wartezeit 7 s pro Schritt. Rohdaten liegen bei Nico unter `messungen/as5600-labortest-2026-11-21-v033-*`.
+
+| Soll ‰ | aufwärts: Ist ‰ (Nachstellfahrten, Abweichung davor) | abwärts: Ist ‰ (Nachstellfahrten) |
+|---|---|---|
+| 0    | 0 (–)                       | 30 (2, beide wirkungslos) → „Abweichung +30“ |
+| 160  | 157 (0)                     | 156 (1, vorher +51) |
+| 250  | 264 (0)                     | 240 (1, vorher +67) |
+| 335  | 346 (2: +27, +23)           | 334 (0) |
+| 400  | 399 (2: +40, +27)           | 405 (0) |
+| 500  | 500 (2: +45, +31)           | 505 (0) |
+| 600  | 611 (2: +40, +33)           | 598 (0) |
+| 700  | 706 (2: +45, +32)           | 693 (0) |
+| 800  | 802 (2: +60, +27)           | 799 (0) |
+| 900  | 920 (1: +74)                | 908 (0) |
+| 1000 | 1000 (0), 177,4°            | – |
+
+- **Zwischenstellungen ok:** Nach dem Nachstellen liegen alle Stellungen von 160 bis 1000 ‰ innerhalb −10 … +20 ‰.
+  Ohne Nachstellen wären es aufwärts bis +74 ‰ gewesen.
+- Eine Korrekturfahrt holt nur etwa ein Drittel bis die Hälfte der Abweichung zurück (z. B. +45 → +31 mit 68 µs).
+  Der Richtungswechsel frisst einen Teil des Pulses (Spiel). Deshalb braucht es meist beide Fahrten.
+- Abwärts ist die Abweichung diesmal klein (−7 … +8 ‰), nur unten (250/160 ‰) wurde nachgestellt.
+- Ganz auf: 860 µs → 177,4° = 1000 ‰. Der neue Drehweg (`AS_RAW_SPAN 2018`) stimmt.
+- **„Glut halten“ aus offener Stellung bleibt offen:** In allen 5 Fällen (aus 160, 2× aus 500, aus 1000, nach dem
+  Haltetest) stand die Welle danach bei 4,0–7,3° (+23 … +41 ‰). Das Wiederholen mit 2360 µs bewegt nichts, weil
+  der Servo seine Position schon erreicht hat. Die Box ist dann nicht ganz zu.
+- Haltetest 500 ‰, 120 s, Servo stromlos: nach dem Nachstellen konstant 91,8° (117 Meldungen), keine Drift.

@@ -5,7 +5,9 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
 ## 2026-11-21
 
 ### Firmware
-- **0.3.3-luftbox: Nachstellen mit dem AS5600**, gebaut (RAM 39,3 %, Flash 32,8 %) und per OTA geflasht 21.11. 19:56. Board online, Discovery meldet 0.3.3; Box von Hand ganz auf zeigt jetzt 177,1° = 999 ‰ (neuer Drehweg passt). Nachstellen noch ungetestet (Riemen ab). Nach jeder Fahrt wird bei Abweichung über der
+- **0.3.3-luftbox: Nachstellen mit dem AS5600**, gebaut (RAM 39,3 %, Flash 32,8 %) und per OTA geflasht 21.11. 19:56. Board online, Discovery meldet 0.3.3; Box von Hand ganz auf zeigt jetzt 177,1° = 999 ‰ (neuer Drehweg passt). Zweite Testreihe mit montiertem Riemen (20:08): Zwischenstellungen nach dem Nachstellen innerhalb −10 … +20 ‰
+  (vorher bis +45 ‰), ganz auf 1000 ‰. „Glut halten“ aus offener Stellung bleibt bei 4–7° stehen, Nachstellen an der
+  Grenze 2360 µs wirkt dort nicht (offener Punkt). Nach jeder Fahrt wird bei Abweichung über der
   Toleranz (20 ‰, bei „Glut halten“ 11 ‰ ≈ 2°) bis zu 2-mal mit korrigiertem Puls nachgefahren. Gegen die im
   Labortest gemessene Hysterese und das unvollständige Schließen. Neue Werte `AIR_CORR_MAX`,
   `AIR_CLOSED_TOL_PERMILLE`, `AIR_CORR_MIN_US` in `config.h`.
