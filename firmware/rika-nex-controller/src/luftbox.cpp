@@ -25,6 +25,7 @@ int correctionsLeft = 0;        // verbleibende Nachstell-Fahrten für die aktue
 unsigned long lastAsRead = 0;
 unsigned long lastAsPublish = 0;
 int lastAsRawPublished = -1000;
+unsigned long lastDiagPublish = 0;
 String lastSensorStatus;
 String lastStatus;
 
@@ -188,6 +189,17 @@ void readAngle() {
     return;
   }
   int raw = ((b[0] & 0x0F) << 8) | b[1];
+  // Diagnose alle AS_DIAG_MS: Rohwinkel, AGC (Verstärkung, 3,3 V: 0–128, klein = starkes Feld)
+  // und Magnitude (Feldstärke nach der AGC, 12 Bit)
+  if (millis() - lastDiagPublish >= AS_DIAG_MS) {
+    uint8_t agc, mag[2];
+    if (asRead(0x1A, &agc, 1) && asRead(0x1B, mag, 2)) {
+      lastDiagPublish = millis();
+      pub("luft/raw", String(raw));
+      pub("luft/agc", String(agc));
+      pub("luft/magnitude", String(((mag[0] & 0x0F) << 8) | mag[1]));
+    }
+  }
   String status = !(st & 0x20) ? "fehlt" : (st & 0x08) ? "zu stark" : (st & 0x10) ? "zu schwach" : "ok";
   // Weg ab "ganz zu" modulo 4096 (Umbruch liegt im Arbeitsbereich). ±5° an den Anschlägen
   // werden auf 0 bzw. Vollausschlag geklemmt, alles weiter außerhalb ist eine Störung.
@@ -319,6 +331,9 @@ void announce() {
   discoverSensor("primaerluft", "Primärluft", "luft/primaer", "%", "mdi:arrow-up-bold-box-outline");
   discoverSensor("sekundaerluft", "Sekundärluft", "luft/sekundaer", "%", "mdi:arrow-down-bold-box-outline");
   discoverSensor("as5600_magnet", "AS5600 Magnet", "luft/magnet", nullptr, "mdi:magnet", true);
+  discoverSensor("as5600_raw", "AS5600 Rohwinkel", "luft/raw", nullptr, "mdi:angle-acute", true);
+  discoverSensor("as5600_agc", "AS5600 AGC", "luft/agc", nullptr, "mdi:magnet", true);
+  discoverSensor("as5600_magnitude", "AS5600 Feldstärke", "luft/magnitude", nullptr, "mdi:magnet", true);
   {
     JsonDocument d;
     d["name"] = "Nullpunkt setzen";

@@ -27,6 +27,7 @@ die Stellung kommt aus Home Assistant.
 | sensor Luftklappe Abweichung | Ist − Soll in ‰ (0,5 s nach jeder Fahrt) |
 | sensor Luftklappe Status | ok / fährt / Abweichung ±x ‰ / Sensor: … / Kalibrierung … |
 | sensor AS5600 Magnet (Diagnose) | ok / zu schwach / zu stark / fehlt / außerhalb Bereich |
+| sensor AS5600 Rohwinkel, AGC, Feldstärke (Diagnose, ab 0.3.4) | raw 0–4095; AGC 0–128 bei 3,3 V (klein = starkes Feld); Magnitude 12 Bit, alle 5 s |
 | button Nullpunkt setzen (Konfiguration) | aktuelle Stellung als „ganz zu“ speichern (EEPROM) |
 | number Servo-Puls (Kalibrierung) (Konfiguration) | roher Puls 500–2500 µs, **ohne** Luftbox-Grenzen |
 

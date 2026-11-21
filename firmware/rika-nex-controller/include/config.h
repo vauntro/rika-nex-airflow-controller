@@ -106,6 +106,7 @@
 #define AS_CHANGE_RAW         6      // ca. 0,5°: sofort senden
 #define AS_INTERVAL_MS        100UL
 #define AS_PUBLISH_MS         1000UL
+#define AS_DIAG_MS            5000UL // Rohwinkel, AGC, Feldstärke (Diagnose)
 #define EEPROM_MAGIC          0xA560 // gleiches Format wie das Servo-Testprogramm
 
 // Takt
@@ -116,4 +117,4 @@
 // MQTT
 #define DEVICE_ID    "rika_nex"
 #define TOPIC_PREFIX "rika_nex/"
-#define FW_VERSION   "0.3.3-luftbox"
+#define FW_VERSION   "0.3.4-luftbox"
