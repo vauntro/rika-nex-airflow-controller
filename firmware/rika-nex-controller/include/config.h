@@ -94,7 +94,7 @@
 #define AIR_PRESET_NEAR_PERMILLE 15
 
 #define AS5600_ADDR           0x36
-#define AS_RAW_CLOSED_DEFAULT 3530   // ganz zu; wird per "Nullpunkt setzen" im EEPROM überschrieben
+#define AS_RAW_CLOSED_DEFAULT 3241   // ganz zu an der Sensorbrücke (21.11.2026); "Nullpunkt setzen" überschreibt im EEPROM
 #define AS_RAW_SPAN           2074   // ganz zu -> ganz auf = 182,3°
 #define AS_TOL_RAW            57     // ca. 5° Toleranz an den Anschlägen
 #define AS_CHANGE_RAW         6      // ca. 0,5°: sofort senden

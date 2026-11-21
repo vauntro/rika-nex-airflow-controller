@@ -2,6 +2,17 @@
 
 Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden hier festgehalten, neueste oben.
 
+## 2026-11-21
+
+### Kalibrierung
+- **AS5600 an der Sensorbrücke in Betrieb genommen (Labortest ohne Feuer).** I²C und Magnet ok, Drehrichtung
+  passt (DIR auf GND). Neuer Nullpunkt „ganz zu“ raw 3241 (vorher 3530, Einlass-Position), im EEPROM gesetzt.
+- Testreihe 0 → 1000 → 0 ‰ in 21 Schritten plus 3 min Haltetest. Kennlinie linear, aber Hysterese von ca.
+  30–40 ‰ (oben bis 64 ‰): aufwärts Ist über Soll, abwärts darunter. Ganz auf nur 177,6° statt 182,3°,
+  „Glut halten“ von 500 ‰ aus nur bis 6,6°. Rauschen ±0,05°, keine Drift bei stromlosem Servo (E21, kalt).
+  Ergebnisse in `docs/KALIBRIERUNG.md`, Rohdaten in `docs/messungen/`.
+- `config.h`: `AS_RAW_CLOSED_DEFAULT` auf 3241 (nur Vorgabe, falls kein EEPROM-Wert da ist; nicht geflasht).
+
 ## 2026-11-06
 
 ### Schaltplan

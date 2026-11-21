@@ -1,0 +1,2066 @@
+t_ms_epoch,t_rel_s,phase,topic,retained,payload
+1795285240480,0.041,init,rika_nex/status,1,online
+1795285240480,0.041,init,rika_nex/state,1,luftbox_hand
+1795285240481,0.041,init,rika_nex/tuer,1,offen
+1795285240481,0.041,init,rika_nex/power,1,netz
+1795285240481,0.041,init,rika_nex/luft/status,1,ok
+1795285240481,0.041,init,rika_nex/luft/magnet,1,ok
+1795285240481,0.041,init,rika_nex/luft/soll,1,0
+1795285240481,0.041,init,rika_nex/luft/preset,1,Glut halten
+1795285240481,0.041,init,rika_nex/luft/stellung,1,0 ‰ / 2360 µs
+1795285240481,0.041,init,rika_nex/luft/abweichung,1,14
+1795285240481,0.041,init,rika_nex/luft/zustand,1,"Glut halten · Sekundärluft 2 %, Primärluft zu"
+1795285240481,0.041,init,rika_nex/luft/primaer,1,0
+1795285240481,0.041,init,rika_nex/luft/sekundaer,1,2
+1795285240481,0.041,init,rika_nex/servo/puls,1,865
+1795285240714,0.274,init,rika_nex/luft/ist_winkel,0,2.5
+1795285240718,0.279,init,rika_nex/luft/ist,0,14
+1795285240718,0.279,init,rika_nex/luft/zustand,0,"Glut halten · Sekundärluft 2 %, Primärluft zu"
+1795285240718,0.279,init,rika_nex/luft/primaer,0,0
+1795285240719,0.279,init,rika_nex/luft/sekundaer,0,2
+1795285241821,1.381,init,rika_nex/luft/ist_winkel,0,2.5
+1795285241824,1.384,init,rika_nex/luft/ist,0,14
+1795285241824,1.384,init,rika_nex/luft/zustand,0,"Glut halten · Sekundärluft 2 %, Primärluft zu"
+1795285241824,1.384,init,rika_nex/luft/primaer,0,0
+1795285241824,1.384,init,rika_nex/luft/sekundaer,0,2
+1795285242708,2.268,init,rika_nex/luft/ist_winkel,0,2.5
+1795285242718,2.279,init,rika_nex/luft/ist,0,14
+1795285242723,2.283,init,rika_nex/luft/zustand,0,"Glut halten · Sekundärluft 2 %, Primärluft zu"
+1795285242723,2.283,init,rika_nex/luft/primaer,0,0
+1795285242723,2.283,init,rika_nex/luft/sekundaer,0,2
+1795285243711,3.271,init,rika_nex/luft/ist_winkel,0,2.5
+1795285243749,3.310,init,rika_nex/luft/ist,0,14
+1795285243753,3.314,init,rika_nex/luft/zustand,0,"Glut halten · Sekundärluft 2 %, Primärluft zu"
+1795285243754,3.314,init,rika_nex/luft/primaer,0,0
+1795285243754,3.314,init,rika_nex/luft/sekundaer,0,2
+1795285244476,4.036,nullpunkt,rika_nex/cmd/luft_nullpunkt,0,1
+1795285244536,4.097,nullpunkt,rika_nex/event,0,luft:nullpunkt:3241
+1795285244708,4.268,nullpunkt,rika_nex/luft/ist_winkel,0,0.0
+1795285244721,4.281,nullpunkt,rika_nex/luft/ist,0,0
+1795285244723,4.284,nullpunkt,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285244724,4.284,nullpunkt,rika_nex/luft/primaer,0,0
+1795285244724,4.284,nullpunkt,rika_nex/luft/sekundaer,0,0
+1795285245060,4.621,nullpunkt,rika_nex/temp/brennraum,0,21.1
+1795285245064,4.624,nullpunkt,rika_nex/temp/fehler,0,ok
+1795285245069,4.629,nullpunkt,rika_nex/tuer,0,offen
+1795285245069,4.629,nullpunkt,rika_nex/power,0,netz
+1795285245069,4.630,nullpunkt,rika_nex/akku/spannung,0,0.04
+1795285245715,5.276,nullpunkt,rika_nex/luft/ist_winkel,0,0.0
+1795285245732,5.292,nullpunkt,rika_nex/luft/ist,0,0
+1795285245736,5.297,nullpunkt,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285245736,5.297,nullpunkt,rika_nex/luft/primaer,0,0
+1795285245736,5.297,nullpunkt,rika_nex/luft/sekundaer,0,0
+1795285246707,6.268,nullpunkt,rika_nex/luft/ist_winkel,0,0.0
+1795285246723,6.284,nullpunkt,rika_nex/luft/ist,0,0
+1795285246727,6.287,nullpunkt,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285246727,6.288,nullpunkt,rika_nex/luft/primaer,0,0
+1795285246727,6.288,nullpunkt,rika_nex/luft/sekundaer,0,0
+1795285247707,7.268,nullpunkt,rika_nex/luft/ist_winkel,0,0.0
+1795285247724,7.285,nullpunkt,rika_nex/luft/ist,0,0
+1795285247728,7.288,nullpunkt,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285247728,7.288,nullpunkt,rika_nex/luft/primaer,0,0
+1795285247728,7.289,nullpunkt,rika_nex/luft/sekundaer,0,0
+1795285248483,8.044,schritt1:Glut halten,rika_nex/cmd/luft_preset,0,Glut halten
+1795285248605,8.166,schritt1:Glut halten,rika_nex/luft/soll,0,0
+1795285248610,8.170,schritt1:Glut halten,rika_nex/luft/preset,0,Glut halten
+1795285248610,8.170,schritt1:Glut halten,rika_nex/luft/stellung,0,0 ‰ / 2360 µs
+1795285248610,8.171,schritt1:Glut halten,rika_nex/event,0,luft:0/2360us
+1795285248610,8.171,schritt1:Glut halten,rika_nex/luft/status,0,fährt
+1795285248707,8.268,schritt1:Glut halten,rika_nex/luft/ist_winkel,0,0.0
+1795285248712,8.272,schritt1:Glut halten,rika_nex/luft/ist,0,0
+1795285248712,8.272,schritt1:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285248712,8.272,schritt1:Glut halten,rika_nex/luft/primaer,0,0
+1795285248712,8.272,schritt1:Glut halten,rika_nex/luft/sekundaer,0,0
+1795285249707,9.268,schritt1:Glut halten,rika_nex/luft/ist_winkel,0,0.0
+1795285249715,9.275,schritt1:Glut halten,rika_nex/luft/ist,0,0
+1795285249715,9.275,schritt1:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285249715,9.275,schritt1:Glut halten,rika_nex/luft/primaer,0,0
+1795285249715,9.275,schritt1:Glut halten,rika_nex/luft/sekundaer,0,0
+1795285250060,9.620,schritt1:Glut halten,rika_nex/temp/brennraum,0,21.1
+1795285250064,9.624,schritt1:Glut halten,rika_nex/temp/fehler,0,ok
+1795285250064,9.624,schritt1:Glut halten,rika_nex/tuer,0,offen
+1795285250064,9.624,schritt1:Glut halten,rika_nex/power,0,netz
+1795285250064,9.625,schritt1:Glut halten,rika_nex/akku/spannung,0,0.04
+1795285250102,9.662,schritt1:Glut halten,rika_nex/luft/abweichung,0,0
+1795285250107,9.668,schritt1:Glut halten,rika_nex/luft/status,0,ok
+1795285250707,10.267,schritt1:Glut halten,rika_nex/luft/ist_winkel,0,0.0
+1795285250711,10.272,schritt1:Glut halten,rika_nex/luft/ist,0,0
+1795285250711,10.272,schritt1:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285250711,10.272,schritt1:Glut halten,rika_nex/luft/primaer,0,0
+1795285250711,10.272,schritt1:Glut halten,rika_nex/luft/sekundaer,0,0
+1795285251708,11.269,schritt1:Glut halten,rika_nex/luft/ist_winkel,0,0.0
+1795285251713,11.273,schritt1:Glut halten,rika_nex/luft/ist,0,0
+1795285251713,11.273,schritt1:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285251713,11.273,schritt1:Glut halten,rika_nex/luft/primaer,0,0
+1795285251713,11.273,schritt1:Glut halten,rika_nex/luft/sekundaer,0,0
+1795285252484,12.044,schritt2:160,rika_nex/cmd/luft_soll,0,160
+1795285252597,12.157,schritt2:160,rika_nex/luft/soll,0,160
+1795285252602,12.162,schritt2:160,rika_nex/luft/preset,0,Manuell
+1795285252602,12.162,schritt2:160,rika_nex/luft/stellung,0,160 ‰ / 2120 µs
+1795285252602,12.162,schritt2:160,rika_nex/event,0,luft:160/2120us
+1795285252602,12.162,schritt2:160,rika_nex/luft/status,0,fährt
+1795285252707,12.268,schritt2:160,rika_nex/luft/ist_winkel,0,7.7
+1795285252713,12.273,schritt2:160,rika_nex/luft/ist,0,42
+1795285252713,12.274,schritt2:160,rika_nex/luft/zustand,0,"Sekundärluft 8 %, Primärluft zu"
+1795285252713,12.274,schritt2:160,rika_nex/luft/primaer,0,0
+1795285252713,12.274,schritt2:160,rika_nex/luft/sekundaer,0,8
+1795285252808,12.368,schritt2:160,rika_nex/luft/ist_winkel,0,26.5
+1795285252813,12.373,schritt2:160,rika_nex/luft/ist,0,145
+1795285252813,12.373,schritt2:160,rika_nex/luft/zustand,0,"Sekundärluft 29 %, Primärluft zu"
+1795285252813,12.373,schritt2:160,rika_nex/luft/primaer,0,0
+1795285252813,12.373,schritt2:160,rika_nex/luft/sekundaer,0,29
+1795285252907,12.467,schritt2:160,rika_nex/luft/ist_winkel,0,28.9
+1795285252912,12.473,schritt2:160,rika_nex/luft/ist,0,159
+1795285252912,12.473,schritt2:160,rika_nex/luft/zustand,0,"Abbrand leicht · Sekundärluft 31 %, Primärluft zu"
+1795285252913,12.473,schritt2:160,rika_nex/luft/primaer,0,0
+1795285252913,12.473,schritt2:160,rika_nex/luft/sekundaer,0,31
+1795285253907,13.468,schritt2:160,rika_nex/luft/ist_winkel,0,28.9
+1795285253911,13.472,schritt2:160,rika_nex/luft/ist,0,159
+1795285253911,13.472,schritt2:160,rika_nex/luft/zustand,0,"Abbrand leicht · Sekundärluft 31 %, Primärluft zu"
+1795285253912,13.472,schritt2:160,rika_nex/luft/primaer,0,0
+1795285253912,13.472,schritt2:160,rika_nex/luft/sekundaer,0,31
+1795285254097,13.658,schritt2:160,rika_nex/luft/abweichung,0,-1
+1795285254100,13.661,schritt2:160,rika_nex/luft/status,0,ok
+1795285254906,14.467,schritt2:160,rika_nex/luft/ist_winkel,0,28.9
+1795285255027,14.587,schritt2:160,rika_nex/luft/ist,0,159
+1795285255027,14.588,schritt2:160,rika_nex/luft/zustand,0,"Abbrand leicht · Sekundärluft 31 %, Primärluft zu"
+1795285255027,14.588,schritt2:160,rika_nex/luft/primaer,0,0
+1795285255027,14.588,schritt2:160,rika_nex/luft/sekundaer,0,31
+1795285255060,14.621,schritt2:160,rika_nex/temp/brennraum,0,21.3
+1795285255064,14.625,schritt2:160,rika_nex/temp/fehler,0,ok
+1795285255064,14.625,schritt2:160,rika_nex/tuer,0,offen
+1795285255064,14.625,schritt2:160,rika_nex/power,0,netz
+1795285255064,14.625,schritt2:160,rika_nex/akku/spannung,0,0.04
+1795285255907,15.468,schritt2:160,rika_nex/luft/ist_winkel,0,28.9
+1795285255911,15.472,schritt2:160,rika_nex/luft/ist,0,159
+1795285255911,15.472,schritt2:160,rika_nex/luft/zustand,0,"Abbrand leicht · Sekundärluft 31 %, Primärluft zu"
+1795285255911,15.472,schritt2:160,rika_nex/luft/primaer,0,0
+1795285255912,15.472,schritt2:160,rika_nex/luft/sekundaer,0,31
+1795285256489,16.050,schritt3:250,rika_nex/cmd/luft_soll,0,250
+1795285256590,16.151,schritt3:250,rika_nex/luft/soll,0,250
+1795285256594,16.155,schritt3:250,rika_nex/luft/preset,0,Manuell
+1795285256594,16.155,schritt3:250,rika_nex/luft/stellung,0,250 ‰ / 1985 µs
+1795285256594,16.155,schritt3:250,rika_nex/event,0,luft:250/1985us
+1795285256594,16.155,schritt3:250,rika_nex/luft/status,0,fährt
+1795285256707,16.268,schritt3:250,rika_nex/luft/ist_winkel,0,39.3
+1795285256713,16.274,schritt3:250,rika_nex/luft/ist,0,216
+1795285256713,16.274,schritt3:250,rika_nex/luft/zustand,0,"Sekundärluft 43 %, Primärluft zu"
+1795285256714,16.274,schritt3:250,rika_nex/luft/primaer,0,0
+1795285256714,16.274,schritt3:250,rika_nex/luft/sekundaer,0,43
+1795285256808,16.369,schritt3:250,rika_nex/luft/ist_winkel,0,47.6
+1795285256813,16.374,schritt3:250,rika_nex/luft/ist,0,261
+1795285256814,16.374,schritt3:250,rika_nex/luft/zustand,0,"Sekundärluft 52 %, Primärluft zu"
+1795285256814,16.374,schritt3:250,rika_nex/luft/primaer,0,0
+1795285256814,16.374,schritt3:250,rika_nex/luft/sekundaer,0,52
+1795285257816,17.377,schritt3:250,rika_nex/luft/ist_winkel,0,47.8
+1795285257819,17.379,schritt3:250,rika_nex/luft/ist,0,262
+1795285257819,17.379,schritt3:250,rika_nex/luft/zustand,0,"Sekundärluft 52 %, Primärluft zu"
+1795285257819,17.379,schritt3:250,rika_nex/luft/primaer,0,0
+1795285257819,17.380,schritt3:250,rika_nex/luft/sekundaer,0,52
+1795285258090,17.650,schritt3:250,rika_nex/luft/abweichung,0,12
+1795285258093,17.653,schritt3:250,rika_nex/luft/status,0,ok
+1795285258807,18.368,schritt3:250,rika_nex/luft/ist_winkel,0,47.8
+1795285258811,18.372,schritt3:250,rika_nex/luft/ist,0,262
+1795285258812,18.372,schritt3:250,rika_nex/luft/zustand,0,"Sekundärluft 52 %, Primärluft zu"
+1795285258812,18.372,schritt3:250,rika_nex/luft/primaer,0,0
+1795285258812,18.372,schritt3:250,rika_nex/luft/sekundaer,0,52
+1795285259807,19.368,schritt3:250,rika_nex/luft/ist_winkel,0,47.8
+1795285259811,19.372,schritt3:250,rika_nex/luft/ist,0,262
+1795285259811,19.372,schritt3:250,rika_nex/luft/zustand,0,"Sekundärluft 52 %, Primärluft zu"
+1795285259811,19.372,schritt3:250,rika_nex/luft/primaer,0,0
+1795285259811,19.372,schritt3:250,rika_nex/luft/sekundaer,0,52
+1795285260066,19.627,schritt3:250,rika_nex/temp/brennraum,0,21.1
+1795285260069,19.630,schritt3:250,rika_nex/temp/fehler,0,ok
+1795285260069,19.630,schritt3:250,rika_nex/tuer,0,offen
+1795285260069,19.630,schritt3:250,rika_nex/power,0,netz
+1795285260069,19.630,schritt3:250,rika_nex/akku/spannung,0,0.04
+1795285260493,20.054,schritt4:335,rika_nex/cmd/luft_soll,0,335
+1795285260498,20.059,schritt4:335,rika_nex/luft/soll,0,335
+1795285260502,20.062,schritt4:335,rika_nex/luft/preset,0,Abbrand mittel
+1795285260502,20.062,schritt4:335,rika_nex/luft/stellung,0,335 ‰ / 1857 µs
+1795285260502,20.062,schritt4:335,rika_nex/event,0,luft:335/1857us
+1795285260502,20.062,schritt4:335,rika_nex/luft/status,0,fährt
+1795285260607,20.167,schritt4:335,rika_nex/luft/ist_winkel,0,56.2
+1795285260611,20.171,schritt4:335,rika_nex/luft/ist,0,308
+1795285260611,20.171,schritt4:335,rika_nex/luft/zustand,0,"Sekundärluft 61 %, Primärluft zu"
+1795285260611,20.171,schritt4:335,rika_nex/luft/primaer,0,0
+1795285260611,20.171,schritt4:335,rika_nex/luft/sekundaer,0,61
+1795285260706,20.267,schritt4:335,rika_nex/luft/ist_winkel,0,64.3
+1795285260710,20.271,schritt4:335,rika_nex/luft/ist,0,353
+1795285260710,20.271,schritt4:335,rika_nex/luft/zustand,0,"Sekundärluft 70 %, Primärluft zu"
+1795285260711,20.271,schritt4:335,rika_nex/luft/primaer,0,0
+1795285260711,20.271,schritt4:335,rika_nex/luft/sekundaer,0,70
+1795285261707,21.267,schritt4:335,rika_nex/luft/ist_winkel,0,64.8
+1795285261717,21.277,schritt4:335,rika_nex/luft/ist,0,355
+1795285261717,21.277,schritt4:335,rika_nex/luft/zustand,0,"Sekundärluft 71 %, Primärluft zu"
+1795285261717,21.277,schritt4:335,rika_nex/luft/primaer,0,0
+1795285261717,21.278,schritt4:335,rika_nex/luft/sekundaer,0,71
+1795285261997,21.558,schritt4:335,rika_nex/luft/abweichung,0,20
+1795285262011,21.572,schritt4:335,rika_nex/luft/status,0,ok
+1795285262709,22.270,schritt4:335,rika_nex/luft/ist_winkel,0,64.8
+1795285262714,22.274,schritt4:335,rika_nex/luft/ist,0,355
+1795285262714,22.274,schritt4:335,rika_nex/luft/zustand,0,"Sekundärluft 71 %, Primärluft zu"
+1795285262714,22.274,schritt4:335,rika_nex/luft/primaer,0,0
+1795285262714,22.274,schritt4:335,rika_nex/luft/sekundaer,0,71
+1795285263707,23.267,schritt4:335,rika_nex/luft/ist_winkel,0,64.8
+1795285263710,23.271,schritt4:335,rika_nex/luft/ist,0,355
+1795285263710,23.271,schritt4:335,rika_nex/luft/zustand,0,"Sekundärluft 71 %, Primärluft zu"
+1795285263710,23.271,schritt4:335,rika_nex/luft/primaer,0,0
+1795285263710,23.271,schritt4:335,rika_nex/luft/sekundaer,0,71
+1795285264498,24.059,schritt5:400,rika_nex/cmd/luft_soll,0,400
+1795285264579,24.140,schritt5:400,rika_nex/luft/soll,0,400
+1795285264584,24.144,schritt5:400,rika_nex/luft/preset,0,Manuell
+1795285264584,24.144,schritt5:400,rika_nex/luft/stellung,0,400 ‰ / 1760 µs
+1795285264584,24.144,schritt5:400,rika_nex/event,0,luft:400/1760us
+1795285264584,24.144,schritt5:400,rika_nex/luft/status,0,fährt
+1795285264707,24.267,schritt5:400,rika_nex/luft/ist_winkel,0,74.1
+1795285264711,24.272,schritt5:400,rika_nex/luft/ist,0,406
+1795285264711,24.272,schritt5:400,rika_nex/luft/zustand,0,"Sekundärluft 81 %, Primärluft zu"
+1795285264711,24.272,schritt5:400,rika_nex/luft/primaer,0,0
+1795285264711,24.272,schritt5:400,rika_nex/luft/sekundaer,0,81
+1795285264807,24.367,schritt5:400,rika_nex/luft/ist_winkel,0,77.2
+1795285264811,24.372,schritt5:400,rika_nex/luft/ist,0,423
+1795285264812,24.372,schritt5:400,rika_nex/luft/zustand,0,"Sekundärluft 84 %, Primärluft zu"
+1795285264812,24.372,schritt5:400,rika_nex/luft/primaer,0,0
+1795285264812,24.372,schritt5:400,rika_nex/luft/sekundaer,0,84
+1795285265059,24.620,schritt5:400,rika_nex/temp/brennraum,0,21.2
+1795285265065,24.625,schritt5:400,rika_nex/temp/fehler,0,ok
+1795285265065,24.625,schritt5:400,rika_nex/tuer,0,offen
+1795285265065,24.625,schritt5:400,rika_nex/power,0,netz
+1795285265065,24.625,schritt5:400,rika_nex/akku/spannung,0,0.04
+1795285265807,25.367,schritt5:400,rika_nex/luft/ist_winkel,0,77.2
+1795285265810,25.371,schritt5:400,rika_nex/luft/ist,0,423
+1795285265810,25.371,schritt5:400,rika_nex/luft/zustand,0,"Sekundärluft 84 %, Primärluft zu"
+1795285265810,25.371,schritt5:400,rika_nex/luft/primaer,0,0
+1795285265810,25.371,schritt5:400,rika_nex/luft/sekundaer,0,84
+1795285266077,25.638,schritt5:400,rika_nex/luft/abweichung,0,23
+1795285266081,25.641,schritt5:400,rika_nex/luft/status,0,Abweichung +23 ‰
+1795285266081,25.641,schritt5:400,rika_nex/event,0,luft:abweichung:23
+1795285266807,26.367,schritt5:400,rika_nex/luft/ist_winkel,0,77.2
+1795285266811,26.372,schritt5:400,rika_nex/luft/ist,0,423
+1795285266811,26.372,schritt5:400,rika_nex/luft/zustand,0,"Sekundärluft 84 %, Primärluft zu"
+1795285266811,26.372,schritt5:400,rika_nex/luft/primaer,0,0
+1795285266812,26.372,schritt5:400,rika_nex/luft/sekundaer,0,84
+1795285267807,27.367,schritt5:400,rika_nex/luft/ist_winkel,0,77.2
+1795285267811,27.371,schritt5:400,rika_nex/luft/ist,0,423
+1795285267811,27.372,schritt5:400,rika_nex/luft/zustand,0,"Sekundärluft 84 %, Primärluft zu"
+1795285267811,27.372,schritt5:400,rika_nex/luft/primaer,0,0
+1795285267811,27.372,schritt5:400,rika_nex/luft/sekundaer,0,84
+1795285268504,28.064,schritt6:500,rika_nex/cmd/luft_soll,0,500
+1795285268509,28.069,schritt6:500,rika_nex/luft/soll,0,500
+1795285268512,28.073,schritt6:500,rika_nex/luft/preset,0,Abbrand stark
+1795285268514,28.074,schritt6:500,rika_nex/luft/stellung,0,500 ‰ / 1610 µs
+1795285268514,28.075,schritt6:500,rika_nex/event,0,luft:500/1610us
+1795285268514,28.075,schritt6:500,rika_nex/luft/status,0,fährt
+1795285268607,28.167,schritt6:500,rika_nex/luft/ist_winkel,0,83.9
+1795285268610,28.171,schritt6:500,rika_nex/luft/ist,0,460
+1795285268610,28.171,schritt6:500,rika_nex/luft/zustand,0,"Sekundärluft 92 %, Primärluft zu"
+1795285268610,28.171,schritt6:500,rika_nex/luft/primaer,0,0
+1795285268610,28.171,schritt6:500,rika_nex/luft/sekundaer,0,92
+1795285268707,28.267,schritt6:500,rika_nex/luft/ist_winkel,0,94.7
+1795285268713,28.273,schritt6:500,rika_nex/luft/ist,0,520
+1795285268713,28.274,schritt6:500,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285268714,28.274,schritt6:500,rika_nex/luft/primaer,0,4
+1795285268714,28.274,schritt6:500,rika_nex/luft/sekundaer,0,100
+1795285268807,28.367,schritt6:500,rika_nex/luft/ist_winkel,0,95.7
+1795285268812,28.373,schritt6:500,rika_nex/luft/ist,0,525
+1795285268812,28.373,schritt6:500,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 5 %"
+1795285268813,28.373,schritt6:500,rika_nex/luft/primaer,0,5
+1795285268813,28.374,schritt6:500,rika_nex/luft/sekundaer,0,100
+1795285269807,29.367,schritt6:500,rika_nex/luft/ist_winkel,0,95.7
+1795285269811,29.371,schritt6:500,rika_nex/luft/ist,0,525
+1795285269811,29.372,schritt6:500,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 5 %"
+1795285269811,29.372,schritt6:500,rika_nex/luft/primaer,0,5
+1795285269811,29.372,schritt6:500,rika_nex/luft/sekundaer,0,100
+1795285270008,29.569,schritt6:500,rika_nex/luft/abweichung,0,25
+1795285270018,29.579,schritt6:500,rika_nex/luft/status,0,Abweichung +25 ‰
+1795285270018,29.579,schritt6:500,rika_nex/event,0,luft:abweichung:25
+1795285270059,29.619,schritt6:500,rika_nex/temp/brennraum,0,21.2
+1795285270063,29.623,schritt6:500,rika_nex/temp/fehler,0,ok
+1795285270063,29.623,schritt6:500,rika_nex/tuer,0,offen
+1795285270063,29.623,schritt6:500,rika_nex/power,0,netz
+1795285270063,29.623,schritt6:500,rika_nex/akku/spannung,0,0.04
+1795285270818,30.378,schritt6:500,rika_nex/luft/ist_winkel,0,95.7
+1795285270822,30.382,schritt6:500,rika_nex/luft/ist,0,525
+1795285270822,30.383,schritt6:500,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 5 %"
+1795285270822,30.383,schritt6:500,rika_nex/luft/primaer,0,5
+1795285270823,30.383,schritt6:500,rika_nex/luft/sekundaer,0,100
+1795285271807,31.367,schritt6:500,rika_nex/luft/ist_winkel,0,95.7
+1795285271811,31.371,schritt6:500,rika_nex/luft/ist,0,525
+1795285271811,31.372,schritt6:500,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 5 %"
+1795285271811,31.372,schritt6:500,rika_nex/luft/primaer,0,5
+1795285271811,31.372,schritt6:500,rika_nex/luft/sekundaer,0,100
+1795285272507,32.067,schritt7:600,rika_nex/cmd/luft_soll,0,600
+1795285272564,32.125,schritt7:600,rika_nex/luft/soll,0,600
+1795285272570,32.130,schritt7:600,rika_nex/luft/preset,0,Manuell
+1795285272570,32.130,schritt7:600,rika_nex/luft/stellung,0,600 ‰ / 1460 µs
+1795285272570,32.130,schritt7:600,rika_nex/event,0,luft:600/1460us
+1795285272570,32.130,schritt7:600,rika_nex/luft/status,0,fährt
+1795285272706,32.267,schritt7:600,rika_nex/luft/ist_winkel,0,109.0
+1795285272709,32.270,schritt7:600,rika_nex/luft/ist,0,598
+1795285272709,32.270,schritt7:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 19 %"
+1795285272709,32.270,schritt7:600,rika_nex/luft/primaer,0,19
+1795285272709,32.270,schritt7:600,rika_nex/luft/sekundaer,0,100
+1795285272807,32.367,schritt7:600,rika_nex/luft/ist_winkel,0,111.9
+1795285272812,32.372,schritt7:600,rika_nex/luft/ist,0,614
+1795285272812,32.372,schritt7:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 22 %"
+1795285272812,32.372,schritt7:600,rika_nex/luft/primaer,0,22
+1795285272812,32.372,schritt7:600,rika_nex/luft/sekundaer,0,100
+1795285273807,33.367,schritt7:600,rika_nex/luft/ist_winkel,0,111.9
+1795285273811,33.371,schritt7:600,rika_nex/luft/ist,0,614
+1795285273811,33.371,schritt7:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 22 %"
+1795285273811,33.372,schritt7:600,rika_nex/luft/primaer,0,22
+1795285273811,33.372,schritt7:600,rika_nex/luft/sekundaer,0,100
+1795285274064,33.624,schritt7:600,rika_nex/luft/abweichung,0,14
+1795285274068,33.628,schritt7:600,rika_nex/luft/status,0,ok
+1795285274811,34.372,schritt7:600,rika_nex/luft/ist_winkel,0,112.0
+1795285274815,34.376,schritt7:600,rika_nex/luft/ist,0,614
+1795285274816,34.376,schritt7:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 22 %"
+1795285274816,34.376,schritt7:600,rika_nex/luft/primaer,0,22
+1795285274816,34.377,schritt7:600,rika_nex/luft/sekundaer,0,100
+1795285275061,34.622,schritt7:600,rika_nex/temp/brennraum,0,21.2
+1795285275066,34.626,schritt7:600,rika_nex/temp/fehler,0,ok
+1795285275066,34.626,schritt7:600,rika_nex/tuer,0,offen
+1795285275066,34.626,schritt7:600,rika_nex/power,0,netz
+1795285275066,34.626,schritt7:600,rika_nex/akku/spannung,0,0.04
+1795285275805,35.366,schritt7:600,rika_nex/luft/ist_winkel,0,112.0
+1795285275810,35.371,schritt7:600,rika_nex/luft/ist,0,614
+1795285275810,35.371,schritt7:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 22 %"
+1795285275810,35.371,schritt7:600,rika_nex/luft/primaer,0,22
+1795285275810,35.371,schritt7:600,rika_nex/luft/sekundaer,0,100
+1795285276509,36.070,schritt8:700,rika_nex/cmd/luft_soll,0,700
+1795285276558,36.118,schritt8:700,rika_nex/luft/soll,0,700
+1795285276564,36.125,schritt8:700,rika_nex/luft/preset,0,Manuell
+1795285276564,36.125,schritt8:700,rika_nex/luft/stellung,0,700 ‰ / 1310 µs
+1795285276565,36.125,schritt8:700,rika_nex/event,0,luft:700/1310us
+1795285276565,36.125,schritt8:700,rika_nex/luft/status,0,fährt
+1795285276707,36.267,schritt8:700,rika_nex/luft/ist_winkel,0,126.7
+1795285276709,36.270,schritt8:700,rika_nex/luft/ist,0,695
+1795285276709,36.270,schritt8:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 39 %"
+1795285276710,36.270,schritt8:700,rika_nex/luft/primaer,0,39
+1795285276710,36.270,schritt8:700,rika_nex/luft/sekundaer,0,100
+1795285276807,36.367,schritt8:700,rika_nex/luft/ist_winkel,0,130.0
+1795285276811,36.372,schritt8:700,rika_nex/luft/ist,0,713
+1795285276811,36.372,schritt8:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 42 %"
+1795285276812,36.372,schritt8:700,rika_nex/luft/primaer,0,42
+1795285276812,36.372,schritt8:700,rika_nex/luft/sekundaer,0,100
+1795285277806,37.367,schritt8:700,rika_nex/luft/ist_winkel,0,130.1
+1795285277810,37.371,schritt8:700,rika_nex/luft/ist,0,714
+1795285277810,37.371,schritt8:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 42 %"
+1795285277810,37.371,schritt8:700,rika_nex/luft/primaer,0,42
+1795285277810,37.371,schritt8:700,rika_nex/luft/sekundaer,0,100
+1795285278057,37.617,schritt8:700,rika_nex/luft/abweichung,0,14
+1795285278062,37.622,schritt8:700,rika_nex/luft/status,0,ok
+1795285278806,38.367,schritt8:700,rika_nex/luft/ist_winkel,0,130.2
+1795285278809,38.370,schritt8:700,rika_nex/luft/ist,0,714
+1795285278810,38.370,schritt8:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 42 %"
+1795285278810,38.370,schritt8:700,rika_nex/luft/primaer,0,42
+1795285278810,38.370,schritt8:700,rika_nex/luft/sekundaer,0,100
+1795285279807,39.367,schritt8:700,rika_nex/luft/ist_winkel,0,130.2
+1795285279812,39.373,schritt8:700,rika_nex/luft/ist,0,714
+1795285279812,39.373,schritt8:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 42 %"
+1795285279812,39.373,schritt8:700,rika_nex/luft/primaer,0,42
+1795285279812,39.373,schritt8:700,rika_nex/luft/sekundaer,0,100
+1795285280060,39.620,schritt8:700,rika_nex/temp/brennraum,0,21.2
+1795285280064,39.624,schritt8:700,rika_nex/temp/fehler,0,ok
+1795285280068,39.628,schritt8:700,rika_nex/tuer,0,offen
+1795285280068,39.628,schritt8:700,rika_nex/power,0,netz
+1795285280068,39.628,schritt8:700,rika_nex/akku/spannung,0,0.04
+1795285280512,40.073,schritt9:800,rika_nex/cmd/luft_soll,0,800
+1795285280555,40.115,schritt9:800,rika_nex/luft/soll,0,800
+1795285280559,40.120,schritt9:800,rika_nex/luft/preset,0,Manuell
+1795285280559,40.120,schritt9:800,rika_nex/luft/stellung,0,800 ‰ / 1160 µs
+1795285280559,40.120,schritt9:800,rika_nex/event,0,luft:800/1160us
+1795285280559,40.120,schritt9:800,rika_nex/luft/status,0,fährt
+1795285280707,40.267,schritt9:800,rika_nex/luft/ist_winkel,0,145.9
+1795285280720,40.281,schritt9:800,rika_nex/luft/ist,0,800
+1795285280720,40.281,schritt9:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 60 %"
+1795285280720,40.281,schritt9:800,rika_nex/luft/primaer,0,60
+1795285280720,40.281,schritt9:800,rika_nex/luft/sekundaer,0,100
+1795285280806,40.367,schritt9:800,rika_nex/luft/ist_winkel,0,150.6
+1795285280810,40.371,schritt9:800,rika_nex/luft/ist,0,826
+1795285280810,40.371,schritt9:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 65 %"
+1795285280810,40.371,schritt9:800,rika_nex/luft/primaer,0,65
+1795285280810,40.371,schritt9:800,rika_nex/luft/sekundaer,0,100
+1795285280906,40.467,schritt9:800,rika_nex/luft/ist_winkel,0,151.3
+1795285280916,40.477,schritt9:800,rika_nex/luft/ist,0,830
+1795285280921,40.481,schritt9:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 66 %"
+1795285280921,40.482,schritt9:800,rika_nex/luft/primaer,0,66
+1795285280921,40.482,schritt9:800,rika_nex/luft/sekundaer,0,100
+1795285281906,41.467,schritt9:800,rika_nex/luft/ist_winkel,0,151.6
+1795285281918,41.478,schritt9:800,rika_nex/luft/ist,0,832
+1795285281923,41.484,schritt9:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 66 %"
+1795285281924,41.484,schritt9:800,rika_nex/luft/primaer,0,66
+1795285281924,41.484,schritt9:800,rika_nex/luft/sekundaer,0,100
+1795285282054,41.614,schritt9:800,rika_nex/luft/abweichung,0,32
+1795285282057,41.618,schritt9:800,rika_nex/luft/status,0,Abweichung +32 ‰
+1795285282057,41.618,schritt9:800,rika_nex/event,0,luft:abweichung:32
+1795285282906,42.467,schritt9:800,rika_nex/luft/ist_winkel,0,151.6
+1795285282910,42.471,schritt9:800,rika_nex/luft/ist,0,832
+1795285282910,42.471,schritt9:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 66 %"
+1795285282910,42.471,schritt9:800,rika_nex/luft/primaer,0,66
+1795285282910,42.471,schritt9:800,rika_nex/luft/sekundaer,0,100
+1795285283906,43.467,schritt9:800,rika_nex/luft/ist_winkel,0,151.6
+1795285283910,43.471,schritt9:800,rika_nex/luft/ist,0,832
+1795285283910,43.471,schritt9:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 66 %"
+1795285283910,43.471,schritt9:800,rika_nex/luft/primaer,0,66
+1795285283911,43.471,schritt9:800,rika_nex/luft/sekundaer,0,100
+1795285284517,44.077,schritt10:900,rika_nex/cmd/luft_soll,0,900
+1795285284558,44.119,schritt10:900,rika_nex/luft/soll,0,900
+1795285284563,44.123,schritt10:900,rika_nex/luft/preset,0,Manuell
+1795285284563,44.123,schritt10:900,rika_nex/luft/stellung,0,900 ‰ / 1010 µs
+1795285284563,44.123,schritt10:900,rika_nex/event,0,luft:900/1010us
+1795285284563,44.124,schritt10:900,rika_nex/luft/status,0,fährt
+1795285284706,44.267,schritt10:900,rika_nex/luft/ist_winkel,0,167.5
+1795285284710,44.271,schritt10:900,rika_nex/luft/ist,0,919
+1795285284711,44.271,schritt10:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 83 %"
+1795285284712,44.273,schritt10:900,rika_nex/luft/primaer,0,83
+1795285284712,44.273,schritt10:900,rika_nex/luft/sekundaer,0,100
+1795285284806,44.367,schritt10:900,rika_nex/luft/ist_winkel,0,172.1
+1795285284810,44.371,schritt10:900,rika_nex/luft/ist,0,944
+1795285284810,44.371,schritt10:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 88 %"
+1795285284810,44.371,schritt10:900,rika_nex/luft/primaer,0,88
+1795285284810,44.371,schritt10:900,rika_nex/luft/sekundaer,0,100
+1795285285059,44.619,schritt10:900,rika_nex/temp/brennraum,0,21.2
+1795285285065,44.626,schritt10:900,rika_nex/temp/fehler,0,ok
+1795285285069,44.630,schritt10:900,rika_nex/tuer,0,offen
+1795285285069,44.630,schritt10:900,rika_nex/power,0,netz
+1795285285069,44.630,schritt10:900,rika_nex/akku/spannung,0,0.04
+1795285285806,45.367,schritt10:900,rika_nex/luft/ist_winkel,0,172.3
+1795285285813,45.373,schritt10:900,rika_nex/luft/ist,0,945
+1795285285816,45.377,schritt10:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 89 %"
+1795285285816,45.377,schritt10:900,rika_nex/luft/primaer,0,89
+1795285285816,45.377,schritt10:900,rika_nex/luft/sekundaer,0,100
+1795285286058,45.618,schritt10:900,rika_nex/luft/abweichung,0,45
+1795285286062,45.623,schritt10:900,rika_nex/luft/status,0,Abweichung +45 ‰
+1795285286062,45.623,schritt10:900,rika_nex/event,0,luft:abweichung:45
+1795285286806,46.366,schritt10:900,rika_nex/luft/ist_winkel,0,172.3
+1795285286811,46.372,schritt10:900,rika_nex/luft/ist,0,945
+1795285286811,46.372,schritt10:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 89 %"
+1795285286811,46.372,schritt10:900,rika_nex/luft/primaer,0,89
+1795285286811,46.372,schritt10:900,rika_nex/luft/sekundaer,0,100
+1795285287815,47.376,schritt10:900,rika_nex/luft/ist_winkel,0,172.4
+1795285287819,47.380,schritt10:900,rika_nex/luft/ist,0,946
+1795285287819,47.380,schritt10:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 89 %"
+1795285287819,47.380,schritt10:900,rika_nex/luft/primaer,0,89
+1795285287820,47.380,schritt10:900,rika_nex/luft/sekundaer,0,100
+1795285288521,48.082,schritt11:1000,rika_nex/cmd/luft_soll,0,1000
+1795285288642,48.202,schritt11:1000,rika_nex/luft/soll,0,1000
+1795285288659,48.219,schritt11:1000,rika_nex/luft/preset,0,Anfeuern
+1795285288663,48.224,schritt11:1000,rika_nex/luft/stellung,0,1000 ‰ / 860 µs
+1795285288663,48.224,schritt11:1000,rika_nex/event,0,luft:1000/860us
+1795285288664,48.225,schritt11:1000,rika_nex/luft/status,0,fährt
+1795285288705,48.266,schritt11:1000,rika_nex/luft/ist_winkel,0,173.5
+1795285288709,48.269,schritt11:1000,rika_nex/luft/ist,0,952
+1795285288709,48.270,schritt11:1000,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 90 %"
+1795285288709,48.270,schritt11:1000,rika_nex/luft/primaer,0,90
+1795285288709,48.270,schritt11:1000,rika_nex/luft/sekundaer,0,100
+1795285288806,48.367,schritt11:1000,rika_nex/luft/ist_winkel,0,176.4
+1795285288810,48.371,schritt11:1000,rika_nex/luft/ist,0,968
+1795285288810,48.371,schritt11:1000,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 93 %"
+1795285288810,48.371,schritt11:1000,rika_nex/luft/primaer,0,93
+1795285288811,48.371,schritt11:1000,rika_nex/luft/sekundaer,0,100
+1795285288907,48.467,schritt11:1000,rika_nex/luft/ist_winkel,0,177.6
+1795285288914,48.475,schritt11:1000,rika_nex/luft/ist,0,974
+1795285288914,48.475,schritt11:1000,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 94 %"
+1795285288915,48.475,schritt11:1000,rika_nex/luft/primaer,0,94
+1795285288915,48.475,schritt11:1000,rika_nex/luft/sekundaer,0,100
+1795285289907,49.468,schritt11:1000,rika_nex/luft/ist_winkel,0,177.6
+1795285289910,49.471,schritt11:1000,rika_nex/luft/ist,0,974
+1795285289911,49.471,schritt11:1000,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 94 %"
+1795285289911,49.471,schritt11:1000,rika_nex/luft/primaer,0,94
+1795285289911,49.471,schritt11:1000,rika_nex/luft/sekundaer,0,100
+1795285290068,49.629,schritt11:1000,rika_nex/temp/brennraum,0,21.2
+1795285290073,49.634,schritt11:1000,rika_nex/temp/fehler,0,ok
+1795285290074,49.634,schritt11:1000,rika_nex/tuer,0,offen
+1795285290074,49.634,schritt11:1000,rika_nex/power,0,netz
+1795285290074,49.634,schritt11:1000,rika_nex/akku/spannung,0,0.04
+1795285290141,49.702,schritt11:1000,rika_nex/luft/abweichung,0,-26
+1795285290155,49.715,schritt11:1000,rika_nex/luft/status,0,Abweichung -26 ‰
+1795285290155,49.715,schritt11:1000,rika_nex/event,0,luft:abweichung:-26
+1795285290906,50.467,schritt11:1000,rika_nex/luft/ist_winkel,0,177.6
+1795285290910,50.471,schritt11:1000,rika_nex/luft/ist,0,974
+1795285290910,50.471,schritt11:1000,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 94 %"
+1795285290910,50.471,schritt11:1000,rika_nex/luft/primaer,0,94
+1795285290910,50.471,schritt11:1000,rika_nex/luft/sekundaer,0,100
+1795285291911,51.472,schritt11:1000,rika_nex/luft/ist_winkel,0,177.6
+1795285291915,51.476,schritt11:1000,rika_nex/luft/ist,0,974
+1795285291915,51.476,schritt11:1000,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 94 %"
+1795285291916,51.476,schritt11:1000,rika_nex/luft/primaer,0,94
+1795285291916,51.476,schritt11:1000,rika_nex/luft/sekundaer,0,100
+1795285292526,52.087,schritt12:900,rika_nex/cmd/luft_soll,0,900
+1795285292634,52.194,schritt12:900,rika_nex/luft/soll,0,900
+1795285292641,52.202,schritt12:900,rika_nex/luft/preset,0,Manuell
+1795285292641,52.202,schritt12:900,rika_nex/luft/stellung,0,900 ‰ / 1010 µs
+1795285292641,52.202,schritt12:900,rika_nex/event,0,luft:900/1010us
+1795285292642,52.202,schritt12:900,rika_nex/luft/status,0,fährt
+1795285292705,52.265,schritt12:900,rika_nex/luft/ist_winkel,0,176.5
+1795285292713,52.273,schritt12:900,rika_nex/luft/ist,0,968
+1795285292716,52.276,schritt12:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 93 %"
+1795285292717,52.277,schritt12:900,rika_nex/luft/primaer,0,93
+1795285292717,52.277,schritt12:900,rika_nex/luft/sekundaer,0,100
+1795285292806,52.366,schritt12:900,rika_nex/luft/ist_winkel,0,162.4
+1795285292811,52.371,schritt12:900,rika_nex/luft/ist,0,891
+1795285292811,52.372,schritt12:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 78 %"
+1795285292811,52.372,schritt12:900,rika_nex/luft/primaer,0,78
+1795285292811,52.372,schritt12:900,rika_nex/luft/sekundaer,0,100
+1795285292906,52.466,schritt12:900,rika_nex/luft/ist_winkel,0,160.8
+1795285292911,52.472,schritt12:900,rika_nex/luft/ist,0,882
+1795285292911,52.472,schritt12:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 76 %"
+1795285292912,52.472,schritt12:900,rika_nex/luft/primaer,0,76
+1795285292912,52.472,schritt12:900,rika_nex/luft/sekundaer,0,100
+1795285293906,53.466,schritt12:900,rika_nex/luft/ist_winkel,0,160.8
+1795285293910,53.471,schritt12:900,rika_nex/luft/ist,0,882
+1795285293910,53.471,schritt12:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 76 %"
+1795285293910,53.471,schritt12:900,rika_nex/luft/primaer,0,76
+1795285293910,53.471,schritt12:900,rika_nex/luft/sekundaer,0,100
+1795285294133,53.694,schritt12:900,rika_nex/luft/abweichung,0,-18
+1795285294137,53.697,schritt12:900,rika_nex/luft/status,0,ok
+1795285294906,54.466,schritt12:900,rika_nex/luft/ist_winkel,0,160.8
+1795285294910,54.471,schritt12:900,rika_nex/luft/ist,0,882
+1795285294910,54.471,schritt12:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 76 %"
+1795285294910,54.471,schritt12:900,rika_nex/luft/primaer,0,76
+1795285294911,54.471,schritt12:900,rika_nex/luft/sekundaer,0,100
+1795285295058,54.619,schritt12:900,rika_nex/temp/brennraum,0,21.4
+1795285295069,54.630,schritt12:900,rika_nex/temp/fehler,0,ok
+1795285295072,54.633,schritt12:900,rika_nex/tuer,0,offen
+1795285295073,54.633,schritt12:900,rika_nex/power,0,netz
+1795285295073,54.633,schritt12:900,rika_nex/akku/spannung,0,0.04
+1795285295907,55.467,schritt12:900,rika_nex/luft/ist_winkel,0,160.8
+1795285295911,55.471,schritt12:900,rika_nex/luft/ist,0,882
+1795285295911,55.471,schritt12:900,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 76 %"
+1795285295911,55.471,schritt12:900,rika_nex/luft/primaer,0,76
+1795285295911,55.472,schritt12:900,rika_nex/luft/sekundaer,0,100
+1795285296531,56.092,schritt13:800,rika_nex/cmd/luft_soll,0,800
+1795285296627,56.188,schritt13:800,rika_nex/luft/soll,0,800
+1795285296633,56.194,schritt13:800,rika_nex/luft/preset,0,Manuell
+1795285296633,56.194,schritt13:800,rika_nex/luft/stellung,0,800 ‰ / 1160 µs
+1795285296634,56.194,schritt13:800,rika_nex/event,0,luft:800/1160us
+1795285296634,56.194,schritt13:800,rika_nex/luft/status,0,fährt
+1795285296706,56.266,schritt13:800,rika_nex/luft/ist_winkel,0,157.8
+1795285296711,56.271,schritt13:800,rika_nex/luft/ist,0,865
+1795285296711,56.271,schritt13:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 73 %"
+1795285296711,56.271,schritt13:800,rika_nex/luft/primaer,0,73
+1795285296711,56.272,schritt13:800,rika_nex/luft/sekundaer,0,100
+1795285296808,56.369,schritt13:800,rika_nex/luft/ist_winkel,0,143.5
+1795285296816,56.377,schritt13:800,rika_nex/luft/ist,0,787
+1795285296817,56.377,schritt13:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 57 %"
+1795285296817,56.377,schritt13:800,rika_nex/luft/primaer,0,57
+1795285296817,56.377,schritt13:800,rika_nex/luft/sekundaer,0,100
+1795285296906,56.466,schritt13:800,rika_nex/luft/ist_winkel,0,141.5
+1795285296913,56.473,schritt13:800,rika_nex/luft/ist,0,776
+1795285296913,56.474,schritt13:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 55 %"
+1795285296913,56.474,schritt13:800,rika_nex/luft/primaer,0,55
+1795285296913,56.474,schritt13:800,rika_nex/luft/sekundaer,0,100
+1795285297938,57.499,schritt13:800,rika_nex/luft/ist_winkel,0,141.5
+1795285297943,57.504,schritt13:800,rika_nex/luft/ist,0,776
+1795285297944,57.504,schritt13:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 55 %"
+1795285297944,57.504,schritt13:800,rika_nex/luft/primaer,0,55
+1795285297944,57.504,schritt13:800,rika_nex/luft/sekundaer,0,100
+1795285298126,57.687,schritt13:800,rika_nex/luft/abweichung,0,-24
+1795285298130,57.691,schritt13:800,rika_nex/luft/status,0,Abweichung -24 ‰
+1795285298130,57.691,schritt13:800,rika_nex/event,0,luft:abweichung:-24
+1795285298909,58.470,schritt13:800,rika_nex/luft/ist_winkel,0,141.4
+1795285298910,58.471,schritt13:800,rika_nex/luft/ist,0,776
+1795285298910,58.471,schritt13:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 55 %"
+1795285298911,58.471,schritt13:800,rika_nex/luft/primaer,0,55
+1795285298911,58.471,schritt13:800,rika_nex/luft/sekundaer,0,100
+1795285299906,59.466,schritt13:800,rika_nex/luft/ist_winkel,0,141.4
+1795285299909,59.469,schritt13:800,rika_nex/luft/ist,0,776
+1795285299909,59.470,schritt13:800,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 55 %"
+1795285299909,59.470,schritt13:800,rika_nex/luft/primaer,0,55
+1795285299909,59.470,schritt13:800,rika_nex/luft/sekundaer,0,100
+1795285300058,59.619,schritt13:800,rika_nex/temp/brennraum,0,21.0
+1795285300068,59.629,schritt13:800,rika_nex/temp/fehler,0,ok
+1795285300073,59.634,schritt13:800,rika_nex/tuer,0,offen
+1795285300073,59.634,schritt13:800,rika_nex/power,0,netz
+1795285300073,59.634,schritt13:800,rika_nex/akku/spannung,0,0.04
+1795285300536,60.097,schritt14:700,rika_nex/cmd/luft_soll,0,700
+1795285300621,60.181,schritt14:700,rika_nex/luft/soll,0,700
+1795285300625,60.185,schritt14:700,rika_nex/luft/preset,0,Manuell
+1795285300625,60.186,schritt14:700,rika_nex/luft/stellung,0,700 ‰ / 1310 µs
+1795285300625,60.186,schritt14:700,rika_nex/event,0,luft:700/1310us
+1795285300625,60.186,schritt14:700,rika_nex/luft/status,0,fährt
+1795285300717,60.277,schritt14:700,rika_nex/luft/ist_winkel,0,137.5
+1795285300723,60.284,schritt14:700,rika_nex/luft/ist,0,754
+1795285300723,60.284,schritt14:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 50 %"
+1795285300723,60.284,schritt14:700,rika_nex/luft/primaer,0,50
+1795285300723,60.284,schritt14:700,rika_nex/luft/sekundaer,0,100
+1795285300806,60.366,schritt14:700,rika_nex/luft/ist_winkel,0,124.1
+1795285300820,60.381,schritt14:700,rika_nex/luft/ist,0,681
+1795285300827,60.387,schritt14:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 36 %"
+1795285300827,60.387,schritt14:700,rika_nex/luft/primaer,0,36
+1795285300827,60.387,schritt14:700,rika_nex/luft/sekundaer,0,100
+1795285300906,60.466,schritt14:700,rika_nex/luft/ist_winkel,0,122.6
+1795285300914,60.475,schritt14:700,rika_nex/luft/ist,0,673
+1795285300915,60.476,schritt14:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 34 %"
+1795285300915,60.476,schritt14:700,rika_nex/luft/primaer,0,34
+1795285300916,60.476,schritt14:700,rika_nex/luft/sekundaer,0,100
+1795285301906,61.466,schritt14:700,rika_nex/luft/ist_winkel,0,122.6
+1795285301910,61.470,schritt14:700,rika_nex/luft/ist,0,673
+1795285301910,61.470,schritt14:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 34 %"
+1795285301910,61.471,schritt14:700,rika_nex/luft/primaer,0,34
+1795285301910,61.471,schritt14:700,rika_nex/luft/sekundaer,0,100
+1795285302120,61.681,schritt14:700,rika_nex/luft/abweichung,0,-27
+1795285302125,61.685,schritt14:700,rika_nex/luft/status,0,Abweichung -27 ‰
+1795285302125,61.685,schritt14:700,rika_nex/event,0,luft:abweichung:-27
+1795285302905,62.466,schritt14:700,rika_nex/luft/ist_winkel,0,122.6
+1795285302910,62.470,schritt14:700,rika_nex/luft/ist,0,673
+1795285302910,62.471,schritt14:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 34 %"
+1795285302910,62.471,schritt14:700,rika_nex/luft/primaer,0,34
+1795285302911,62.471,schritt14:700,rika_nex/luft/sekundaer,0,100
+1795285303906,63.466,schritt14:700,rika_nex/luft/ist_winkel,0,122.6
+1795285303910,63.471,schritt14:700,rika_nex/luft/ist,0,673
+1795285303910,63.471,schritt14:700,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 34 %"
+1795285303910,63.471,schritt14:700,rika_nex/luft/primaer,0,34
+1795285303911,63.471,schritt14:700,rika_nex/luft/sekundaer,0,100
+1795285304541,64.102,schritt15:600,rika_nex/cmd/luft_soll,0,600
+1795285304614,64.174,schritt15:600,rika_nex/luft/soll,0,600
+1795285304619,64.179,schritt15:600,rika_nex/luft/preset,0,Manuell
+1795285304619,64.180,schritt15:600,rika_nex/luft/stellung,0,600 ‰ / 1460 µs
+1795285304621,64.182,schritt15:600,rika_nex/event,0,luft:600/1460us
+1795285304621,64.182,schritt15:600,rika_nex/luft/status,0,fährt
+1795285304711,64.272,schritt15:600,rika_nex/luft/ist_winkel,0,117.4
+1795285304721,64.281,schritt15:600,rika_nex/luft/ist,0,644
+1795285304721,64.282,schritt15:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 28 %"
+1795285304721,64.282,schritt15:600,rika_nex/luft/primaer,0,28
+1795285304721,64.282,schritt15:600,rika_nex/luft/sekundaer,0,100
+1795285304814,64.374,schritt15:600,rika_nex/luft/ist_winkel,0,106.6
+1795285304817,64.378,schritt15:600,rika_nex/luft/ist,0,585
+1795285304818,64.378,schritt15:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 17 %"
+1795285304818,64.378,schritt15:600,rika_nex/luft/primaer,0,17
+1795285304818,64.378,schritt15:600,rika_nex/luft/sekundaer,0,100
+1795285304916,64.476,schritt15:600,rika_nex/luft/ist_winkel,0,105.7
+1795285304927,64.487,schritt15:600,rika_nex/luft/ist,0,580
+1795285304927,64.488,schritt15:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 16 %"
+1795285304927,64.488,schritt15:600,rika_nex/luft/primaer,0,16
+1795285304927,64.488,schritt15:600,rika_nex/luft/sekundaer,0,100
+1795285305058,64.619,schritt15:600,rika_nex/temp/brennraum,0,21.2
+1795285305073,64.634,schritt15:600,rika_nex/temp/fehler,0,ok
+1795285305077,64.638,schritt15:600,rika_nex/tuer,0,offen
+1795285305077,64.638,schritt15:600,rika_nex/power,0,netz
+1795285305077,64.638,schritt15:600,rika_nex/akku/spannung,0,0.04
+1795285305905,65.466,schritt15:600,rika_nex/luft/ist_winkel,0,105.6
+1795285305909,65.469,schritt15:600,rika_nex/luft/ist,0,580
+1795285305909,65.470,schritt15:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 16 %"
+1795285305909,65.470,schritt15:600,rika_nex/luft/primaer,0,16
+1795285305909,65.470,schritt15:600,rika_nex/luft/sekundaer,0,100
+1795285306115,65.675,schritt15:600,rika_nex/luft/abweichung,0,-20
+1795285306120,65.681,schritt15:600,rika_nex/luft/status,0,ok
+1795285306905,66.466,schritt15:600,rika_nex/luft/ist_winkel,0,105.6
+1795285306910,66.470,schritt15:600,rika_nex/luft/ist,0,580
+1795285306910,66.470,schritt15:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 16 %"
+1795285306910,66.470,schritt15:600,rika_nex/luft/primaer,0,16
+1795285306910,66.471,schritt15:600,rika_nex/luft/sekundaer,0,100
+1795285307905,67.466,schritt15:600,rika_nex/luft/ist_winkel,0,105.6
+1795285307909,67.470,schritt15:600,rika_nex/luft/ist,0,580
+1795285307910,67.470,schritt15:600,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 16 %"
+1795285307910,67.470,schritt15:600,rika_nex/luft/primaer,0,16
+1795285307910,67.470,schritt15:600,rika_nex/luft/sekundaer,0,100
+1795285308543,68.104,schritt16:500,rika_nex/cmd/luft_soll,0,500
+1795285308608,68.169,schritt16:500,rika_nex/luft/soll,0,500
+1795285308612,68.172,schritt16:500,rika_nex/luft/preset,0,Abbrand stark
+1795285308612,68.172,schritt16:500,rika_nex/luft/stellung,0,500 ‰ / 1610 µs
+1795285308612,68.172,schritt16:500,rika_nex/event,0,luft:500/1610us
+1795285308612,68.172,schritt16:500,rika_nex/luft/status,0,fährt
+1795285308707,68.268,schritt16:500,rika_nex/luft/ist_winkel,0,99.4
+1795285308711,68.272,schritt16:500,rika_nex/luft/ist,0,545
+1795285308711,68.272,schritt16:500,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 9 %"
+1795285308711,68.272,schritt16:500,rika_nex/luft/primaer,0,9
+1795285308713,68.273,schritt16:500,rika_nex/luft/sekundaer,0,100
+1795285308807,68.367,schritt16:500,rika_nex/luft/ist_winkel,0,89.7
+1795285308811,68.371,schritt16:500,rika_nex/luft/ist,0,492
+1795285308811,68.372,schritt16:500,rika_nex/luft/zustand,0,"Abbrand stark · Sekundärluft 98 %, Primärluft zu"
+1795285308811,68.372,schritt16:500,rika_nex/luft/primaer,0,0
+1795285308811,68.372,schritt16:500,rika_nex/luft/sekundaer,0,98
+1795285308909,68.470,schritt16:500,rika_nex/luft/ist_winkel,0,89.0
+1795285308920,68.480,schritt16:500,rika_nex/luft/ist,0,488
+1795285308920,68.480,schritt16:500,rika_nex/luft/zustand,0,"Abbrand stark · Sekundärluft 97 %, Primärluft zu"
+1795285308920,68.481,schritt16:500,rika_nex/luft/primaer,0,0
+1795285308920,68.481,schritt16:500,rika_nex/luft/sekundaer,0,97
+1795285309905,69.466,schritt16:500,rika_nex/luft/ist_winkel,0,89.0
+1795285309909,69.470,schritt16:500,rika_nex/luft/ist,0,488
+1795285309910,69.470,schritt16:500,rika_nex/luft/zustand,0,"Abbrand stark · Sekundärluft 97 %, Primärluft zu"
+1795285309910,69.470,schritt16:500,rika_nex/luft/primaer,0,0
+1795285309910,69.470,schritt16:500,rika_nex/luft/sekundaer,0,97
+1795285310058,69.619,schritt16:500,rika_nex/temp/brennraum,0,21.2
+1795285310063,69.623,schritt16:500,rika_nex/temp/fehler,0,ok
+1795285310067,69.627,schritt16:500,rika_nex/tuer,0,offen
+1795285310067,69.628,schritt16:500,rika_nex/power,0,netz
+1795285310067,69.628,schritt16:500,rika_nex/akku/spannung,0,0.04
+1795285310107,69.668,schritt16:500,rika_nex/luft/abweichung,0,-12
+1795285310112,69.673,schritt16:500,rika_nex/luft/status,0,ok
+1795285310906,70.466,schritt16:500,rika_nex/luft/ist_winkel,0,89.0
+1795285310910,70.471,schritt16:500,rika_nex/luft/ist,0,488
+1795285310914,70.475,schritt16:500,rika_nex/luft/zustand,0,"Abbrand stark · Sekundärluft 97 %, Primärluft zu"
+1795285310915,70.475,schritt16:500,rika_nex/luft/primaer,0,0
+1795285310915,70.475,schritt16:500,rika_nex/luft/sekundaer,0,97
+1795285311905,71.466,schritt16:500,rika_nex/luft/ist_winkel,0,89.0
+1795285311910,71.470,schritt16:500,rika_nex/luft/ist,0,488
+1795285311910,71.470,schritt16:500,rika_nex/luft/zustand,0,"Abbrand stark · Sekundärluft 97 %, Primärluft zu"
+1795285311910,71.470,schritt16:500,rika_nex/luft/primaer,0,0
+1795285311910,71.471,schritt16:500,rika_nex/luft/sekundaer,0,97
+1795285312548,72.109,schritt17:400,rika_nex/cmd/luft_soll,0,400
+1795285312602,72.163,schritt17:400,rika_nex/luft/soll,0,400
+1795285312607,72.168,schritt17:400,rika_nex/luft/preset,0,Manuell
+1795285312608,72.169,schritt17:400,rika_nex/luft/stellung,0,400 ‰ / 1760 µs
+1795285312608,72.169,schritt17:400,rika_nex/event,0,luft:400/1760us
+1795285312609,72.169,schritt17:400,rika_nex/luft/status,0,fährt
+1795285312707,72.268,schritt17:400,rika_nex/luft/ist_winkel,0,81.6
+1795285312717,72.278,schritt17:400,rika_nex/luft/ist,0,447
+1795285312717,72.278,schritt17:400,rika_nex/luft/zustand,0,"Sekundärluft 89 %, Primärluft zu"
+1795285312718,72.278,schritt17:400,rika_nex/luft/primaer,0,0
+1795285312718,72.278,schritt17:400,rika_nex/luft/sekundaer,0,89
+1795285312805,72.366,schritt17:400,rika_nex/luft/ist_winkel,0,71.5
+1795285312816,72.376,schritt17:400,rika_nex/luft/ist,0,392
+1795285312816,72.376,schritt17:400,rika_nex/luft/zustand,0,"Sekundärluft 78 %, Primärluft zu"
+1795285312816,72.376,schritt17:400,rika_nex/luft/primaer,0,0
+1795285312816,72.376,schritt17:400,rika_nex/luft/sekundaer,0,78
+1795285313805,73.366,schritt17:400,rika_nex/luft/ist_winkel,0,71.0
+1795285313810,73.370,schritt17:400,rika_nex/luft/ist,0,390
+1795285313810,73.370,schritt17:400,rika_nex/luft/zustand,0,"Sekundärluft 78 %, Primärluft zu"
+1795285313810,73.371,schritt17:400,rika_nex/luft/primaer,0,0
+1795285313810,73.371,schritt17:400,rika_nex/luft/sekundaer,0,78
+1795285314103,73.664,schritt17:400,rika_nex/luft/abweichung,0,-10
+1795285314107,73.667,schritt17:400,rika_nex/luft/status,0,ok
+1795285314805,74.366,schritt17:400,rika_nex/luft/ist_winkel,0,71.0
+1795285314811,74.371,schritt17:400,rika_nex/luft/ist,0,390
+1795285314811,74.371,schritt17:400,rika_nex/luft/zustand,0,"Sekundärluft 78 %, Primärluft zu"
+1795285314811,74.372,schritt17:400,rika_nex/luft/primaer,0,0
+1795285314811,74.372,schritt17:400,rika_nex/luft/sekundaer,0,78
+1795285315058,74.618,schritt17:400,rika_nex/temp/brennraum,0,21.1
+1795285315062,74.622,schritt17:400,rika_nex/temp/fehler,0,ok
+1795285315066,74.627,schritt17:400,rika_nex/tuer,0,offen
+1795285315066,74.627,schritt17:400,rika_nex/power,0,netz
+1795285315066,74.627,schritt17:400,rika_nex/akku/spannung,0,0.04
+1795285315805,75.366,schritt17:400,rika_nex/luft/ist_winkel,0,70.9
+1795285315810,75.370,schritt17:400,rika_nex/luft/ist,0,389
+1795285315810,75.370,schritt17:400,rika_nex/luft/zustand,0,"Sekundärluft 77 %, Primärluft zu"
+1795285315810,75.371,schritt17:400,rika_nex/luft/primaer,0,0
+1795285315810,75.371,schritt17:400,rika_nex/luft/sekundaer,0,77
+1795285316551,76.112,schritt18:335,rika_nex/cmd/luft_soll,0,335
+1795285316595,76.155,schritt18:335,rika_nex/luft/soll,0,335
+1795285316605,76.165,schritt18:335,rika_nex/luft/preset,0,Abbrand mittel
+1795285316605,76.166,schritt18:335,rika_nex/luft/stellung,0,335 ‰ / 1857 µs
+1795285316605,76.166,schritt18:335,rika_nex/event,0,luft:335/1857us
+1795285316606,76.166,schritt18:335,rika_nex/luft/status,0,fährt
+1795285316705,76.266,schritt18:335,rika_nex/luft/ist_winkel,0,63.5
+1795285316711,76.271,schritt18:335,rika_nex/luft/ist,0,349
+1795285316715,76.276,schritt18:335,rika_nex/luft/zustand,0,"Abbrand mittel · Sekundärluft 69 %, Primärluft zu"
+1795285316715,76.276,schritt18:335,rika_nex/luft/primaer,0,0
+1795285316715,76.276,schritt18:335,rika_nex/luft/sekundaer,0,69
+1795285316805,76.366,schritt18:335,rika_nex/luft/ist_winkel,0,58.6
+1795285316813,76.373,schritt18:335,rika_nex/luft/ist,0,322
+1795285316813,76.373,schritt18:335,rika_nex/luft/zustand,0,"Abbrand mittel · Sekundärluft 64 %, Primärluft zu"
+1795285316813,76.373,schritt18:335,rika_nex/luft/primaer,0,0
+1795285316813,76.374,schritt18:335,rika_nex/luft/sekundaer,0,64
+1795285317806,77.366,schritt18:335,rika_nex/luft/ist_winkel,0,58.4
+1795285317819,77.379,schritt18:335,rika_nex/luft/ist,0,321
+1795285317822,77.383,schritt18:335,rika_nex/luft/zustand,0,"Abbrand mittel · Sekundärluft 64 %, Primärluft zu"
+1795285317823,77.383,schritt18:335,rika_nex/luft/primaer,0,0
+1795285317823,77.383,schritt18:335,rika_nex/luft/sekundaer,0,64
+1795285318093,77.654,schritt18:335,rika_nex/luft/abweichung,0,-14
+1795285318097,77.658,schritt18:335,rika_nex/luft/status,0,ok
+1795285318805,78.365,schritt18:335,rika_nex/luft/ist_winkel,0,58.4
+1795285318809,78.369,schritt18:335,rika_nex/luft/ist,0,321
+1795285318809,78.369,schritt18:335,rika_nex/luft/zustand,0,"Abbrand mittel · Sekundärluft 64 %, Primärluft zu"
+1795285318809,78.370,schritt18:335,rika_nex/luft/primaer,0,0
+1795285318809,78.370,schritt18:335,rika_nex/luft/sekundaer,0,64
+1795285319805,79.365,schritt18:335,rika_nex/luft/ist_winkel,0,58.4
+1795285319810,79.370,schritt18:335,rika_nex/luft/ist,0,321
+1795285319810,79.370,schritt18:335,rika_nex/luft/zustand,0,"Abbrand mittel · Sekundärluft 64 %, Primärluft zu"
+1795285319810,79.370,schritt18:335,rika_nex/luft/primaer,0,0
+1795285319810,79.371,schritt18:335,rika_nex/luft/sekundaer,0,64
+1795285320058,79.618,schritt18:335,rika_nex/temp/brennraum,0,21.3
+1795285320071,79.632,schritt18:335,rika_nex/temp/fehler,0,ok
+1795285320075,79.636,schritt18:335,rika_nex/tuer,0,offen
+1795285320075,79.636,schritt18:335,rika_nex/power,0,netz
+1795285320075,79.636,schritt18:335,rika_nex/akku/spannung,0,0.04
+1795285320552,80.113,schritt19:250,rika_nex/cmd/luft_soll,0,250
+1795285320596,80.156,schritt19:250,rika_nex/luft/soll,0,250
+1795285320602,80.163,schritt19:250,rika_nex/luft/preset,0,Manuell
+1795285320603,80.163,schritt19:250,rika_nex/luft/stellung,0,250 ‰ / 1985 µs
+1795285320603,80.163,schritt19:250,rika_nex/event,0,luft:250/1985us
+1795285320603,80.163,schritt19:250,rika_nex/luft/status,0,fährt
+1795285320704,80.265,schritt19:250,rika_nex/luft/ist_winkel,0,50.4
+1795285320714,80.275,schritt19:250,rika_nex/luft/ist,0,277
+1795285320715,80.275,schritt19:250,rika_nex/luft/zustand,0,"Sekundärluft 55 %, Primärluft zu"
+1795285320715,80.275,schritt19:250,rika_nex/luft/primaer,0,0
+1795285320715,80.275,schritt19:250,rika_nex/luft/sekundaer,0,55
+1795285320805,80.365,schritt19:250,rika_nex/luft/ist_winkel,0,42.8
+1795285320820,80.380,schritt19:250,rika_nex/luft/ist,0,235
+1795285320820,80.381,schritt19:250,rika_nex/luft/zustand,0,"Sekundärluft 47 %, Primärluft zu"
+1795285320820,80.381,schritt19:250,rika_nex/luft/primaer,0,0
+1795285320820,80.381,schritt19:250,rika_nex/luft/sekundaer,0,47
+1795285321811,81.371,schritt19:250,rika_nex/luft/ist_winkel,0,42.5
+1795285321830,81.391,schritt19:250,rika_nex/luft/ist,0,233
+1795285321831,81.391,schritt19:250,rika_nex/luft/zustand,0,"Sekundärluft 46 %, Primärluft zu"
+1795285321831,81.391,schritt19:250,rika_nex/luft/primaer,0,0
+1795285321831,81.391,schritt19:250,rika_nex/luft/sekundaer,0,46
+1795285322095,81.656,schritt19:250,rika_nex/luft/abweichung,0,-17
+1795285322105,81.665,schritt19:250,rika_nex/luft/status,0,ok
+1795285322821,82.381,schritt19:250,rika_nex/luft/ist_winkel,0,42.5
+1795285322825,82.386,schritt19:250,rika_nex/luft/ist,0,233
+1795285322826,82.386,schritt19:250,rika_nex/luft/zustand,0,"Sekundärluft 46 %, Primärluft zu"
+1795285322826,82.386,schritt19:250,rika_nex/luft/primaer,0,0
+1795285322826,82.386,schritt19:250,rika_nex/luft/sekundaer,0,46
+1795285323805,83.365,schritt19:250,rika_nex/luft/ist_winkel,0,42.5
+1795285323809,83.369,schritt19:250,rika_nex/luft/ist,0,233
+1795285323809,83.369,schritt19:250,rika_nex/luft/zustand,0,"Sekundärluft 46 %, Primärluft zu"
+1795285323809,83.370,schritt19:250,rika_nex/luft/primaer,0,0
+1795285323809,83.370,schritt19:250,rika_nex/luft/sekundaer,0,46
+1795285324558,84.118,schritt20:160,rika_nex/cmd/luft_soll,0,160
+1795285324581,84.141,schritt20:160,rika_nex/luft/soll,0,160
+1795285324596,84.157,schritt20:160,rika_nex/luft/preset,0,Manuell
+1795285324601,84.161,schritt20:160,rika_nex/luft/stellung,0,160 ‰ / 2120 µs
+1795285324601,84.162,schritt20:160,rika_nex/event,0,luft:160/2120us
+1795285324601,84.162,schritt20:160,rika_nex/luft/status,0,fährt
+1795285324704,84.265,schritt20:160,rika_nex/luft/ist_winkel,0,31.4
+1795285324708,84.268,schritt20:160,rika_nex/luft/ist,0,172
+1795285324708,84.268,schritt20:160,rika_nex/luft/zustand,0,"Abbrand leicht · Sekundärluft 34 %, Primärluft zu"
+1795285324708,84.269,schritt20:160,rika_nex/luft/primaer,0,0
+1795285324708,84.269,schritt20:160,rika_nex/luft/sekundaer,0,34
+1795285324805,84.365,schritt20:160,rika_nex/luft/ist_winkel,0,24.3
+1795285324813,84.373,schritt20:160,rika_nex/luft/ist,0,133
+1795285324813,84.373,schritt20:160,rika_nex/luft/zustand,0,"Sekundärluft 26 %, Primärluft zu"
+1795285324813,84.374,schritt20:160,rika_nex/luft/primaer,0,0
+1795285324813,84.374,schritt20:160,rika_nex/luft/sekundaer,0,26
+1795285325057,84.617,schritt20:160,rika_nex/temp/brennraum,0,21.3
+1795285325064,84.624,schritt20:160,rika_nex/temp/fehler,0,ok
+1795285325069,84.630,schritt20:160,rika_nex/tuer,0,offen
+1795285325069,84.630,schritt20:160,rika_nex/power,0,netz
+1795285325069,84.630,schritt20:160,rika_nex/akku/spannung,0,0.04
+1795285325805,85.366,schritt20:160,rika_nex/luft/ist_winkel,0,23.8
+1795285325810,85.370,schritt20:160,rika_nex/luft/ist,0,131
+1795285325810,85.371,schritt20:160,rika_nex/luft/zustand,0,"Sekundärluft 26 %, Primärluft zu"
+1795285325810,85.371,schritt20:160,rika_nex/luft/primaer,0,0
+1795285325810,85.371,schritt20:160,rika_nex/luft/sekundaer,0,26
+1795285326080,85.641,schritt20:160,rika_nex/luft/abweichung,0,-29
+1795285326088,85.649,schritt20:160,rika_nex/luft/status,0,Abweichung -29 ‰
+1795285326088,85.649,schritt20:160,rika_nex/event,0,luft:abweichung:-29
+1795285326805,86.365,schritt20:160,rika_nex/luft/ist_winkel,0,23.8
+1795285326817,86.377,schritt20:160,rika_nex/luft/ist,0,131
+1795285326817,86.378,schritt20:160,rika_nex/luft/zustand,0,"Sekundärluft 26 %, Primärluft zu"
+1795285326817,86.378,schritt20:160,rika_nex/luft/primaer,0,0
+1795285326820,86.380,schritt20:160,rika_nex/luft/sekundaer,0,26
+1795285327838,87.399,schritt20:160,rika_nex/luft/ist_winkel,0,23.8
+1795285327843,87.403,schritt20:160,rika_nex/luft/ist,0,131
+1795285327843,87.404,schritt20:160,rika_nex/luft/zustand,0,"Sekundärluft 26 %, Primärluft zu"
+1795285327843,87.404,schritt20:160,rika_nex/luft/primaer,0,0
+1795285327844,87.404,schritt20:160,rika_nex/luft/sekundaer,0,26
+1795285328562,88.123,schritt21:Glut halten,rika_nex/cmd/luft_preset,0,Glut halten
+1795285328677,88.238,schritt21:Glut halten,rika_nex/luft/soll,0,0
+1795285328688,88.249,schritt21:Glut halten,rika_nex/luft/preset,0,Glut halten
+1795285328688,88.249,schritt21:Glut halten,rika_nex/luft/stellung,0,0 ‰ / 2360 µs
+1795285328689,88.249,schritt21:Glut halten,rika_nex/event,0,luft:0/2360us
+1795285328689,88.249,schritt21:Glut halten,rika_nex/luft/status,0,fährt
+1795285328804,88.364,schritt21:Glut halten,rika_nex/luft/ist_winkel,0,11.0
+1795285328809,88.370,schritt21:Glut halten,rika_nex/luft/ist,0,60
+1795285328810,88.370,schritt21:Glut halten,rika_nex/luft/zustand,0,"Sekundärluft 12 %, Primärluft zu"
+1795285328810,88.370,schritt21:Glut halten,rika_nex/luft/primaer,0,0
+1795285328810,88.370,schritt21:Glut halten,rika_nex/luft/sekundaer,0,12
+1795285328905,88.465,schritt21:Glut halten,rika_nex/luft/ist_winkel,0,1.8
+1795285328915,88.475,schritt21:Glut halten,rika_nex/luft/ist,0,10
+1795285328915,88.475,schritt21:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285328915,88.475,schritt21:Glut halten,rika_nex/luft/primaer,0,0
+1795285328915,88.475,schritt21:Glut halten,rika_nex/luft/sekundaer,0,2
+1795285329004,88.565,schritt21:Glut halten,rika_nex/luft/ist_winkel,0,0.0
+1795285329013,88.573,schritt21:Glut halten,rika_nex/luft/ist,0,0
+1795285329021,88.581,schritt21:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285329022,88.582,schritt21:Glut halten,rika_nex/luft/primaer,0,0
+1795285329022,88.583,schritt21:Glut halten,rika_nex/luft/sekundaer,0,0
+1795285330004,89.565,schritt21:Glut halten,rika_nex/luft/ist_winkel,0,0.0
+1795285330008,89.569,schritt21:Glut halten,rika_nex/luft/ist,0,0
+1795285330008,89.569,schritt21:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285330008,89.569,schritt21:Glut halten,rika_nex/luft/primaer,0,0
+1795285330008,89.569,schritt21:Glut halten,rika_nex/luft/sekundaer,0,0
+1795285330056,89.616,schritt21:Glut halten,rika_nex/temp/brennraum,0,21.3
+1795285330061,89.621,schritt21:Glut halten,rika_nex/temp/fehler,0,ok
+1795285330065,89.625,schritt21:Glut halten,rika_nex/tuer,0,offen
+1795285330065,89.625,schritt21:Glut halten,rika_nex/power,0,netz
+1795285330065,89.625,schritt21:Glut halten,rika_nex/akku/spannung,0,0.04
+1795285330176,89.737,schritt21:Glut halten,rika_nex/luft/abweichung,0,0
+1795285330180,89.741,schritt21:Glut halten,rika_nex/luft/status,0,ok
+1795285331015,90.575,schritt21:Glut halten,rika_nex/luft/ist_winkel,0,0.0
+1795285331019,90.580,schritt21:Glut halten,rika_nex/luft/ist,0,0
+1795285331020,90.580,schritt21:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285331020,90.581,schritt21:Glut halten,rika_nex/luft/primaer,0,0
+1795285331021,90.581,schritt21:Glut halten,rika_nex/luft/sekundaer,0,0
+1795285332002,91.562,schritt21:Glut halten,rika_nex/luft/ist_winkel,0,0.0
+1795285332008,91.568,schritt21:Glut halten,rika_nex/luft/ist,0,0
+1795285332008,91.569,schritt21:Glut halten,rika_nex/luft/zustand,0,Glut halten · ganz zu
+1795285332008,91.569,schritt21:Glut halten,rika_nex/luft/primaer,0,0
+1795285332009,91.569,schritt21:Glut halten,rika_nex/luft/sekundaer,0,0
+1795285332570,92.131,haltetest_fahrt,rika_nex/cmd/luft_soll,0,500
+1795285332671,92.232,haltetest_fahrt,rika_nex/luft/soll,0,500
+1795285332687,92.247,haltetest_fahrt,rika_nex/luft/preset,0,Abbrand stark
+1795285332691,92.251,haltetest_fahrt,rika_nex/luft/stellung,0,500 ‰ / 1610 µs
+1795285332691,92.251,haltetest_fahrt,rika_nex/event,0,luft:500/1610us
+1795285332691,92.251,haltetest_fahrt,rika_nex/luft/status,0,fährt
+1795285332805,92.366,haltetest_fahrt,rika_nex/luft/ist_winkel,0,12.7
+1795285332822,92.383,haltetest_fahrt,rika_nex/luft/ist,0,69
+1795285332823,92.383,haltetest_fahrt,rika_nex/luft/zustand,0,"Sekundärluft 13 %, Primärluft zu"
+1795285332823,92.383,haltetest_fahrt,rika_nex/luft/primaer,0,0
+1795285332823,92.383,haltetest_fahrt,rika_nex/luft/sekundaer,0,13
+1795285332904,92.465,haltetest_fahrt,rika_nex/luft/ist_winkel,0,37.4
+1795285332917,92.477,haltetest_fahrt,rika_nex/luft/ist,0,205
+1795285332917,92.478,haltetest_fahrt,rika_nex/luft/zustand,0,"Sekundärluft 41 %, Primärluft zu"
+1795285332917,92.478,haltetest_fahrt,rika_nex/luft/primaer,0,0
+1795285332917,92.478,haltetest_fahrt,rika_nex/luft/sekundaer,0,41
+1795285333005,92.565,haltetest_fahrt,rika_nex/luft/ist_winkel,0,62.9
+1795285333012,92.572,haltetest_fahrt,rika_nex/luft/ist,0,345
+1795285333012,92.572,haltetest_fahrt,rika_nex/luft/zustand,0,"Abbrand mittel · Sekundärluft 69 %, Primärluft zu"
+1795285333012,92.572,haltetest_fahrt,rika_nex/luft/primaer,0,0
+1795285333012,92.573,haltetest_fahrt,rika_nex/luft/sekundaer,0,69
+1795285333109,92.669,haltetest_fahrt,rika_nex/luft/ist_winkel,0,87.4
+1795285333170,92.731,haltetest_fahrt,rika_nex/luft/ist,0,479
+1795285333171,92.731,haltetest_fahrt,rika_nex/luft/zustand,0,"Sekundärluft 95 %, Primärluft zu"
+1795285333171,92.731,haltetest_fahrt,rika_nex/luft/primaer,0,0
+1795285333171,92.731,haltetest_fahrt,rika_nex/luft/sekundaer,0,95
+1795285333205,92.765,haltetest_fahrt,rika_nex/luft/ist_winkel,0,95.0
+1795285333213,92.773,haltetest_fahrt,rika_nex/luft/ist,0,521
+1795285333213,92.773,haltetest_fahrt,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285333213,92.773,haltetest_fahrt,rika_nex/luft/primaer,0,4
+1795285333213,92.774,haltetest_fahrt,rika_nex/luft/sekundaer,0,100
+1795285334169,93.729,haltetest_fahrt,rika_nex/luft/abweichung,0,22
+1795285334174,93.734,haltetest_fahrt,rika_nex/luft/status,0,Abweichung +22 ‰
+1795285334174,93.735,haltetest_fahrt,rika_nex/event,0,luft:abweichung:22
+1795285334206,93.767,haltetest_fahrt,rika_nex/luft/ist_winkel,0,95.3
+1795285334216,93.776,haltetest_fahrt,rika_nex/luft/ist,0,523
+1795285334222,93.783,haltetest_fahrt,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285334222,93.783,haltetest_fahrt,rika_nex/luft/primaer,0,4
+1795285334223,93.783,haltetest_fahrt,rika_nex/luft/sekundaer,0,100
+1795285335057,94.617,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285335061,94.621,haltetest,rika_nex/temp/fehler,0,ok
+1795285335061,94.621,haltetest,rika_nex/tuer,0,offen
+1795285335061,94.621,haltetest,rika_nex/power,0,netz
+1795285335061,94.621,haltetest,rika_nex/akku/spannung,0,0.04
+1795285335204,94.765,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285335213,94.774,haltetest,rika_nex/luft/ist,0,522
+1795285335214,94.774,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285335214,94.774,haltetest,rika_nex/luft/primaer,0,4
+1795285335214,94.775,haltetest,rika_nex/luft/sekundaer,0,100
+1795285336208,95.768,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285336224,95.785,haltetest,rika_nex/luft/ist,0,522
+1795285336224,95.785,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285336224,95.785,haltetest,rika_nex/luft/primaer,0,4
+1795285336224,95.785,haltetest,rika_nex/luft/sekundaer,0,100
+1795285337204,96.765,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285337211,96.771,haltetest,rika_nex/luft/ist,0,523
+1795285337212,96.772,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285337212,96.772,haltetest,rika_nex/luft/primaer,0,4
+1795285337212,96.773,haltetest,rika_nex/luft/sekundaer,0,100
+1795285338204,97.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285338209,97.770,haltetest,rika_nex/luft/ist,0,522
+1795285338209,97.770,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285338209,97.770,haltetest,rika_nex/luft/primaer,0,4
+1795285338209,97.770,haltetest,rika_nex/luft/sekundaer,0,100
+1795285339204,98.765,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285339220,98.780,haltetest,rika_nex/luft/ist,0,522
+1795285339225,98.785,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285339225,98.785,haltetest,rika_nex/luft/primaer,0,4
+1795285339225,98.786,haltetest,rika_nex/luft/sekundaer,0,100
+1795285340058,99.619,haltetest,rika_nex/temp/brennraum,0,21.3
+1795285340072,99.633,haltetest,rika_nex/temp/fehler,0,ok
+1795285340073,99.633,haltetest,rika_nex/tuer,0,offen
+1795285340073,99.633,haltetest,rika_nex/power,0,netz
+1795285340073,99.633,haltetest,rika_nex/akku/spannung,0,0.04
+1795285340204,99.765,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285340210,99.770,haltetest,rika_nex/luft/ist,0,522
+1795285340214,99.775,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285340214,99.775,haltetest,rika_nex/luft/primaer,0,4
+1795285340214,99.775,haltetest,rika_nex/luft/sekundaer,0,100
+1795285341204,100.765,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285341210,100.771,haltetest,rika_nex/luft/ist,0,522
+1795285341215,100.775,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285341215,100.775,haltetest,rika_nex/luft/primaer,0,4
+1795285341215,100.775,haltetest,rika_nex/luft/sekundaer,0,100
+1795285342204,101.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285342211,101.772,haltetest,rika_nex/luft/ist,0,522
+1795285342216,101.777,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285342217,101.777,haltetest,rika_nex/luft/primaer,0,4
+1795285342217,101.777,haltetest,rika_nex/luft/sekundaer,0,100
+1795285343211,102.772,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285343215,102.775,haltetest,rika_nex/luft/ist,0,522
+1795285343215,102.776,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285343215,102.776,haltetest,rika_nex/luft/primaer,0,4
+1795285343216,102.776,haltetest,rika_nex/luft/sekundaer,0,100
+1795285344204,103.765,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285344218,103.778,haltetest,rika_nex/luft/ist,0,523
+1795285344221,103.781,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285344221,103.781,haltetest,rika_nex/luft/primaer,0,4
+1795285344221,103.781,haltetest,rika_nex/luft/sekundaer,0,100
+1795285345057,104.617,haltetest,rika_nex/temp/brennraum,0,21.3
+1795285345082,104.643,haltetest,rika_nex/temp/fehler,0,ok
+1795285345082,104.643,haltetest,rika_nex/tuer,0,offen
+1795285345082,104.643,haltetest,rika_nex/power,0,netz
+1795285345082,104.643,haltetest,rika_nex/akku/spannung,0,0.04
+1795285345204,104.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285345214,104.775,haltetest,rika_nex/luft/ist,0,522
+1795285345229,104.790,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285345229,104.790,haltetest,rika_nex/luft/primaer,0,4
+1795285345229,104.790,haltetest,rika_nex/luft/sekundaer,0,100
+1795285346211,105.772,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285346214,105.775,haltetest,rika_nex/luft/ist,0,522
+1795285346220,105.781,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285346220,105.781,haltetest,rika_nex/luft/primaer,0,4
+1795285346221,105.781,haltetest,rika_nex/luft/sekundaer,0,100
+1795285347205,106.765,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285347217,106.778,haltetest,rika_nex/luft/ist,0,523
+1795285347223,106.784,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285347223,106.784,haltetest,rika_nex/luft/primaer,0,4
+1795285347224,106.784,haltetest,rika_nex/luft/sekundaer,0,100
+1795285348214,107.775,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285348256,107.817,haltetest,rika_nex/luft/ist,0,522
+1795285348258,107.819,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285348258,107.819,haltetest,rika_nex/luft/primaer,0,4
+1795285348258,107.819,haltetest,rika_nex/luft/sekundaer,0,100
+1795285349203,108.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285349224,108.784,haltetest,rika_nex/luft/ist,0,523
+1795285349225,108.785,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285349225,108.786,haltetest,rika_nex/luft/primaer,0,4
+1795285349226,108.786,haltetest,rika_nex/luft/sekundaer,0,100
+1795285350056,109.616,haltetest,rika_nex/temp/brennraum,0,21.3
+1795285350060,109.620,haltetest,rika_nex/temp/fehler,0,ok
+1795285350060,109.620,haltetest,rika_nex/tuer,0,offen
+1795285350060,109.620,haltetest,rika_nex/power,0,netz
+1795285350060,109.620,haltetest,rika_nex/akku/spannung,0,0.04
+1795285350204,109.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285350220,109.781,haltetest,rika_nex/luft/ist,0,522
+1795285350223,109.784,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285350223,109.784,haltetest,rika_nex/luft/primaer,0,4
+1795285350224,109.784,haltetest,rika_nex/luft/sekundaer,0,100
+1795285351205,110.765,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285351220,110.780,haltetest,rika_nex/luft/ist,0,523
+1795285351223,110.784,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285351223,110.784,haltetest,rika_nex/luft/primaer,0,4
+1795285351223,110.784,haltetest,rika_nex/luft/sekundaer,0,100
+1795285352206,111.766,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285352210,111.770,haltetest,rika_nex/luft/ist,0,523
+1795285352210,111.770,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285352210,111.770,haltetest,rika_nex/luft/primaer,0,4
+1795285352210,111.771,haltetest,rika_nex/luft/sekundaer,0,100
+1795285353203,112.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285353212,112.772,haltetest,rika_nex/luft/ist,0,522
+1795285353212,112.772,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285353212,112.772,haltetest,rika_nex/luft/primaer,0,4
+1795285353212,112.773,haltetest,rika_nex/luft/sekundaer,0,100
+1795285354204,113.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285354210,113.771,haltetest,rika_nex/luft/ist,0,523
+1795285354212,113.772,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285354213,113.773,haltetest,rika_nex/luft/primaer,0,4
+1795285354213,113.774,haltetest,rika_nex/luft/sekundaer,0,100
+1795285355056,114.617,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285355063,114.624,haltetest,rika_nex/temp/fehler,0,ok
+1795285355068,114.628,haltetest,rika_nex/tuer,0,offen
+1795285355068,114.628,haltetest,rika_nex/power,0,netz
+1795285355068,114.629,haltetest,rika_nex/akku/spannung,0,0.04
+1795285355203,114.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285355207,114.768,haltetest,rika_nex/luft/ist,0,523
+1795285355207,114.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285355207,114.768,haltetest,rika_nex/luft/primaer,0,4
+1795285355208,114.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285356215,115.776,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285356229,115.790,haltetest,rika_nex/luft/ist,0,522
+1795285356231,115.792,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285356231,115.792,haltetest,rika_nex/luft/primaer,0,4
+1795285356231,115.792,haltetest,rika_nex/luft/sekundaer,0,100
+1795285357203,116.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285357207,116.768,haltetest,rika_nex/luft/ist,0,522
+1795285357207,116.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285357207,116.768,haltetest,rika_nex/luft/primaer,0,4
+1795285357208,116.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285358204,117.765,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285358208,117.769,haltetest,rika_nex/luft/ist,0,522
+1795285358208,117.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285358209,117.769,haltetest,rika_nex/luft/primaer,0,4
+1795285358209,117.769,haltetest,rika_nex/luft/sekundaer,0,100
+1795285359204,118.765,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285359212,118.772,haltetest,rika_nex/luft/ist,0,523
+1795285359212,118.773,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285359215,118.776,haltetest,rika_nex/luft/primaer,0,4
+1795285359216,118.777,haltetest,rika_nex/luft/sekundaer,0,100
+1795285360056,119.616,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285360060,119.620,haltetest,rika_nex/temp/fehler,0,ok
+1795285360060,119.621,haltetest,rika_nex/tuer,0,offen
+1795285360060,119.621,haltetest,rika_nex/power,0,netz
+1795285360060,119.621,haltetest,rika_nex/akku/spannung,0,0.04
+1795285360209,119.769,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285360212,119.772,haltetest,rika_nex/luft/ist,0,523
+1795285360212,119.772,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285360212,119.772,haltetest,rika_nex/luft/primaer,0,4
+1795285360212,119.772,haltetest,rika_nex/luft/sekundaer,0,100
+1795285361203,120.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285361208,120.768,haltetest,rika_nex/luft/ist,0,523
+1795285361208,120.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285361208,120.768,haltetest,rika_nex/luft/primaer,0,4
+1795285361208,120.769,haltetest,rika_nex/luft/sekundaer,0,100
+1795285362203,121.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285362208,121.768,haltetest,rika_nex/luft/ist,0,522
+1795285362208,121.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285362208,121.769,haltetest,rika_nex/luft/primaer,0,4
+1795285362208,121.769,haltetest,rika_nex/luft/sekundaer,0,100
+1795285363203,122.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285363246,122.806,haltetest,rika_nex/luft/ist,0,522
+1795285363250,122.810,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285363250,122.810,haltetest,rika_nex/luft/primaer,0,4
+1795285363250,122.811,haltetest,rika_nex/luft/sekundaer,0,100
+1795285364204,123.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285364208,123.768,haltetest,rika_nex/luft/ist,0,522
+1795285364208,123.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285364208,123.768,haltetest,rika_nex/luft/primaer,0,4
+1795285364208,123.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285365056,124.616,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285365060,124.620,haltetest,rika_nex/temp/fehler,0,ok
+1795285365060,124.620,haltetest,rika_nex/tuer,0,offen
+1795285365060,124.621,haltetest,rika_nex/power,0,netz
+1795285365060,124.621,haltetest,rika_nex/akku/spannung,0,0.04
+1795285365203,124.763,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285365210,124.770,haltetest,rika_nex/luft/ist,0,522
+1795285365210,124.771,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285365210,124.771,haltetest,rika_nex/luft/primaer,0,4
+1795285365210,124.771,haltetest,rika_nex/luft/sekundaer,0,100
+1795285366203,125.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285366214,125.775,haltetest,rika_nex/luft/ist,0,523
+1795285366215,125.775,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285366219,125.780,haltetest,rika_nex/luft/primaer,0,4
+1795285366224,125.785,haltetest,rika_nex/luft/sekundaer,0,100
+1795285367204,126.765,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285367215,126.776,haltetest,rika_nex/luft/ist,0,523
+1795285367216,126.776,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285367216,126.776,haltetest,rika_nex/luft/primaer,0,4
+1795285367216,126.777,haltetest,rika_nex/luft/sekundaer,0,100
+1795285368216,127.776,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285368216,127.776,haltetest,rika_nex/luft/ist,0,522
+1795285368216,127.776,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285368218,127.778,haltetest,rika_nex/luft/primaer,0,4
+1795285368218,127.778,haltetest,rika_nex/luft/sekundaer,0,100
+1795285369203,128.764,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285369208,128.769,haltetest,rika_nex/luft/ist,0,522
+1795285369208,128.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285369208,128.769,haltetest,rika_nex/luft/primaer,0,4
+1795285369209,128.769,haltetest,rika_nex/luft/sekundaer,0,100
+1795285370056,129.616,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285370060,129.620,haltetest,rika_nex/temp/fehler,0,ok
+1795285370060,129.620,haltetest,rika_nex/tuer,0,offen
+1795285370060,129.620,haltetest,rika_nex/power,0,netz
+1795285370060,129.621,haltetest,rika_nex/akku/spannung,0,0.04
+1795285370203,129.763,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285370207,129.768,haltetest,rika_nex/luft/ist,0,522
+1795285370207,129.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285370208,129.768,haltetest,rika_nex/luft/primaer,0,4
+1795285370208,129.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285371203,130.763,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285371207,130.767,haltetest,rika_nex/luft/ist,0,522
+1795285371207,130.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285371207,130.768,haltetest,rika_nex/luft/primaer,0,4
+1795285371207,130.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285372203,131.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285372206,131.767,haltetest,rika_nex/luft/ist,0,523
+1795285372206,131.767,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285372207,131.767,haltetest,rika_nex/luft/primaer,0,4
+1795285372207,131.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285373213,132.773,haltetest,rika_nex/luft/ist_winkel,0,95.2
+1795285373217,132.778,haltetest,rika_nex/luft/ist,0,522
+1795285373217,132.778,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285373217,132.778,haltetest,rika_nex/luft/primaer,0,4
+1795285373217,132.778,haltetest,rika_nex/luft/sekundaer,0,100
+1795285374203,133.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285374207,133.768,haltetest,rika_nex/luft/ist,0,523
+1795285374207,133.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285374207,133.768,haltetest,rika_nex/luft/primaer,0,4
+1795285374207,133.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285375056,134.617,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285375062,134.623,haltetest,rika_nex/temp/fehler,0,ok
+1795285375067,134.627,haltetest,rika_nex/tuer,0,offen
+1795285375067,134.627,haltetest,rika_nex/power,0,netz
+1795285375067,134.628,haltetest,rika_nex/akku/spannung,0,0.04
+1795285375208,134.769,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285375213,134.774,haltetest,rika_nex/luft/ist,0,523
+1795285375213,134.774,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285375213,134.774,haltetest,rika_nex/luft/primaer,0,4
+1795285375213,134.774,haltetest,rika_nex/luft/sekundaer,0,100
+1795285376203,135.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285376206,135.767,haltetest,rika_nex/luft/ist,0,523
+1795285376206,135.767,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285376206,135.767,haltetest,rika_nex/luft/primaer,0,4
+1795285376207,135.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285377205,136.766,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285377210,136.770,haltetest,rika_nex/luft/ist,0,523
+1795285377210,136.771,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285377210,136.771,haltetest,rika_nex/luft/primaer,0,4
+1795285377210,136.771,haltetest,rika_nex/luft/sekundaer,0,100
+1795285378203,137.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285378245,137.806,haltetest,rika_nex/luft/ist,0,523
+1795285378252,137.812,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285378252,137.812,haltetest,rika_nex/luft/primaer,0,4
+1795285378252,137.813,haltetest,rika_nex/luft/sekundaer,0,100
+1795285379202,138.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285379207,138.767,haltetest,rika_nex/luft/ist,0,523
+1795285379207,138.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285379207,138.768,haltetest,rika_nex/luft/primaer,0,4
+1795285379208,138.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285380057,139.618,haltetest,rika_nex/temp/brennraum,0,21.1
+1795285380066,139.626,haltetest,rika_nex/temp/fehler,0,ok
+1795285380066,139.627,haltetest,rika_nex/tuer,0,offen
+1795285380068,139.628,haltetest,rika_nex/power,0,netz
+1795285380068,139.628,haltetest,rika_nex/akku/spannung,0,0.04
+1795285380201,139.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285380209,139.770,haltetest,rika_nex/luft/ist,0,523
+1795285380209,139.770,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285380210,139.770,haltetest,rika_nex/luft/primaer,0,4
+1795285380210,139.770,haltetest,rika_nex/luft/sekundaer,0,100
+1795285381202,140.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285381207,140.768,haltetest,rika_nex/luft/ist,0,523
+1795285381207,140.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285381207,140.768,haltetest,rika_nex/luft/primaer,0,4
+1795285381207,140.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285382202,141.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285382212,141.772,haltetest,rika_nex/luft/ist,0,523
+1795285382212,141.772,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285382212,141.772,haltetest,rika_nex/luft/primaer,0,4
+1795285382212,141.773,haltetest,rika_nex/luft/sekundaer,0,100
+1795285383202,142.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285383207,142.768,haltetest,rika_nex/luft/ist,0,523
+1795285383208,142.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285383208,142.768,haltetest,rika_nex/luft/primaer,0,4
+1795285383208,142.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285384202,143.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285384206,143.767,haltetest,rika_nex/luft/ist,0,523
+1795285384206,143.767,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285384206,143.767,haltetest,rika_nex/luft/primaer,0,4
+1795285384206,143.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285385055,144.616,haltetest,rika_nex/temp/brennraum,0,21.0
+1795285385066,144.626,haltetest,rika_nex/temp/fehler,0,ok
+1795285385066,144.626,haltetest,rika_nex/tuer,0,offen
+1795285385066,144.626,haltetest,rika_nex/power,0,netz
+1795285385066,144.627,haltetest,rika_nex/akku/spannung,0,0.04
+1795285385202,144.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285385207,144.768,haltetest,rika_nex/luft/ist,0,523
+1795285385208,144.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285385208,144.768,haltetest,rika_nex/luft/primaer,0,4
+1795285385208,144.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285386202,145.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285386208,145.768,haltetest,rika_nex/luft/ist,0,523
+1795285386208,145.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285386208,145.769,haltetest,rika_nex/luft/primaer,0,4
+1795285386208,145.769,haltetest,rika_nex/luft/sekundaer,0,100
+1795285387202,146.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285387207,146.767,haltetest,rika_nex/luft/ist,0,523
+1795285387207,146.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285387207,146.768,haltetest,rika_nex/luft/primaer,0,4
+1795285387207,146.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285388202,147.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285388207,147.768,haltetest,rika_nex/luft/ist,0,523
+1795285388207,147.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285388207,147.768,haltetest,rika_nex/luft/primaer,0,4
+1795285388207,147.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285389203,148.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285389207,148.768,haltetest,rika_nex/luft/ist,0,523
+1795285389208,148.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285389208,148.768,haltetest,rika_nex/luft/primaer,0,4
+1795285389208,148.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285390055,149.616,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285390058,149.619,haltetest,rika_nex/temp/fehler,0,ok
+1795285390059,149.619,haltetest,rika_nex/tuer,0,offen
+1795285390059,149.619,haltetest,rika_nex/power,0,netz
+1795285390059,149.619,haltetest,rika_nex/akku/spannung,0,0.04
+1795285390211,149.772,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285390216,149.776,haltetest,rika_nex/luft/ist,0,523
+1795285390216,149.776,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285390216,149.776,haltetest,rika_nex/luft/primaer,0,4
+1795285390217,149.777,haltetest,rika_nex/luft/sekundaer,0,100
+1795285391210,150.770,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285391222,150.782,haltetest,rika_nex/luft/ist,0,523
+1795285391222,150.782,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285391222,150.782,haltetest,rika_nex/luft/primaer,0,4
+1795285391222,150.783,haltetest,rika_nex/luft/sekundaer,0,100
+1795285392202,151.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285392207,151.767,haltetest,rika_nex/luft/ist,0,523
+1795285392207,151.767,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285392207,151.767,haltetest,rika_nex/luft/primaer,0,4
+1795285392207,151.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285393205,152.765,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285393257,152.818,haltetest,rika_nex/luft/ist,0,523
+1795285393262,152.822,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285393262,152.822,haltetest,rika_nex/luft/primaer,0,4
+1795285393262,152.822,haltetest,rika_nex/luft/sekundaer,0,100
+1795285394204,153.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285394208,153.769,haltetest,rika_nex/luft/ist,0,523
+1795285394208,153.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285394208,153.769,haltetest,rika_nex/luft/primaer,0,4
+1795285394209,153.769,haltetest,rika_nex/luft/sekundaer,0,100
+1795285395057,154.617,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285395061,154.622,haltetest,rika_nex/temp/fehler,0,ok
+1795285395062,154.622,haltetest,rika_nex/tuer,0,offen
+1795285395062,154.622,haltetest,rika_nex/power,0,netz
+1795285395062,154.622,haltetest,rika_nex/akku/spannung,0,0.04
+1795285395201,154.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285395205,154.766,haltetest,rika_nex/luft/ist,0,523
+1795285395206,154.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285395206,154.766,haltetest,rika_nex/luft/primaer,0,4
+1795285395206,154.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285396201,155.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285396205,155.766,haltetest,rika_nex/luft/ist,0,523
+1795285396205,155.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285396205,155.766,haltetest,rika_nex/luft/primaer,0,4
+1795285396206,155.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285397202,156.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285397209,156.769,haltetest,rika_nex/luft/ist,0,523
+1795285397209,156.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285397209,156.769,haltetest,rika_nex/luft/primaer,0,4
+1795285397209,156.770,haltetest,rika_nex/luft/sekundaer,0,100
+1795285398202,157.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285398207,157.767,haltetest,rika_nex/luft/ist,0,523
+1795285398207,157.767,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285398207,157.767,haltetest,rika_nex/luft/primaer,0,4
+1795285398207,157.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285399202,158.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285399209,158.770,haltetest,rika_nex/luft/ist,0,523
+1795285399209,158.770,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285399209,158.770,haltetest,rika_nex/luft/primaer,0,4
+1795285399210,158.770,haltetest,rika_nex/luft/sekundaer,0,100
+1795285400054,159.615,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285400061,159.622,haltetest,rika_nex/temp/fehler,0,ok
+1795285400065,159.626,haltetest,rika_nex/tuer,0,offen
+1795285400065,159.626,haltetest,rika_nex/power,0,netz
+1795285400066,159.626,haltetest,rika_nex/akku/spannung,0,0.04
+1795285400202,159.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285400207,159.767,haltetest,rika_nex/luft/ist,0,523
+1795285400207,159.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285400207,159.768,haltetest,rika_nex/luft/primaer,0,4
+1795285400208,159.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285401201,160.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285401206,160.766,haltetest,rika_nex/luft/ist,0,523
+1795285401206,160.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285401206,160.766,haltetest,rika_nex/luft/primaer,0,4
+1795285401206,160.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285402200,161.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285402205,161.766,haltetest,rika_nex/luft/ist,0,523
+1795285402205,161.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285402205,161.766,haltetest,rika_nex/luft/primaer,0,4
+1795285402206,161.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285403202,162.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285403214,162.775,haltetest,rika_nex/luft/ist,0,523
+1795285403217,162.778,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285403218,162.778,haltetest,rika_nex/luft/primaer,0,4
+1795285403218,162.778,haltetest,rika_nex/luft/sekundaer,0,100
+1795285404200,163.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285404205,163.765,haltetest,rika_nex/luft/ist,0,523
+1795285404205,163.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285404205,163.765,haltetest,rika_nex/luft/primaer,0,4
+1795285404205,163.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285405058,164.619,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285405066,164.626,haltetest,rika_nex/temp/fehler,0,ok
+1795285405069,164.629,haltetest,rika_nex/tuer,0,offen
+1795285405069,164.630,haltetest,rika_nex/power,0,netz
+1795285405069,164.630,haltetest,rika_nex/akku/spannung,0,0.04
+1795285405201,164.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285405206,164.766,haltetest,rika_nex/luft/ist,0,523
+1795285405206,164.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285405206,164.766,haltetest,rika_nex/luft/primaer,0,4
+1795285405206,164.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285406203,165.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285406205,165.766,haltetest,rika_nex/luft/ist,0,523
+1795285406205,165.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285406205,165.766,haltetest,rika_nex/luft/primaer,0,4
+1795285406205,165.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285407213,166.774,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285407213,166.774,haltetest,rika_nex/luft/ist,0,523
+1795285407214,166.774,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285407214,166.774,haltetest,rika_nex/luft/primaer,0,4
+1795285407214,166.775,haltetest,rika_nex/luft/sekundaer,0,100
+1795285408199,167.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285408243,167.804,haltetest,rika_nex/luft/ist,0,523
+1795285408247,167.808,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285408247,167.808,haltetest,rika_nex/luft/primaer,0,4
+1795285408247,167.808,haltetest,rika_nex/luft/sekundaer,0,100
+1795285409202,168.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285409207,168.768,haltetest,rika_nex/luft/ist,0,523
+1795285409207,168.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285409207,168.768,haltetest,rika_nex/luft/primaer,0,4
+1795285409207,168.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285410055,169.615,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285410077,169.637,haltetest,rika_nex/temp/fehler,0,ok
+1795285410080,169.641,haltetest,rika_nex/tuer,0,offen
+1795285410081,169.641,haltetest,rika_nex/power,0,netz
+1795285410081,169.641,haltetest,rika_nex/akku/spannung,0,0.04
+1795285410200,169.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285410205,169.765,haltetest,rika_nex/luft/ist,0,523
+1795285410205,169.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285410205,169.766,haltetest,rika_nex/luft/primaer,0,4
+1795285410205,169.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285411202,170.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285411206,170.766,haltetest,rika_nex/luft/ist,0,523
+1795285411206,170.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285411206,170.766,haltetest,rika_nex/luft/primaer,0,4
+1795285411206,170.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285412200,171.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285412204,171.764,haltetest,rika_nex/luft/ist,0,523
+1795285412204,171.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285412204,171.764,haltetest,rika_nex/luft/primaer,0,4
+1795285412204,171.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285413201,172.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285413206,172.766,haltetest,rika_nex/luft/ist,0,523
+1795285413206,172.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285413206,172.766,haltetest,rika_nex/luft/primaer,0,4
+1795285413206,172.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285414201,173.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285414208,173.769,haltetest,rika_nex/luft/ist,0,523
+1795285414208,173.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285414208,173.769,haltetest,rika_nex/luft/primaer,0,4
+1795285414208,173.769,haltetest,rika_nex/luft/sekundaer,0,100
+1795285415054,174.614,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285415058,174.618,haltetest,rika_nex/temp/fehler,0,ok
+1795285415058,174.618,haltetest,rika_nex/tuer,0,offen
+1795285415058,174.618,haltetest,rika_nex/power,0,netz
+1795285415058,174.619,haltetest,rika_nex/akku/spannung,0,0.04
+1795285415199,174.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285415203,174.763,haltetest,rika_nex/luft/ist,0,523
+1795285415203,174.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285415203,174.763,haltetest,rika_nex/luft/primaer,0,4
+1795285415203,174.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285416201,175.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285416208,175.768,haltetest,rika_nex/luft/ist,0,523
+1795285416208,175.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285416210,175.771,haltetest,rika_nex/luft/primaer,0,4
+1795285416211,175.771,haltetest,rika_nex/luft/sekundaer,0,100
+1795285417201,176.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285417205,176.765,haltetest,rika_nex/luft/ist,0,523
+1795285417205,176.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285417205,176.765,haltetest,rika_nex/luft/primaer,0,4
+1795285417205,176.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285418200,177.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285418206,177.767,haltetest,rika_nex/luft/ist,0,523
+1795285418206,177.767,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285418206,177.767,haltetest,rika_nex/luft/primaer,0,4
+1795285418207,177.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285419202,178.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285419207,178.767,haltetest,rika_nex/luft/ist,0,523
+1795285419207,178.767,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285419207,178.767,haltetest,rika_nex/luft/primaer,0,4
+1795285419207,178.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285420054,179.614,haltetest,rika_nex/temp/brennraum,0,21.3
+1795285420064,179.625,haltetest,rika_nex/temp/fehler,0,ok
+1795285420068,179.628,haltetest,rika_nex/tuer,0,offen
+1795285420068,179.628,haltetest,rika_nex/power,0,netz
+1795285420068,179.629,haltetest,rika_nex/akku/spannung,0,0.04
+1795285420212,179.772,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285420216,179.777,haltetest,rika_nex/luft/ist,0,523
+1795285420216,179.777,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285420216,179.777,haltetest,rika_nex/luft/primaer,0,4
+1795285420217,179.778,haltetest,rika_nex/luft/sekundaer,0,100
+1795285421200,180.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285421205,180.765,haltetest,rika_nex/luft/ist,0,523
+1795285421205,180.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285421205,180.765,haltetest,rika_nex/luft/primaer,0,4
+1795285421205,180.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285422201,181.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285422203,181.764,haltetest,rika_nex/luft/ist,0,523
+1795285422204,181.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285422204,181.764,haltetest,rika_nex/luft/primaer,0,4
+1795285422204,181.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285423200,182.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285423243,182.804,haltetest,rika_nex/luft/ist,0,523
+1795285423249,182.810,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285423249,182.810,haltetest,rika_nex/luft/primaer,0,4
+1795285423249,182.810,haltetest,rika_nex/luft/sekundaer,0,100
+1795285424205,183.766,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285424210,183.770,haltetest,rika_nex/luft/ist,0,523
+1795285424210,183.770,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285424210,183.770,haltetest,rika_nex/luft/primaer,0,4
+1795285424210,183.770,haltetest,rika_nex/luft/sekundaer,0,100
+1795285425053,184.613,haltetest,rika_nex/temp/brennraum,0,21.3
+1795285425059,184.619,haltetest,rika_nex/temp/fehler,0,ok
+1795285425063,184.624,haltetest,rika_nex/tuer,0,offen
+1795285425063,184.624,haltetest,rika_nex/power,0,netz
+1795285425064,184.625,haltetest,rika_nex/akku/spannung,0,0.04
+1795285425201,184.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285425209,184.769,haltetest,rika_nex/luft/ist,0,523
+1795285425209,184.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285425209,184.770,haltetest,rika_nex/luft/primaer,0,4
+1795285425209,184.770,haltetest,rika_nex/luft/sekundaer,0,100
+1795285426201,185.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285426205,185.766,haltetest,rika_nex/luft/ist,0,523
+1795285426205,185.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285426205,185.766,haltetest,rika_nex/luft/primaer,0,4
+1795285426205,185.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285427201,186.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285427205,186.766,haltetest,rika_nex/luft/ist,0,523
+1795285427206,186.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285427206,186.767,haltetest,rika_nex/luft/primaer,0,4
+1795285427206,186.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285428199,187.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285428204,187.764,haltetest,rika_nex/luft/ist,0,523
+1795285428204,187.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285428204,187.764,haltetest,rika_nex/luft/primaer,0,4
+1795285428204,187.765,haltetest,rika_nex/luft/sekundaer,0,100
+1795285429199,188.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285429203,188.764,haltetest,rika_nex/luft/ist,0,523
+1795285429203,188.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285429203,188.764,haltetest,rika_nex/luft/primaer,0,4
+1795285429203,188.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285430056,189.616,haltetest,rika_nex/temp/brennraum,0,21.1
+1795285430061,189.622,haltetest,rika_nex/temp/fehler,0,ok
+1795285430061,189.622,haltetest,rika_nex/tuer,0,offen
+1795285430062,189.622,haltetest,rika_nex/power,0,netz
+1795285430062,189.622,haltetest,rika_nex/akku/spannung,0,0.04
+1795285430200,189.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285430205,189.765,haltetest,rika_nex/luft/ist,0,523
+1795285430205,189.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285430205,189.766,haltetest,rika_nex/luft/primaer,0,4
+1795285430205,189.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285431200,190.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285431204,190.764,haltetest,rika_nex/luft/ist,0,523
+1795285431204,190.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285431204,190.765,haltetest,rika_nex/luft/primaer,0,4
+1795285431204,190.765,haltetest,rika_nex/luft/sekundaer,0,100
+1795285432203,191.764,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285432211,191.771,haltetest,rika_nex/luft/ist,0,523
+1795285432211,191.771,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285432211,191.771,haltetest,rika_nex/luft/primaer,0,4
+1795285432211,191.772,haltetest,rika_nex/luft/sekundaer,0,100
+1795285433201,192.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285433206,192.766,haltetest,rika_nex/luft/ist,0,523
+1795285433206,192.767,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285433207,192.767,haltetest,rika_nex/luft/primaer,0,4
+1795285433207,192.767,haltetest,rika_nex/luft/sekundaer,0,100
+1795285434201,193.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285434205,193.766,haltetest,rika_nex/luft/ist,0,523
+1795285434205,193.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285434205,193.766,haltetest,rika_nex/luft/primaer,0,4
+1795285434205,193.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285435060,194.621,haltetest,rika_nex/temp/brennraum,0,21.1
+1795285435066,194.626,haltetest,rika_nex/temp/fehler,0,ok
+1795285435066,194.626,haltetest,rika_nex/tuer,0,offen
+1795285435066,194.626,haltetest,rika_nex/power,0,netz
+1795285435066,194.627,haltetest,rika_nex/akku/spannung,0,0.04
+1795285435200,194.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285435204,194.764,haltetest,rika_nex/luft/ist,0,523
+1795285435204,194.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285435204,194.765,haltetest,rika_nex/luft/primaer,0,4
+1795285435204,194.765,haltetest,rika_nex/luft/sekundaer,0,100
+1795285436200,195.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285436203,195.764,haltetest,rika_nex/luft/ist,0,523
+1795285436204,195.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285436204,195.764,haltetest,rika_nex/luft/primaer,0,4
+1795285436204,195.765,haltetest,rika_nex/luft/sekundaer,0,100
+1795285437209,196.770,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285437213,196.774,haltetest,rika_nex/luft/ist,0,523
+1795285437213,196.774,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285437215,196.775,haltetest,rika_nex/luft/primaer,0,4
+1795285437215,196.776,haltetest,rika_nex/luft/sekundaer,0,100
+1795285438200,197.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285438243,197.803,haltetest,rika_nex/luft/ist,0,523
+1795285438250,197.810,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285438250,197.810,haltetest,rika_nex/luft/primaer,0,4
+1795285438250,197.811,haltetest,rika_nex/luft/sekundaer,0,100
+1795285439200,198.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285439204,198.764,haltetest,rika_nex/luft/ist,0,523
+1795285439204,198.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285439204,198.765,haltetest,rika_nex/luft/primaer,0,4
+1795285439204,198.765,haltetest,rika_nex/luft/sekundaer,0,100
+1795285440053,199.613,haltetest,rika_nex/temp/brennraum,0,21.3
+1795285440056,199.616,haltetest,rika_nex/temp/fehler,0,ok
+1795285440056,199.616,haltetest,rika_nex/tuer,0,offen
+1795285440056,199.616,haltetest,rika_nex/power,0,netz
+1795285440056,199.617,haltetest,rika_nex/akku/spannung,0,0.04
+1795285440199,199.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285440203,199.764,haltetest,rika_nex/luft/ist,0,523
+1795285440204,199.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285440204,199.764,haltetest,rika_nex/luft/primaer,0,4
+1795285440204,199.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285441203,200.763,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285441207,200.768,haltetest,rika_nex/luft/ist,0,523
+1795285441207,200.768,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285441207,200.768,haltetest,rika_nex/luft/primaer,0,4
+1795285441207,200.768,haltetest,rika_nex/luft/sekundaer,0,100
+1795285442200,201.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285442204,201.764,haltetest,rika_nex/luft/ist,0,523
+1795285442204,201.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285442205,201.765,haltetest,rika_nex/luft/primaer,0,4
+1795285442205,201.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285443199,202.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285443203,202.764,haltetest,rika_nex/luft/ist,0,523
+1795285443203,202.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285443204,202.764,haltetest,rika_nex/luft/primaer,0,4
+1795285443204,202.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285444200,203.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285444204,203.765,haltetest,rika_nex/luft/ist,0,523
+1795285444204,203.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285444204,203.765,haltetest,rika_nex/luft/primaer,0,4
+1795285444204,203.765,haltetest,rika_nex/luft/sekundaer,0,100
+1795285445083,204.643,haltetest,rika_nex/temp/brennraum,0,21.4
+1795285445089,204.649,haltetest,rika_nex/temp/fehler,0,ok
+1795285445089,204.649,haltetest,rika_nex/tuer,0,offen
+1795285445089,204.649,haltetest,rika_nex/power,0,netz
+1795285445089,204.649,haltetest,rika_nex/akku/spannung,0,0.04
+1795285445199,204.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285445205,204.766,haltetest,rika_nex/luft/ist,0,523
+1795285445205,204.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285445205,204.766,haltetest,rika_nex/luft/primaer,0,4
+1795285445206,204.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285446199,205.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285446206,205.767,haltetest,rika_nex/luft/ist,0,523
+1795285446209,205.770,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285446210,205.770,haltetest,rika_nex/luft/primaer,0,4
+1795285446210,205.770,haltetest,rika_nex/luft/sekundaer,0,100
+1795285447199,206.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285447205,206.765,haltetest,rika_nex/luft/ist,0,523
+1795285447209,206.769,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285447209,206.769,haltetest,rika_nex/luft/primaer,0,4
+1795285447209,206.770,haltetest,rika_nex/luft/sekundaer,0,100
+1795285448256,207.816,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285448258,207.819,haltetest,rika_nex/luft/ist,0,523
+1795285448259,207.819,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285448259,207.819,haltetest,rika_nex/luft/primaer,0,4
+1795285448259,207.819,haltetest,rika_nex/luft/sekundaer,0,100
+1795285449199,208.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285449206,208.767,haltetest,rika_nex/luft/ist,0,523
+1795285449210,208.771,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285449211,208.771,haltetest,rika_nex/luft/primaer,0,4
+1795285449211,208.771,haltetest,rika_nex/luft/sekundaer,0,100
+1795285450052,209.612,haltetest,rika_nex/temp/brennraum,0,21.4
+1795285450056,209.616,haltetest,rika_nex/temp/fehler,0,ok
+1795285450056,209.616,haltetest,rika_nex/tuer,0,offen
+1795285450056,209.617,haltetest,rika_nex/power,0,netz
+1795285450056,209.617,haltetest,rika_nex/akku/spannung,0,0.04
+1795285450200,209.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285450215,209.775,haltetest,rika_nex/luft/ist,0,523
+1795285450219,209.779,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285450219,209.780,haltetest,rika_nex/luft/primaer,0,4
+1795285450219,209.780,haltetest,rika_nex/luft/sekundaer,0,100
+1795285451227,210.788,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285451232,210.793,haltetest,rika_nex/luft/ist,0,523
+1795285451232,210.793,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285451233,210.793,haltetest,rika_nex/luft/primaer,0,4
+1795285451233,210.794,haltetest,rika_nex/luft/sekundaer,0,100
+1795285452248,211.808,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285452252,211.813,haltetest,rika_nex/luft/ist,0,523
+1795285452252,211.813,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285452252,211.813,haltetest,rika_nex/luft/primaer,0,4
+1795285452252,211.813,haltetest,rika_nex/luft/sekundaer,0,100
+1795285453247,212.807,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285453252,212.812,haltetest,rika_nex/luft/ist,0,523
+1795285453252,212.812,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285453252,212.813,haltetest,rika_nex/luft/primaer,0,4
+1795285453252,212.813,haltetest,rika_nex/luft/sekundaer,0,100
+1795285454299,213.859,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285454304,213.865,haltetest,rika_nex/luft/ist,0,523
+1795285454304,213.865,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285454304,213.865,haltetest,rika_nex/luft/primaer,0,4
+1795285454304,213.865,haltetest,rika_nex/luft/sekundaer,0,100
+1795285455052,214.612,haltetest,rika_nex/temp/brennraum,0,21.4
+1795285455056,214.617,haltetest,rika_nex/temp/fehler,0,ok
+1795285455056,214.617,haltetest,rika_nex/tuer,0,offen
+1795285455056,214.617,haltetest,rika_nex/power,0,netz
+1795285455056,214.617,haltetest,rika_nex/akku/spannung,0,0.04
+1795285455199,214.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285455211,214.772,haltetest,rika_nex/luft/ist,0,523
+1795285455217,214.777,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285455217,214.778,haltetest,rika_nex/luft/primaer,0,4
+1795285455217,214.778,haltetest,rika_nex/luft/sekundaer,0,100
+1795285456198,215.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285456212,215.772,haltetest,rika_nex/luft/ist,0,523
+1795285456217,215.778,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285456218,215.778,haltetest,rika_nex/luft/primaer,0,4
+1795285456218,215.778,haltetest,rika_nex/luft/sekundaer,0,100
+1795285457199,216.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285457213,216.774,haltetest,rika_nex/luft/ist,0,523
+1795285457217,216.778,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285457218,216.778,haltetest,rika_nex/luft/primaer,0,4
+1795285457218,216.778,haltetest,rika_nex/luft/sekundaer,0,100
+1795285458293,217.853,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285458298,217.858,haltetest,rika_nex/luft/ist,0,523
+1795285458298,217.858,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285458298,217.858,haltetest,rika_nex/luft/primaer,0,4
+1795285458298,217.859,haltetest,rika_nex/luft/sekundaer,0,100
+1795285459200,218.760,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285459226,218.787,haltetest,rika_nex/luft/ist,0,523
+1795285459233,218.793,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285459233,218.793,haltetest,rika_nex/luft/primaer,0,4
+1795285459234,218.795,haltetest,rika_nex/luft/sekundaer,0,100
+1795285460052,219.612,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285460058,219.619,haltetest,rika_nex/temp/fehler,0,ok
+1795285460062,219.622,haltetest,rika_nex/tuer,0,offen
+1795285460062,219.622,haltetest,rika_nex/power,0,netz
+1795285460062,219.623,haltetest,rika_nex/akku/spannung,0,0.04
+1795285460199,219.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285460216,219.776,haltetest,rika_nex/luft/ist,0,523
+1795285460220,219.780,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285460220,219.780,haltetest,rika_nex/luft/primaer,0,4
+1795285460220,219.781,haltetest,rika_nex/luft/sekundaer,0,100
+1795285461201,220.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285461203,220.764,haltetest,rika_nex/luft/ist,0,523
+1795285461204,220.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285461204,220.764,haltetest,rika_nex/luft/primaer,0,4
+1795285461204,220.765,haltetest,rika_nex/luft/sekundaer,0,100
+1795285462199,221.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285462203,221.764,haltetest,rika_nex/luft/ist,0,523
+1795285462203,221.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285462203,221.764,haltetest,rika_nex/luft/primaer,0,4
+1795285462204,221.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285463199,222.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285463205,222.766,haltetest,rika_nex/luft/ist,0,523
+1795285463206,222.766,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285463206,222.766,haltetest,rika_nex/luft/primaer,0,4
+1795285463206,222.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285464199,223.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285464203,223.763,haltetest,rika_nex/luft/ist,0,523
+1795285464203,223.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285464203,223.764,haltetest,rika_nex/luft/primaer,0,4
+1795285464203,223.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285465061,224.622,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285465066,224.626,haltetest,rika_nex/temp/fehler,0,ok
+1795285465066,224.626,haltetest,rika_nex/tuer,0,offen
+1795285465066,224.626,haltetest,rika_nex/power,0,netz
+1795285465066,224.626,haltetest,rika_nex/akku/spannung,0,0.04
+1795285465199,224.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285465204,224.765,haltetest,rika_nex/luft/ist,0,523
+1795285465205,224.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285465205,224.765,haltetest,rika_nex/luft/primaer,0,4
+1795285465205,224.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285466199,225.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285466203,225.764,haltetest,rika_nex/luft/ist,0,523
+1795285466203,225.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285466203,225.764,haltetest,rika_nex/luft/primaer,0,4
+1795285466203,225.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285467214,226.774,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285467218,226.779,haltetest,rika_nex/luft/ist,0,523
+1795285467218,226.779,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285467218,226.779,haltetest,rika_nex/luft/primaer,0,4
+1795285467218,226.779,haltetest,rika_nex/luft/sekundaer,0,100
+1795285468198,227.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285468243,227.803,haltetest,rika_nex/luft/ist,0,523
+1795285468246,227.807,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285468247,227.807,haltetest,rika_nex/luft/primaer,0,4
+1795285468247,227.807,haltetest,rika_nex/luft/sekundaer,0,100
+1795285469199,228.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285469203,228.763,haltetest,rika_nex/luft/ist,0,523
+1795285469203,228.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285469203,228.764,haltetest,rika_nex/luft/primaer,0,4
+1795285469203,228.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285470068,229.629,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285470074,229.634,haltetest,rika_nex/temp/fehler,0,ok
+1795285470074,229.634,haltetest,rika_nex/tuer,0,offen
+1795285470074,229.634,haltetest,rika_nex/power,0,netz
+1795285470074,229.635,haltetest,rika_nex/akku/spannung,0,0.04
+1795285470199,229.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285470203,229.763,haltetest,rika_nex/luft/ist,0,523
+1795285470203,229.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285470203,229.763,haltetest,rika_nex/luft/primaer,0,4
+1795285470203,229.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285471303,230.863,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285471308,230.868,haltetest,rika_nex/luft/ist,0,523
+1795285471308,230.869,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285471308,230.869,haltetest,rika_nex/luft/primaer,0,4
+1795285471308,230.869,haltetest,rika_nex/luft/sekundaer,0,100
+1795285472198,231.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285472203,231.764,haltetest,rika_nex/luft/ist,0,523
+1795285472203,231.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285472203,231.764,haltetest,rika_nex/luft/primaer,0,4
+1795285472204,231.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285473201,232.762,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285473205,232.765,haltetest,rika_nex/luft/ist,0,523
+1795285473205,232.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285473205,232.765,haltetest,rika_nex/luft/primaer,0,4
+1795285473205,232.766,haltetest,rika_nex/luft/sekundaer,0,100
+1795285474198,233.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285474203,233.763,haltetest,rika_nex/luft/ist,0,523
+1795285474203,233.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285474203,233.763,haltetest,rika_nex/luft/primaer,0,4
+1795285474203,233.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285475052,234.613,haltetest,rika_nex/temp/brennraum,0,21.3
+1795285475061,234.622,haltetest,rika_nex/temp/fehler,0,ok
+1795285475065,234.626,haltetest,rika_nex/tuer,0,offen
+1795285475066,234.626,haltetest,rika_nex/power,0,netz
+1795285475066,234.626,haltetest,rika_nex/akku/spannung,0,0.04
+1795285475206,234.767,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285475210,234.771,haltetest,rika_nex/luft/ist,0,523
+1795285475211,234.771,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285475211,234.771,haltetest,rika_nex/luft/primaer,0,4
+1795285475211,234.771,haltetest,rika_nex/luft/sekundaer,0,100
+1795285476198,235.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285476203,235.763,haltetest,rika_nex/luft/ist,0,523
+1795285476203,235.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285476203,235.763,haltetest,rika_nex/luft/primaer,0,4
+1795285476203,235.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285477199,236.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285477203,236.764,haltetest,rika_nex/luft/ist,0,523
+1795285477203,236.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285477203,236.764,haltetest,rika_nex/luft/primaer,0,4
+1795285477203,236.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285478198,237.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285478203,237.764,haltetest,rika_nex/luft/ist,0,523
+1795285478203,237.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285478204,237.764,haltetest,rika_nex/luft/primaer,0,4
+1795285478204,237.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285479198,238.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285479202,238.763,haltetest,rika_nex/luft/ist,0,523
+1795285479203,238.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285479203,238.763,haltetest,rika_nex/luft/primaer,0,4
+1795285479203,238.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285480051,239.612,haltetest,rika_nex/temp/brennraum,0,21.1
+1795285480056,239.616,haltetest,rika_nex/temp/fehler,0,ok
+1795285480060,239.621,haltetest,rika_nex/tuer,0,offen
+1795285480061,239.621,haltetest,rika_nex/power,0,netz
+1795285480061,239.621,haltetest,rika_nex/akku/spannung,0,0.04
+1795285480199,239.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285480203,239.764,haltetest,rika_nex/luft/ist,0,523
+1795285480204,239.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285480204,239.764,haltetest,rika_nex/luft/primaer,0,4
+1795285480204,239.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285481198,240.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285481203,240.763,haltetest,rika_nex/luft/ist,0,523
+1795285481203,240.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285481203,240.764,haltetest,rika_nex/luft/primaer,0,4
+1795285481203,240.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285482199,241.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285482203,241.763,haltetest,rika_nex/luft/ist,0,523
+1795285482203,241.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285482203,241.764,haltetest,rika_nex/luft/primaer,0,4
+1795285482203,241.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285483199,242.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285483241,242.801,haltetest,rika_nex/luft/ist,0,523
+1795285483245,242.805,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285483247,242.807,haltetest,rika_nex/luft/primaer,0,4
+1795285483247,242.808,haltetest,rika_nex/luft/sekundaer,0,100
+1795285484209,243.770,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285484214,243.774,haltetest,rika_nex/luft/ist,0,523
+1795285484214,243.774,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285484214,243.774,haltetest,rika_nex/luft/primaer,0,4
+1795285484214,243.775,haltetest,rika_nex/luft/sekundaer,0,100
+1795285485121,244.682,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285485125,244.686,haltetest,rika_nex/temp/fehler,0,ok
+1795285485125,244.686,haltetest,rika_nex/tuer,0,offen
+1795285485126,244.687,haltetest,rika_nex/power,0,netz
+1795285485127,244.687,haltetest,rika_nex/akku/spannung,0,0.04
+1795285485198,244.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285485202,244.763,haltetest,rika_nex/luft/ist,0,523
+1795285485202,244.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285485202,244.763,haltetest,rika_nex/luft/primaer,0,4
+1795285485202,244.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285486198,245.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285486202,245.763,haltetest,rika_nex/luft/ist,0,523
+1795285486202,245.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285486203,245.763,haltetest,rika_nex/luft/primaer,0,4
+1795285486203,245.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285487208,246.768,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285487212,246.772,haltetest,rika_nex/luft/ist,0,523
+1795285487212,246.773,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285487212,246.773,haltetest,rika_nex/luft/primaer,0,4
+1795285487213,246.773,haltetest,rika_nex/luft/sekundaer,0,100
+1795285488237,247.798,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285488241,247.801,haltetest,rika_nex/luft/ist,0,523
+1795285488241,247.801,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285488241,247.801,haltetest,rika_nex/luft/primaer,0,4
+1795285488241,247.802,haltetest,rika_nex/luft/sekundaer,0,100
+1795285489217,248.777,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285489222,248.782,haltetest,rika_nex/luft/ist,0,523
+1795285489222,248.783,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285489222,248.783,haltetest,rika_nex/luft/primaer,0,4
+1795285489222,248.783,haltetest,rika_nex/luft/sekundaer,0,100
+1795285490063,249.623,haltetest,rika_nex/temp/brennraum,0,21.0
+1795285490069,249.630,haltetest,rika_nex/temp/fehler,0,ok
+1795285490069,249.630,haltetest,rika_nex/tuer,0,offen
+1795285490069,249.630,haltetest,rika_nex/power,0,netz
+1795285490069,249.630,haltetest,rika_nex/akku/spannung,0,0.04
+1795285490198,249.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285490202,249.763,haltetest,rika_nex/luft/ist,0,523
+1795285490202,249.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285490202,249.763,haltetest,rika_nex/luft/primaer,0,4
+1795285490203,249.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285491278,250.838,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285491297,250.858,haltetest,rika_nex/luft/ist,0,523
+1795285491297,250.858,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285491297,250.858,haltetest,rika_nex/luft/primaer,0,4
+1795285491297,250.858,haltetest,rika_nex/luft/sekundaer,0,100
+1795285492198,251.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285492202,251.763,haltetest,rika_nex/luft/ist,0,523
+1795285492202,251.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285492203,251.763,haltetest,rika_nex/luft/primaer,0,4
+1795285492203,251.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285493198,252.759,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285493202,252.763,haltetest,rika_nex/luft/ist,0,523
+1795285493202,252.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285493203,252.763,haltetest,rika_nex/luft/primaer,0,4
+1795285493203,252.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285494234,253.795,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285494239,253.800,haltetest,rika_nex/luft/ist,0,523
+1795285494240,253.800,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285494240,253.800,haltetest,rika_nex/luft/primaer,0,4
+1795285494240,253.801,haltetest,rika_nex/luft/sekundaer,0,100
+1795285495050,254.611,haltetest,rika_nex/temp/brennraum,0,21.0
+1795285495066,254.626,haltetest,rika_nex/temp/fehler,0,ok
+1795285495070,254.631,haltetest,rika_nex/tuer,0,offen
+1795285495070,254.631,haltetest,rika_nex/power,0,netz
+1795285495070,254.631,haltetest,rika_nex/akku/spannung,0,0.04
+1795285495198,254.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285495203,254.764,haltetest,rika_nex/luft/ist,0,523
+1795285495203,254.764,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285495203,254.764,haltetest,rika_nex/luft/primaer,0,4
+1795285495203,254.764,haltetest,rika_nex/luft/sekundaer,0,100
+1795285496198,255.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285496202,255.763,haltetest,rika_nex/luft/ist,0,523
+1795285496203,255.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285496203,255.763,haltetest,rika_nex/luft/primaer,0,4
+1795285496203,255.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285497200,256.761,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285497204,256.765,haltetest,rika_nex/luft/ist,0,523
+1795285497205,256.765,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285497205,256.765,haltetest,rika_nex/luft/primaer,0,4
+1795285497205,256.765,haltetest,rika_nex/luft/sekundaer,0,100
+1795285498228,257.789,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285498248,257.809,haltetest,rika_nex/luft/ist,0,523
+1795285498252,257.813,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285498252,257.813,haltetest,rika_nex/luft/primaer,0,4
+1795285498253,257.813,haltetest,rika_nex/luft/sekundaer,0,100
+1795285499252,258.813,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285499257,258.818,haltetest,rika_nex/luft/ist,0,523
+1795285499257,258.818,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285499257,258.818,haltetest,rika_nex/luft/primaer,0,4
+1795285499258,258.818,haltetest,rika_nex/luft/sekundaer,0,100
+1795285500075,259.635,haltetest,rika_nex/temp/brennraum,0,21.1
+1795285500080,259.640,haltetest,rika_nex/temp/fehler,0,ok
+1795285500080,259.640,haltetest,rika_nex/tuer,0,offen
+1795285500080,259.641,haltetest,rika_nex/power,0,netz
+1795285500080,259.641,haltetest,rika_nex/akku/spannung,0,0.04
+1795285500198,259.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285500202,259.762,haltetest,rika_nex/luft/ist,0,523
+1795285500202,259.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285500202,259.763,haltetest,rika_nex/luft/primaer,0,4
+1795285500202,259.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285501207,260.768,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285501212,260.773,haltetest,rika_nex/luft/ist,0,523
+1795285501212,260.773,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285501213,260.773,haltetest,rika_nex/luft/primaer,0,4
+1795285501213,260.773,haltetest,rika_nex/luft/sekundaer,0,100
+1795285502198,261.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285502202,261.762,haltetest,rika_nex/luft/ist,0,523
+1795285502202,261.762,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285502202,261.762,haltetest,rika_nex/luft/primaer,0,4
+1795285502202,261.762,haltetest,rika_nex/luft/sekundaer,0,100
+1795285503246,262.806,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285503251,262.811,haltetest,rika_nex/luft/ist,0,523
+1795285503251,262.811,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285503251,262.811,haltetest,rika_nex/luft/primaer,0,4
+1795285503251,262.811,haltetest,rika_nex/luft/sekundaer,0,100
+1795285504270,263.830,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285504275,263.835,haltetest,rika_nex/luft/ist,0,523
+1795285504275,263.836,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285504275,263.836,haltetest,rika_nex/luft/primaer,0,4
+1795285504275,263.836,haltetest,rika_nex/luft/sekundaer,0,100
+1795285505051,264.612,haltetest,rika_nex/temp/brennraum,0,21.2
+1795285505059,264.619,haltetest,rika_nex/temp/fehler,0,ok
+1795285505059,264.619,haltetest,rika_nex/tuer,0,offen
+1795285505059,264.619,haltetest,rika_nex/power,0,netz
+1795285505060,264.620,haltetest,rika_nex/akku/spannung,0,0.04
+1795285505209,264.770,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285505215,264.775,haltetest,rika_nex/luft/ist,0,523
+1795285505219,264.779,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285505219,264.780,haltetest,rika_nex/luft/primaer,0,4
+1795285505219,264.780,haltetest,rika_nex/luft/sekundaer,0,100
+1795285506198,265.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285506202,265.762,haltetest,rika_nex/luft/ist,0,523
+1795285506202,265.762,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285506202,265.762,haltetest,rika_nex/luft/primaer,0,4
+1795285506202,265.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285507198,266.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285507202,266.762,haltetest,rika_nex/luft/ist,0,523
+1795285507202,266.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285507202,266.763,haltetest,rika_nex/luft/primaer,0,4
+1795285507202,266.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285508198,267.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285508202,267.762,haltetest,rika_nex/luft/ist,0,523
+1795285508202,267.763,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285508202,267.763,haltetest,rika_nex/luft/primaer,0,4
+1795285508202,267.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285509287,268.848,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285509292,268.853,haltetest,rika_nex/luft/ist,0,523
+1795285509293,268.853,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285509293,268.853,haltetest,rika_nex/luft/primaer,0,4
+1795285509293,268.853,haltetest,rika_nex/luft/sekundaer,0,100
+1795285510051,269.611,haltetest,rika_nex/temp/brennraum,0,21.3
+1795285510060,269.620,haltetest,rika_nex/temp/fehler,0,ok
+1795285510064,269.624,haltetest,rika_nex/tuer,0,offen
+1795285510064,269.624,haltetest,rika_nex/power,0,netz
+1795285510064,269.625,haltetest,rika_nex/akku/spannung,0,0.04
+1795285510198,269.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285510201,269.761,haltetest,rika_nex/luft/ist,0,523
+1795285510201,269.762,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285510201,269.762,haltetest,rika_nex/luft/primaer,0,4
+1795285510201,269.762,haltetest,rika_nex/luft/sekundaer,0,100
+1795285511197,270.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285511201,270.762,haltetest,rika_nex/luft/ist,0,523
+1795285511202,270.762,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285511202,270.762,haltetest,rika_nex/luft/primaer,0,4
+1795285511202,270.762,haltetest,rika_nex/luft/sekundaer,0,100
+1795285512198,271.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285512202,271.762,haltetest,rika_nex/luft/ist,0,523
+1795285512202,271.762,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285512202,271.762,haltetest,rika_nex/luft/primaer,0,4
+1795285512202,271.763,haltetest,rika_nex/luft/sekundaer,0,100
+1795285513197,272.758,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285513240,272.800,haltetest,rika_nex/luft/ist,0,523
+1795285513245,272.805,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285513245,272.806,haltetest,rika_nex/luft/primaer,0,4
+1795285513245,272.806,haltetest,rika_nex/luft/sekundaer,0,100
+1795285514310,273.870,haltetest,rika_nex/luft/ist_winkel,0,95.3
+1795285514314,273.875,haltetest,rika_nex/luft/ist,0,523
+1795285514315,273.876,haltetest,rika_nex/luft/zustand,0,"Sekundärluft offen, Primärluft 4 %"
+1795285514316,273.877,haltetest,rika_nex/luft/primaer,0,4
+1795285514316,273.877,haltetest,rika_nex/luft/sekundaer,0,100
+1795285514567,274.128,ende,rika_nex/cmd/luft_preset,0,Glut halten
+1795285514627,274.187,ende,rika_nex/luft/soll,0,0
+1795285514631,274.192,ende,rika_nex/luft/preset,0,Glut halten
+1795285514631,274.192,ende,rika_nex/luft/stellung,0,0 ‰ / 2360 µs
+1795285514631,274.192,ende,rika_nex/event,0,luft:0/2360us
+1795285514632,274.192,ende,rika_nex/luft/status,0,fährt
+1795285514798,274.358,ende,rika_nex/luft/ist_winkel,0,80.2
+1795285514809,274.369,ende,rika_nex/luft/ist,0,440
+1795285514812,274.373,ende,rika_nex/luft/zustand,0,"Sekundärluft 88 %, Primärluft zu"
+1795285514812,274.373,ende,rika_nex/luft/primaer,0,0
+1795285514813,274.373,ende,rika_nex/luft/sekundaer,0,88
+1795285514897,274.458,ende,rika_nex/luft/ist_winkel,0,56.4
+1795285514903,274.463,ende,rika_nex/luft/ist,0,310
+1795285514903,274.464,ende,rika_nex/luft/zustand,0,"Sekundärluft 62 %, Primärluft zu"
+1795285514903,274.464,ende,rika_nex/luft/primaer,0,0
+1795285514909,274.470,ende,rika_nex/luft/sekundaer,0,62
+1795285514998,274.558,ende,rika_nex/luft/ist_winkel,0,32.3
+1795285515006,274.567,ende,rika_nex/luft/ist,0,177
+1795285515006,274.567,ende,rika_nex/luft/zustand,0,"Abbrand leicht · Sekundärluft 35 %, Primärluft zu"
+1795285515006,274.567,ende,rika_nex/luft/primaer,0,0
+1795285515007,274.568,ende,rika_nex/luft/sekundaer,0,35
+1795285515050,274.610,ende,rika_nex/temp/brennraum,0,21.2
+1795285515063,274.624,ende,rika_nex/temp/fehler,0,ok
+1795285515068,274.628,ende,rika_nex/tuer,0,offen
+1795285515068,274.628,ende,rika_nex/power,0,netz
+1795285515068,274.628,ende,rika_nex/akku/spannung,0,0.04
+1795285515097,274.657,ende,rika_nex/luft/ist_winkel,0,10.6
+1795285515101,274.661,ende,rika_nex/luft/ist,0,58
+1795285515101,274.661,ende,rika_nex/luft/zustand,0,"Sekundärluft 11 %, Primärluft zu"
+1795285515101,274.661,ende,rika_nex/luft/primaer,0,0
+1795285515101,274.662,ende,rika_nex/luft/sekundaer,0,11
+1795285515198,274.758,ende,rika_nex/luft/ist_winkel,0,6.6
+1795285515202,274.762,ende,rika_nex/luft/ist,0,36
+1795285515202,274.762,ende,rika_nex/luft/zustand,0,"Sekundärluft 7 %, Primärluft zu"
+1795285515202,274.763,ende,rika_nex/luft/primaer,0,0
+1795285515203,274.763,ende,rika_nex/luft/sekundaer,0,7
+1795285516126,275.687,ende,rika_nex/luft/abweichung,0,36
+1795285516135,275.696,ende,rika_nex/luft/status,0,Abweichung +36 ‰
+1795285516136,275.696,ende,rika_nex/event,0,luft:abweichung:36
+1795285516196,275.756,ende,rika_nex/luft/ist_winkel,0,6.6
+1795285516200,275.761,ende,rika_nex/luft/ist,0,36
+1795285516201,275.761,ende,rika_nex/luft/zustand,0,"Sekundärluft 7 %, Primärluft zu"
+1795285516201,275.761,ende,rika_nex/luft/primaer,0,0
+1795285516201,275.762,ende,rika_nex/luft/sekundaer,0,7
+1795285517198,276.758,ende,rika_nex/luft/ist_winkel,0,6.6
+1795285517201,276.761,ende,rika_nex/luft/ist,0,36
+1795285517201,276.761,ende,rika_nex/luft/zustand,0,"Sekundärluft 7 %, Primärluft zu"
+1795285517201,276.761,ende,rika_nex/luft/primaer,0,0
+1795285517201,276.761,ende,rika_nex/luft/sekundaer,0,7
+1795285518205,277.766,ende,rika_nex/luft/ist_winkel,0,6.6
+1795285518210,277.770,ende,rika_nex/luft/ist,0,36
+1795285518210,277.771,ende,rika_nex/luft/zustand,0,"Sekundärluft 7 %, Primärluft zu"
+1795285518210,277.771,ende,rika_nex/luft/primaer,0,0
+1795285518211,277.772,ende,rika_nex/luft/sekundaer,0,7
