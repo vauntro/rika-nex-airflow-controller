@@ -20,9 +20,12 @@ int asRawClosed = AS_RAW_CLOSED_DEFAULT;
 unsigned long pulseUntil = 0;   // 0 = kein Puls aktiv
 unsigned long checkAt = 0;      // Zeitpunkt der Plausibilitätsprüfung nach einer Fahrt
 bool calibrationMove = false;   // letzte Fahrt kam vom Kalibrier-Puls
+int lastUs = -1;                // zuletzt gefahrener Puls (für das Nachstellen)
+int correctionsLeft = 0;        // verbleibende Nachstell-Fahrten für die aktuelle Soll-Stellung
 unsigned long lastAsRead = 0;
 unsigned long lastAsPublish = 0;
 int lastAsRawPublished = -1000;
+unsigned long lastDiagPublish = 0;
 String lastSensorStatus;
 String lastStatus;
 
@@ -112,6 +115,8 @@ void moveTo(int permille, bool viaPreset) {
   int us = permilleToUs(permille);
   if (!pulse(us)) return;
   soll = permille;
+  lastUs = us;
+  correctionsLeft = AIR_CORR_MAX;
   calibrationMove = false;
   pub("luft/soll", String(soll), true);
   pub("luft/preset", presetName(soll), true);
@@ -184,6 +189,17 @@ void readAngle() {
     return;
   }
   int raw = ((b[0] & 0x0F) << 8) | b[1];
+  // Diagnose alle AS_DIAG_MS: Rohwinkel, AGC (Verstärkung, 3,3 V: 0–128, klein = starkes Feld)
+  // und Magnitude (Feldstärke nach der AGC, 12 Bit)
+  if (millis() - lastDiagPublish >= AS_DIAG_MS) {
+    uint8_t agc, mag[2];
+    if (asRead(0x1A, &agc, 1) && asRead(0x1B, mag, 2)) {
+      lastDiagPublish = millis();
+      pub("luft/raw", String(raw));
+      pub("luft/agc", String(agc));
+      pub("luft/magnitude", String(((mag[0] & 0x0F) << 8) | mag[1]));
+    }
+  }
   String status = !(st & 0x20) ? "fehlt" : (st & 0x08) ? "zu stark" : (st & 0x10) ? "zu schwach" : "ok";
   // Weg ab "ganz zu" modulo 4096 (Umbruch liegt im Arbeitsbereich). ±5° an den Anschlägen
   // werden auf 0 bzw. Vollausschlag geklemmt, alles weiter außerhalb ist eine Störung.
@@ -228,7 +244,24 @@ void checkPosition() {
   }
   int diff = ist - soll;
   pub("luft/abweichung", String(diff), true);
-  if (abs(diff) > AIR_CHECK_TOL_PERMILLE) {
+  int tol = soll == 0 ? AIR_CLOSED_TOL_PERMILLE : AIR_CHECK_TOL_PERMILLE;
+  if (abs(diff) > tol && correctionsLeft > 0 && lastUs > 0) {
+    // Nachstellen: Puls um die gemessene Abweichung korrigieren, innerhalb der harten Grenzen.
+    // Bei Soll 0 ‰ bleibt der Puls an der Grenze, die Fahrt wird dann einfach wiederholt.
+    correctionsLeft--;
+    float usPerPermille = (AIR_US_AT_1000 - AIR_US_AT_0) / 1000.0f;
+    int step = (int)lroundf(-diff * usPerPermille);
+    if (abs(step) < AIR_CORR_MIN_US) step = step < 0 ? -AIR_CORR_MIN_US : AIR_CORR_MIN_US;
+    int us = constrain(lastUs + step, min(AIR_US_AT_0, AIR_US_AT_1000), max(AIR_US_AT_0, AIR_US_AT_1000));
+    if (pulse(us)) {
+      lastUs = us;
+      pub("luft/stellung", String(soll) + " ‰ / " + String(us) + " µs", true);
+      event("luft:nachstellen:" + String(diff) + "/" + String(us) + "us");
+      setStatus("Nachstellen " + String(diff > 0 ? "+" : "") + String(diff) + " ‰");
+      return;
+    }
+  }
+  if (abs(diff) > tol) {
     setStatus("Abweichung " + String(diff > 0 ? "+" : "") + String(diff) + " ‰");
     event("luft:abweichung:" + String(diff));
   } else {
@@ -298,6 +331,9 @@ void announce() {
   discoverSensor("primaerluft", "Primärluft", "luft/primaer", "%", "mdi:arrow-up-bold-box-outline");
   discoverSensor("sekundaerluft", "Sekundärluft", "luft/sekundaer", "%", "mdi:arrow-down-bold-box-outline");
   discoverSensor("as5600_magnet", "AS5600 Magnet", "luft/magnet", nullptr, "mdi:magnet", true);
+  discoverSensor("as5600_raw", "AS5600 Rohwinkel", "luft/raw", nullptr, "mdi:angle-acute", true);
+  discoverSensor("as5600_agc", "AS5600 AGC", "luft/agc", nullptr, "mdi:magnet", true);
+  discoverSensor("as5600_magnitude", "AS5600 Feldstärke", "luft/magnitude", nullptr, "mdi:magnet", true);
   {
     JsonDocument d;
     d["name"] = "Nullpunkt setzen";
@@ -363,6 +399,7 @@ bool handleMessage(const String& t, const String& msg) {
     int us = constrain((int)lroundf(msg.toFloat()), 500, 2500);
     if (pulse(us)) {
       calibrationMove = true;
+      correctionsLeft = 0;
       pub("servo/puls", String(us), true);
       event("luft:kalibrierung:" + String(us) + "us");
       setStatus("Kalibrierung " + String(us) + " µs");

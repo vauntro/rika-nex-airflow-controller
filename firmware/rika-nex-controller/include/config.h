@@ -85,6 +85,12 @@
 // Plausibilitätsprüfung nach jeder Fahrt (Ist vom AS5600 gegen Soll)
 #define AIR_CHECK_DELAY_MS     500UL
 #define AIR_CHECK_TOL_PERMILLE 20
+// Nachstellen mit dem AS5600 (Labortest 21.11.2026: Hysterese 30–40 ‰, "Glut halten" blieb
+// einmal bei 6,6° statt 0° stehen). Liegt das Ist nach einer Fahrt außerhalb der Toleranz,
+// wird mit korrigiertem Puls nachgefahren, höchstens AIR_CORR_MAX-mal. 0 = aus.
+#define AIR_CORR_MAX              2
+#define AIR_CLOSED_TOL_PERMILLE   11   // bei Soll 0 ‰ ("Glut halten"): ca. 2°
+#define AIR_CORR_MIN_US           10   // kleinster Korrekturschritt (Totband/Getriebespiel)
 // Voreinstellungen für Home Assistant: Name, Stellung in ‰ (mittel/leicht vorläufig)
 #define AIR_PRESETS \
   {"Anfeuern", 1000}, {"Abbrand stark", 500}, {"Abbrand mittel", 335}, \
@@ -94,12 +100,13 @@
 #define AIR_PRESET_NEAR_PERMILLE 15
 
 #define AS5600_ADDR           0x36
-#define AS_RAW_CLOSED_DEFAULT 3530   // ganz zu; wird per "Nullpunkt setzen" im EEPROM überschrieben
-#define AS_RAW_SPAN           2074   // ganz zu -> ganz auf = 182,3°
+#define AS_RAW_CLOSED_DEFAULT 3241   // ganz zu an der Sensorbrücke (21.11.2026); "Nullpunkt setzen" überschreibt im EEPROM
+#define AS_RAW_SPAN           2018   // ganz zu -> ganz auf = 177,3° (Sensorbrücke, Anschlag 21.11.2026)
 #define AS_TOL_RAW            57     // ca. 5° Toleranz an den Anschlägen
 #define AS_CHANGE_RAW         6      // ca. 0,5°: sofort senden
 #define AS_INTERVAL_MS        100UL
 #define AS_PUBLISH_MS         1000UL
+#define AS_DIAG_MS            5000UL // Rohwinkel, AGC, Feldstärke (Diagnose)
 #define EEPROM_MAGIC          0xA560 // gleiches Format wie das Servo-Testprogramm
 
 // Takt
@@ -110,4 +117,4 @@
 // MQTT
 #define DEVICE_ID    "rika_nex"
 #define TOPIC_PREFIX "rika_nex/"
-#define FW_VERSION   "0.3.2-luftbox"
+#define FW_VERSION   "0.3.4-luftbox"

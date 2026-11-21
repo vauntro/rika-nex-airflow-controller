@@ -24,17 +24,28 @@ gepuffert werden).
 
 ## Mechanik / Kalibrierung
 
-- AS5600-Sensorbrücke bauen (`hardware/sensorbruecke-as5600/`): Zeichnung 1:1 drucken, aus 2-mm-Alublech
-  aussägen, Teile laut Einkaufsliste im README des Bauteils besorgen (u. a. M5 × 30, Hülsen 12 mm,
-  Abstandshalter M3 × 6). Nach Montage Luftspalt und Feldstärke (MD/ML/MH) prüfen und den Nullpunkt neu setzen.
+- ~~AS5600-Sensorbrücke bauen~~ erledigt: montiert, Magnet ok, Nullpunkt raw 3241 gesetzt (Labortest 21.11.2026,
+  `KALIBRIERUNG.md`).
+- **Hysterese der Luftbox-Fahrt** (Labortest 21.11.): Ist liegt aufwärts bis +45 ‰ über, abwärts bis −29 ‰ unter
+  dem Soll, die Plausibilitätsprüfung (±20 ‰) schlägt dadurch oft an. Zuerst Ursache klären: dieselben Stellungen
+  langsam in kleinen Pulsschritten anfahren. Wird es dann genau, ist es Schwung (Abhilfe: Fahrrampe); bleibt es,
+  ist es Spiel (Abhilfe: Ziele immer aus derselben Richtung anfahren oder mit dem AS5600 nachstellen).
+- ~~**Ganz auf:** 860 µs ergibt nur 177,6° statt 182,3°.~~ Geklärt 21.11.: Anschlag liegt an der Sensorbrücke bei
+  177,1–177,6°, `AS_RAW_SPAN` auf 2018 gesetzt. Beim nächsten Flashen übernehmen und Testreihe wiederholen.
+- **Ganz zu:** „Glut halten“ von 500 ‰ aus blieb bei 6,6° stehen (von 160 ‰ aus 0,0°). Sie sah zu aus, ließ sich
+  von Hand aber noch 1–2 mm weiter schließen (Nico, 21.11.). Firmware: bei Soll 0 ‰ nachstellen (zweite kurze Fahrt),
+  wenn der AS5600 mehr als ca. 2° meldet. Für „Glut halten“ wichtig, weil dort ganz zu gewollt ist.
+  0.3.3-luftbox (Nachstellen) geflasht und getestet 21.11.: Zwischenstellungen jetzt innerhalb ±20 ‰, aber „Glut halten“
+  aus offener Stellung bleibt bei 4–7° stehen, das Wiederholen mit 2360 µs hilft nicht. **Offen:** Beim Schließen über
+  2360 µs hinaus nachdrücken (z. B. bis 2420 µs, Schritt 20 µs, nur bei Soll 0 ‰)? Vorher mit „Servo-Puls (Kalibrierung)“
+  testen, ob der Riemen dabei springt.
 - Druck-Riemenräder (3 Varianten) eingetroffen? → passende Variante wählen, M3-Schraube nach
   Einschraubtiefe.
 - Axialspiel der Luftbox-Welle: Scheiben M10 (≈ 3,6 mm) + Riemenrad als Anschlag.
-- Servo gekoppelt. AIR_US_AT_0 = 2360 µs (ganz zu, 27.10.). AIR_US_AT_1000 = 860 µs (ganz auf, bestätigt 28.10.). Offen: AS5600-Nullpunkt neu setzen und Linearität prüfen (KALIBRIERUNG.md).
+- Servo gekoppelt. AIR_US_AT_0 = 2360 µs (ganz zu, 27.10.). AIR_US_AT_1000 = 860 µs (ganz auf, bestätigt 28.10.). AS5600-Nullpunkt neu gesetzt und Linearität geprüft (21.11.): Kennlinie linear, Hysterese siehe oben.
 - Klappen prüfen: Liegt der Übergang Primär/Sekundär wirklich bei 500 ‰?
 - **Test (E21):** Hält der Riemenantrieb die Stellung mit stromlosem Servo, oder drücken die Klappen ihn zurück?
-  Mehrere Stellungen anfahren, Servo abschalten, AS5600-Wert über einige Minuten beobachten (auch mit
-  warmem Ofen). Falls er wegdriftet: Nachstellen bei Abweichung oder Servo doch halten lassen (dann Akku neu rechnen).
+  Kalt bestätigt (21.11.): 180 s auf 500 ‰, Winkel 95,2–95,3°, keine Drift. Offen: dasselbe mit warmem Ofen. Falls er wegdriftet: Nachstellen bei Abweichung oder Servo doch halten lassen (dann Akku neu rechnen).
 - Echten Verbrauch messen (Board + Servo, Phase 3) und die Akku-Abschätzung prüfen.
 - Voreinstellungen „Abbrand mittel/leicht“ am echten Feuer festlegen.
 

@@ -152,3 +152,100 @@ ohne Nullpunkt, 14:59:39–15:00:39, 604 Messwerte, langsam von Anschlag zu Ansc
 - Der Servo braucht über den Riemen ca. 8,0 µs/° statt der geschätzten 7,4 µs/°; die Sorge „860 µs drückt an den Anschlag“ ist damit erledigt.
 - Zwischenstellungen (linear): Abbrand stark 500 ‰ = 1610 µs, mittel 335 ‰ ≈ 1858 µs, leicht 165 ‰ ≈ 2113 µs, Reglersperre 160 ‰ ≈ 2120 µs.
 - Offen, sobald der AS5600 wieder angeschlossen ist: auf „Glut halten“ fahren und „Nullpunkt setzen“; dann 1000/500/335/165 ‰ fahren und prüfen, dass „Luftklappe Abweichung“ überall unter ±20 ‰ bleibt.
+
+## AS5600 an der Sensorbrücke – Labortest (21.11.2026)
+
+Erster Test nach Montage der Sensorbrücke (Rückseite Luftbox, `hardware/sensorbruecke-as5600/`).
+**Labortest ohne Feuer**, Firmware 0.3.2-luftbox unverändert. Fahrten per MQTT ausgelöst, Werte jeweils
+4 s nach dem Befehl abgelesen. Rohdaten: [`messungen/as5600-labortest-2026-11-21-rohlog.csv`](messungen/as5600-labortest-2026-11-21-rohlog.csv),
+Tabelle: [`messungen/as5600-labortest-2026-11-21-ergebnis.md`](messungen/as5600-labortest-2026-11-21-ergebnis.md).
+
+- I²C und Magnet: Sensor antwortet, Magnetstatus in allen Messungen „ok“ (Luftspalt passt).
+- Drehrichtung: Öffnen = steigender Winkel, DIR auf GND bleibt richtig.
+- **Neuer Nullpunkt** bei „ganz zu“ (Glut halten): **raw 3241** (Ereignis `luft:nullpunkt:3241`, im EEPROM).
+  Vorher 3530 an der Einlass-Position. Vor dem Setzen zeigte der alte Wert 2,5° bei geschlossener Box.
+
+### Fahrten über den ganzen Weg
+
+| Soll ‰ | Puls µs | Ist ‰ aufwärts | Winkel ° | Ist ‰ abwärts | Winkel ° | Mitte ‰ | Breite ‰ |
+|---|---|---|---|---|---|---|---|
+| 0    | 2360 | 0   | 0,0   | 0   | 0,0   | 0   | 0  |
+| 160  | 2120 | 159 | 28,9  | 131 | 23,8  | 145 | 28 |
+| 250  | 1985 | 262 | 47,8  | 233 | 42,5  | 248 | 29 |
+| 335  | 1857 | 355 | 64,8  | 321 | 58,4  | 338 | 34 |
+| 400  | 1760 | 423 | 77,2  | 389 | 70,9  | 406 | 34 |
+| 500  | 1610 | 525 | 95,7  | 488 | 89,0  | 507 | 37 |
+| 600  | 1460 | 614 | 112,0 | 580 | 105,6 | 597 | 34 |
+| 700  | 1310 | 714 | 130,2 | 673 | 122,6 | 694 | 41 |
+| 800  | 1160 | 832 | 151,6 | 776 | 141,4 | 804 | 56 |
+| 900  | 1010 | 946 | 172,4 | 882 | 160,8 | 914 | 64 |
+| 1000 | 860  | 974 | 177,6 | –   | –     | –   | –  |
+
+„Mitte“ = Mittel aus auf- und abwärts, „Breite“ = Unterschied auf/ab bei gleichem Puls.
+
+- **Kennlinie linear:** Die Mitte liegt bis 900 ‰ innerhalb −15 … +14 ‰ vom Soll. Die Endwerte
+  2360/860 µs und die lineare Abbildung passen.
+- **Hysterese:** Aufwärts liegt der Ist-Wert immer über dem Soll (+12 … +45 ‰), abwärts immer darunter
+  (−10 … −29 ‰). Die Welle bleibt also in Fahrtrichtung vorne stehen. Breite ca. 30–40 ‰ (5–7°), oben
+  bis 64 ‰. Dadurch meldet die Plausibilitätsprüfung (±20 ‰) bei 10 von 22 Fahrten „Abweichung“.
+  Ursache noch offen: Schwung bei der schnellen Fahrt (ca. 95° in 0,3 s) mit anschließend stromlosem
+  Servo, oder Spiel in Servogetriebe und Riemen.
+- **Einschwingen:** Jede Fahrt ist nach 0,2–0,4 s fertig, danach ändert sich der Wert nicht mehr
+  (kein Kriechen).
+- **Ganz auf:** Bei 860 µs nur 177,6° (974 ‰) statt der hinterlegten 182,3° (`AS_RAW_SPAN 2074`).
+  Geklärt (Nico, 21.11., 19:41): Welle stromlos von Hand bis zum Anschlag „ganz auf“ gedreht (Stößel berühren
+  die Klappe nicht mehr): **177,1°**, 11 Messwerte ohne Schwankung. Der Servo erreicht mit 860 µs also den Anschlag
+  (177,6°). Der Drehweg an dieser Sensorposition ist ca. **177,3°** statt 182,3°.
+  → `AS_RAW_SPAN` 2074 → **2018** (177,3° × 4096 / 360). Die Servo-Endwerte 2360/860 µs bleiben.
+  Vor dem Anschlag gibt es ein kurzes Stück, auf dem die Klappe schon ganz offen ist und die Stößel frei laufen.
+- **Ganz zu nicht immer erreicht:** Von 160 ‰ aus kommt „Glut halten“ auf 0,0°, direkt von 500 ‰ aus
+  blieb die Welle bei 6,6° (36 ‰) stehen. Auch vor dem Test stand sie bei 2,5°.
+  Nico (21.11., 19:32): Bei 6,6° sah die Luftbox zu aus, ließ sich von Hand aber noch 1–2 mm weiter schließen.
+  Sie war also **nicht ganz zu**. Die Meldung „Abweichung +36 ‰“ war berechtigt.
+- **Rauschen und Halten (E21, kalt):** 180 s auf 500 ‰ mit stromlosem Servo, 180 Messwerte, 95,2–95,3°
+  (±0,05°). Kein Rauschen, keine Drift. Der Riemenantrieb hält kalt die Stellung.
+
+### Zweite Testreihe mit 0.3.3-luftbox (Nachstellen), 21.11.2026, 20:08
+
+Riemen neu aufgelegt bei „ganz zu“ (Box und Servo 2360 µs), Ausgangslage 0,0°, kein neuer Nullpunkt nötig.
+Wartezeit 7 s pro Schritt. Rohdaten liegen bei Nico unter `messungen/as5600-labortest-2026-11-21-v033-*`.
+
+| Soll ‰ | aufwärts: Ist ‰ (Nachstellfahrten, Abweichung davor) | abwärts: Ist ‰ (Nachstellfahrten) |
+|---|---|---|
+| 0    | 0 (–)                       | 30 (2, beide wirkungslos) → „Abweichung +30“ |
+| 160  | 157 (0)                     | 156 (1, vorher +51) |
+| 250  | 264 (0)                     | 240 (1, vorher +67) |
+| 335  | 346 (2: +27, +23)           | 334 (0) |
+| 400  | 399 (2: +40, +27)           | 405 (0) |
+| 500  | 500 (2: +45, +31)           | 505 (0) |
+| 600  | 611 (2: +40, +33)           | 598 (0) |
+| 700  | 706 (2: +45, +32)           | 693 (0) |
+| 800  | 802 (2: +60, +27)           | 799 (0) |
+| 900  | 920 (1: +74)                | 908 (0) |
+| 1000 | 1000 (0), 177,4°            | – |
+
+- **Zwischenstellungen ok:** Nach dem Nachstellen liegen alle Stellungen von 160 bis 1000 ‰ innerhalb −10 … +20 ‰.
+  Ohne Nachstellen wären es aufwärts bis +74 ‰ gewesen.
+- Eine Korrekturfahrt holt nur etwa ein Drittel bis die Hälfte der Abweichung zurück (z. B. +45 → +31 mit 68 µs).
+  Der Richtungswechsel frisst einen Teil des Pulses (Spiel). Deshalb braucht es meist beide Fahrten.
+- Abwärts ist die Abweichung diesmal klein (−7 … +8 ‰), nur unten (250/160 ‰) wurde nachgestellt.
+- Ganz auf: 860 µs → 177,4° = 1000 ‰. Der neue Drehweg (`AS_RAW_SPAN 2018`) stimmt.
+- **„Glut halten“ aus offener Stellung bleibt offen:** In allen 5 Fällen (aus 160, 2× aus 500, aus 1000, nach dem
+  Haltetest) stand die Welle danach bei 4,0–7,3° (+23 … +41 ‰). Das Wiederholen mit 2360 µs bewegt nichts, weil
+  der Servo seine Position schon erreicht hat. Die Box ist dann nicht ganz zu.
+- Haltetest 500 ‰, 120 s, Servo stromlos: nach dem Nachstellen konstant 91,8° (117 Meldungen), keine Drift.
+
+### Endpunkte und Magnet (21.11.2026, 20:30–20:45)
+
+| Stellung | Puls | Winkel (Nullpunkt 3241) | raw |
+|---|---|---|---|
+| ganz zu (Glut halten) | 2360 µs | 1,1° | 3254 |
+| ganz auf (Anfeuern)   | 860 µs  | 173,1° | 1114 |
+
+- Servo-Hub damit 172,0° (1956 raw). Gegenüber der Testreihe um 20:08 (177,4° bei ganz auf, 4–7° bei ganz zu) sind
+  beide Endpunkte um ca. 4° Richtung zu verschoben, vermutlich durch das erneute Auflegen des Riemens.
+- Magnet mit 0.3.4-luftbox (Box steht, 60 s): **AGC 29** (0–128 bei 3,3 V, viel Reserve in beide Richtungen),
+  **Feldstärke 2066–2067**, Rohwinkel 3229–3230 (±1 LSB ≈ ±0,1°). Magnet und Luftspalt sind in Ordnung.
+- Nach dem Flashen meldete der Sensor „außerhalb Bereich (−6,9°)“ bei raw 3229. Der gespeicherte Nullpunkt liegt also
+  bei ca. raw 3308, nicht mehr bei 3241. Klären, ob „Nullpunkt setzen“ zwischendurch gedrückt wurde; Nullpunkt bei
+  „Glut halten“ neu setzen.

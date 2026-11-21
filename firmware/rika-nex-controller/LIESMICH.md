@@ -1,6 +1,6 @@
 # RIKA NEX – Firmware (Logger + Luftbox)
 
-Stand 0.3.2-luftbox (27.10.2026). Läuft auf dem Produktiv-D1-Mini (rika_nex.local).
+Stand 0.3.3-luftbox (geflasht 21.11.2026; vorher 0.3.2-luftbox vom 27.10.). Läuft auf dem Produktiv-D1-Mini (rika_nex.local).
 Misst Brennraumtemperatur, Tür, Netz/Akku und stellt die Luftbox über den Servo;
 der AS5600 kontrolliert die Ist-Stellung. Noch **keine automatische Regelung** –
 die Stellung kommt aus Home Assistant.
@@ -27,6 +27,7 @@ die Stellung kommt aus Home Assistant.
 | sensor Luftklappe Abweichung | Ist − Soll in ‰ (0,5 s nach jeder Fahrt) |
 | sensor Luftklappe Status | ok / fährt / Abweichung ±x ‰ / Sensor: … / Kalibrierung … |
 | sensor AS5600 Magnet (Diagnose) | ok / zu schwach / zu stark / fehlt / außerhalb Bereich |
+| sensor AS5600 Rohwinkel, AGC, Feldstärke (Diagnose, ab 0.3.4) | raw 0–4095; AGC 0–128 bei 3,3 V (klein = starkes Feld); Magnitude 12 Bit, alle 5 s |
 | button Nullpunkt setzen (Konfiguration) | aktuelle Stellung als „ganz zu“ speichern (EEPROM) |
 | number Servo-Puls (Kalibrierung) (Konfiguration) | roher Puls 500–2500 µs, **ohne** Luftbox-Grenzen |
 
@@ -38,7 +39,11 @@ Dashboard zum Einfügen: `../../home-assistant/rika-nex-dashboard.yaml`.
 - Jede Fahrt: 1000 ms Puls, danach Puls aus (Servo hält nicht aktiv).
 - Software-Sperre: Regler und spätere Regelung nicht unter 160 ‰ (alter Zwischenanschlag
   bei ca. 152 ‰); ganz zu nur über „Glut halten“.
-- Plausibilität: Abweichung > 20 ‰ → Status „Abweichung“ und Ereignis `luft:abweichung:…`.
+- Nachstellen (ab 0.3.3): Liegt das Ist 0,5 s nach der Fahrt mehr als 20 ‰ neben dem Soll (bei „Glut halten“
+  mehr als 11 ‰ ≈ 2°), fährt die Firmware mit einem um die Abweichung korrigierten Puls nach, höchstens
+  2-mal (`AIR_CORR_MAX`, 0 = aus). Bei „Glut halten“ wird die Fahrt an der Grenze 2360 µs wiederholt.
+  Ereignis `luft:nachstellen:<Abweichung>/<µs>us`, Status „Nachstellen …“.
+- Plausibilität: bleibt die Abweichung danach über der Toleranz → Status „Abweichung“ und Ereignis `luft:abweichung:…`.
   Vor dem Koppeln und Kalibrieren ist das normal (Servo und Box sind noch nicht verbunden).
 - Ereignisse auf `rika_nex/event`: `luft:<‰>/<µs>us`, `luft:sperre`, `luft:abweichung:<‰>`,
   `luft:nullpunkt:<raw>`, `luft:kalibrierung:<µs>us`, `tuer_auf`, `tuer_zu`, `nachgelegt`, …

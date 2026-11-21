@@ -2,6 +2,36 @@
 
 Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden hier festgehalten, neueste oben.
 
+## 2026-11-21
+
+### Doku
+- **Verkabelungsplan D1 Mini** neu für Firmware 0.3.4 (`firmware/rika-nex-controller/VERKABELUNG-D1-MINI.md`): alle Pins,
+  PCA9685 mit Servo auf Kanal 1 und externer 5-V-Versorgung (≥ 3 A), AS5600, MAX6675, Tür, Netz, Akku.
+  `docs/VERKABELUNG.md` verweist darauf. Der alte Plan der Logger-Firmware enthielt den Servo noch nicht.
+
+### Firmware
+- **0.3.4-luftbox:** AS5600-Diagnose in HA (Konfiguration/Diagnose): Rohwinkel, AGC und Feldstärke (Magnitude),
+  alle 5 s (`AS_DIAG_MS`). Zum Prüfen von Luftspalt und Magnet.
+- **0.3.3-luftbox: Nachstellen mit dem AS5600**, gebaut (RAM 39,3 %, Flash 32,8 %) und per OTA geflasht 21.11. 19:56. Board online, Discovery meldet 0.3.3; Box von Hand ganz auf zeigt jetzt 177,1° = 999 ‰ (neuer Drehweg passt). Zweite Testreihe mit montiertem Riemen (20:08): Zwischenstellungen nach dem Nachstellen innerhalb −10 … +20 ‰
+  (vorher bis +45 ‰), ganz auf 1000 ‰. „Glut halten“ aus offener Stellung bleibt bei 4–7° stehen, Nachstellen an der
+  Grenze 2360 µs wirkt dort nicht (offener Punkt). Nach jeder Fahrt wird bei Abweichung über der
+  Toleranz (20 ‰, bei „Glut halten“ 11 ‰ ≈ 2°) bis zu 2-mal mit korrigiertem Puls nachgefahren. Gegen die im
+  Labortest gemessene Hysterese und das unvollständige Schließen. Neue Werte `AIR_CORR_MAX`,
+  `AIR_CLOSED_TOL_PERMILLE`, `AIR_CORR_MIN_US` in `config.h`.
+
+### Kalibrierung
+- **AS5600 an der Sensorbrücke in Betrieb genommen (Labortest ohne Feuer).** I²C und Magnet ok, Drehrichtung
+  passt (DIR auf GND). Neuer Nullpunkt „ganz zu“ raw 3241 (vorher 3530, Einlass-Position), im EEPROM gesetzt.
+- Testreihe 0 → 1000 → 0 ‰ in 21 Schritten plus 3 min Haltetest. Kennlinie linear, aber Hysterese von ca.
+  30–40 ‰ (oben bis 64 ‰): aufwärts Ist über Soll, abwärts darunter. Ganz auf nur 177,6° statt 182,3°,
+  „Glut halten“ von 500 ‰ aus nur bis 6,6°. Rauschen ±0,05°, keine Drift bei stromlosem Servo (E21, kalt).
+  Ergebnisse in `docs/KALIBRIERUNG.md`, Rohdaten in `docs/messungen/`.
+- `config.h`: `AS_RAW_CLOSED_DEFAULT` auf 3241 (nur Vorgabe, falls kein EEPROM-Wert da ist; nicht geflasht).
+- `config.h`: `AS_RAW_SPAN` 2074 → 2018 (Drehweg 177,3°, Anschlag „ganz auf“ von Hand gemessen 177,1°, Servo 177,6°).
+  Noch nicht geflasht.
+- „Glut halten“ von 500 ‰ aus blieb bei 6,6° stehen, die Box ließ sich von Hand noch 1–2 mm weiter schließen
+  (Nico). Nachstellen bei Soll 0 ‰ als offener Punkt.
+
 ## 2026-11-06
 
 ### Schaltplan
