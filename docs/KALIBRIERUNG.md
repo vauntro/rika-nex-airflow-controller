@@ -234,3 +234,18 @@ Wartezeit 7 s pro Schritt. Rohdaten liegen bei Nico unter `messungen/as5600-labo
   Haltetest) stand die Welle danach bei 4,0–7,3° (+23 … +41 ‰). Das Wiederholen mit 2360 µs bewegt nichts, weil
   der Servo seine Position schon erreicht hat. Die Box ist dann nicht ganz zu.
 - Haltetest 500 ‰, 120 s, Servo stromlos: nach dem Nachstellen konstant 91,8° (117 Meldungen), keine Drift.
+
+### Endpunkte und Magnet (21.11.2026, 20:30–20:45)
+
+| Stellung | Puls | Winkel (Nullpunkt 3241) | raw |
+|---|---|---|---|
+| ganz zu (Glut halten) | 2360 µs | 1,1° | 3254 |
+| ganz auf (Anfeuern)   | 860 µs  | 173,1° | 1114 |
+
+- Servo-Hub damit 172,0° (1956 raw). Gegenüber der Testreihe um 20:08 (177,4° bei ganz auf, 4–7° bei ganz zu) sind
+  beide Endpunkte um ca. 4° Richtung zu verschoben, vermutlich durch das erneute Auflegen des Riemens.
+- Magnet mit 0.3.4-luftbox (Box steht, 60 s): **AGC 29** (0–128 bei 3,3 V, viel Reserve in beide Richtungen),
+  **Feldstärke 2066–2067**, Rohwinkel 3229–3230 (±1 LSB ≈ ±0,1°). Magnet und Luftspalt sind in Ordnung.
+- Nach dem Flashen meldete der Sensor „außerhalb Bereich (−6,9°)“ bei raw 3229. Der gespeicherte Nullpunkt liegt also
+  bei ca. raw 3308, nicht mehr bei 3241. Klären, ob „Nullpunkt setzen“ zwischendurch gedrückt wurde; Nullpunkt bei
+  „Glut halten“ neu setzen.
