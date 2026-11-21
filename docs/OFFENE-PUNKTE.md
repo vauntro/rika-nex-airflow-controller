@@ -30,8 +30,8 @@ gepuffert werden).
   dem Soll, die Plausibilitätsprüfung (±20 ‰) schlägt dadurch oft an. Zuerst Ursache klären: dieselben Stellungen
   langsam in kleinen Pulsschritten anfahren. Wird es dann genau, ist es Schwung (Abhilfe: Fahrrampe); bleibt es,
   ist es Spiel (Abhilfe: Ziele immer aus derselben Richtung anfahren oder mit dem AS5600 nachstellen).
-- **Ganz auf:** 860 µs ergibt nur 177,6° statt 182,3°. Schieber stromlos von Hand ganz auf drücken und den Winkel
-  ablesen. Danach `AS_RAW_SPAN` oder `AIR_US_AT_1000` anpassen.
+- ~~**Ganz auf:** 860 µs ergibt nur 177,6° statt 182,3°.~~ Geklärt 21.11.: Anschlag liegt an der Sensorbrücke bei
+  177,1–177,6°, `AS_RAW_SPAN` auf 2018 gesetzt. Beim nächsten Flashen übernehmen und Testreihe wiederholen.
 - **Ganz zu:** „Glut halten“ von 500 ‰ aus blieb bei 6,6° stehen (von 160 ‰ aus 0,0°). Sie sah zu aus, ließ sich
   von Hand aber noch 1–2 mm weiter schließen (Nico, 21.11.). Firmware: bei Soll 0 ‰ nachstellen (zweite kurze Fahrt),
   wenn der AS5600 mehr als ca. 2° meldet. Für „Glut halten“ wichtig, weil dort ganz zu gewollt ist.

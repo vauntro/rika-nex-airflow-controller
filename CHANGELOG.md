@@ -12,6 +12,10 @@ Alle Änderungen am Projekt (Firmware, Kalibrierung, Hardware, Planung) werden h
   „Glut halten“ von 500 ‰ aus nur bis 6,6°. Rauschen ±0,05°, keine Drift bei stromlosem Servo (E21, kalt).
   Ergebnisse in `docs/KALIBRIERUNG.md`, Rohdaten in `docs/messungen/`.
 - `config.h`: `AS_RAW_CLOSED_DEFAULT` auf 3241 (nur Vorgabe, falls kein EEPROM-Wert da ist; nicht geflasht).
+- `config.h`: `AS_RAW_SPAN` 2074 → 2018 (Drehweg 177,3°, Anschlag „ganz auf“ von Hand gemessen 177,1°, Servo 177,6°).
+  Noch nicht geflasht.
+- „Glut halten“ von 500 ‰ aus blieb bei 6,6° stehen, die Box ließ sich von Hand noch 1–2 mm weiter schließen
+  (Nico). Nachstellen bei Soll 0 ‰ als offener Punkt.
 
 ## 2026-11-06
 

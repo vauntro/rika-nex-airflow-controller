@@ -193,7 +193,11 @@ Tabelle: [`messungen/as5600-labortest-2026-11-21-ergebnis.md`](messungen/as5600-
 - **Einschwingen:** Jede Fahrt ist nach 0,2–0,4 s fertig, danach ändert sich der Wert nicht mehr
   (kein Kriechen).
 - **Ganz auf:** Bei 860 µs nur 177,6° (974 ‰) statt der hinterlegten 182,3° (`AS_RAW_SPAN 2074`).
-  Offen: Erreicht der Servo den Anschlag nicht, oder ist der Drehweg an dieser Sensorposition kleiner?
+  Geklärt (Nico, 21.11., 19:41): Welle stromlos von Hand bis zum Anschlag „ganz auf“ gedreht (Stößel berühren
+  die Klappe nicht mehr): **177,1°**, 11 Messwerte ohne Schwankung. Der Servo erreicht mit 860 µs also den Anschlag
+  (177,6°). Der Drehweg an dieser Sensorposition ist ca. **177,3°** statt 182,3°.
+  → `AS_RAW_SPAN` 2074 → **2018** (177,3° × 4096 / 360). Die Servo-Endwerte 2360/860 µs bleiben.
+  Vor dem Anschlag gibt es ein kurzes Stück, auf dem die Klappe schon ganz offen ist und die Stößel frei laufen.
 - **Ganz zu nicht immer erreicht:** Von 160 ‰ aus kommt „Glut halten“ auf 0,0°, direkt von 500 ‰ aus
   blieb die Welle bei 6,6° (36 ‰) stehen. Auch vor dem Test stand sie bei 2,5°.
   Nico (21.11., 19:32): Bei 6,6° sah die Luftbox zu aus, ließ sich von Hand aber noch 1–2 mm weiter schließen.
